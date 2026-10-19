@@ -65,6 +65,8 @@ canvas{display:block;width:100%;height:100%}
 .info section.f h3{color:#8a9ee0}
 .pick.u[aria-pressed="true"]{border-color:#ff8fa8;box-shadow:inset 0 0 0 1px #ff8fa8}
 .info section.u h3{color:#ff8fa8}
+.pick.v[aria-pressed="true"]{border-color:#ff8a4a;box-shadow:inset 0 0 0 1px #ff8a4a}
+.info section.v h3{color:#ff8a4a}
 .row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
 /* 闯关 */
 .lvs{display:flex;flex-direction:column;gap:8px}
@@ -245,6 +247,7 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
           <button class="pick q" type="button" data-char="kenjaku" aria-pressed="false"><b style="color:#d8a8a8">羂索</b><span>占据夏油杰身体的千年诅咒师。咒灵操术、重力、极之番 · 涡（可蓄力）；领域展开 · 胎藏遍野。</span></button>
           <button class="pick u" type="button" data-char="yuji" aria-pressed="false"><b style="color:#ff8fa8">虎杖悠仁</b><span>涩谷事变时期。没有术式，靠超人的体能、逕庭拳和黑闪硬打。</span></button>
           <button class="pick f" type="button" data-char="megumi" aria-pressed="false"><b style="color:#8a9ee0">伏黑惠</b><span>十种影法术。用影子召唤式神：玉犬、鵺、蛤蟆，还有未完成的领域。</span></button>
+          <button class="pick v" type="button" data-char="jogo" aria-pressed="false"><b style="color:#ff8a4a">漏瑚</b><span>未登记的特级咒灵，从人类对大地的恐惧中诞生。火礫虫、火山、极之番 · 隕，领域展开 · 盖棺铁围山。</span></button>
           <button class="pick w" type="button" data-char="mahito" aria-pressed="false"><b style="color:#9fb8cc">真人</b><span>特级咒灵。碰到对方就能改变灵魂的形状；改造人、多重魂，还有只开 0.2 秒的领域。</span></button>
           <button class="pick e" type="button" data-char="kashimo" aria-pressed="false"><b style="color:#7fe3f0">鹿紫云一</b><span>四百年前的「雷神」。咒力带电，用如意给对手留下电荷再放电；一生一次的术式 · 幻兽琥珀。</span></button>
           <button class="pick k" type="button" data-char="yuki" aria-pressed="false"><b style="color:#ffd36a">九十九由基</b><span>四位特级咒术师之一。星之怒给自己和式神伽楼罗加上假想的质量；最后的手段是黑洞。</span></button>
@@ -275,6 +278,7 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
           <button type="button" data-opp="mahito" aria-pressed="false">真人</button>
           <button type="button" data-opp="megumi" aria-pressed="false">伏黑惠</button>
           <button type="button" data-opp="yuji" aria-pressed="false">虎杖悠仁</button>
+          <button type="button" data-opp="jogo" aria-pressed="false">漏瑚</button>
         </div>
         <div class="row" role="group" aria-label="难度">
           <button type="button" data-diff="easy" aria-pressed="false">简单</button>
@@ -500,6 +504,21 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
         <dt>没有做的</dt><dd>几魂异性体（第 129 话，分出来的改造体）、分身。乙骨的里香吞了他也复制不到术式（游戏规则）。</dd>
       </dl>
     </section>
+    <section class="v">
+      <h3>漏瑚</h3>
+      <dl>
+        <dt>出处</dt><dd>《咒术回战》。未登记的特级咒灵，从人类对大地（火山）的畏惧中诞生，和真人、花御、陀艮一伙，跟羂索（夏油杰的身体）合作。第 14 话对上五条悟，被单方面压制；涩谷事变里烧倒了禅院直毘人、七海建人和禅院真希（第 111 话），之后跟宿傩赌了一场，战死（第 116 话）。</dd>
+        <dt>外观</dt><dd>小个子，只有一只眼睛，头顶像一座火山口，牙齿是黑的；生气时头顶和耳朵会喷出热气。皮肤和衣服的颜色没有查到可靠资料，游戏里画成灰白的皮肤、浅色和服、深色腰带和裤子【尚未确认】。</dd>
+        <dt><kbd>J</kbd> 体术三连</dt><dd>普通拳脚。</dd>
+        <dt><kbd>K</kbd> 火礫虫</dt><dd>原作：会飞的小咒灵，碰到人就尖叫着爆炸（第 14 话对五条悟时用过，被无下限挡下）。游戏里：一次放出三只，追着对手飞，打中就炸。</dd>
+        <dt><kbd>L</kbd> 火山</dt><dd>原作：他的术式能操纵火焰和岩浆，让地面冒出火山口（第 111 话对直毘人时在身后开出火山口）。游戏里：对手脚下鼓起一座小火山，约半秒后喷发，把人掀上天；看到地面鼓起来就走开。</dd>
+        <dt><kbd>U</kbd> 极之番 · 隕</dt><dd>原作：召唤出像陨石一样巨大的燃烧岩块砸下来。涩谷事变里他对宿傩用了这一招（第 115 话）。游戏里：从天上砸下来，落点有红色预警圈，范围大、伤害高，跑出圈外就躲得开。</dd>
+        <dt><kbd>I</kbd> 盖棺铁围山</dt><dd>原作：他的领域展开，对五条悟时展开过，被无量空处压了过去（具体话数【尚未确认】）。必中的具体效果没有查到可靠说法【尚未确认】，游戏里做成在火山里持续灼烧。和五条悟、模块虎杖等有结界的领域相撞时连按 <kbd>J</kbd> 对撞；碰上伏魔御厨子进入领域并存。</dd>
+        <dt>被动 · 再生</dt><dd>游戏设定：3 秒没挨打就慢慢回血（咒灵的身体由咒力构成）。</dd>
+        <dt>没有做的</dt><dd>资料提到的岩浆巨手、从掌心和头顶射出的热线都没做成招式。乙骨的里香吞了他也复制不到术式（游戏规则）。</dd>
+        <dt>原作结局</dt><dd>宿傩跟他赌：只要他能打中自己一下就……（赌约的具体条件各资料概括不一【尚未确认】）。漏瑚用了极之番 · 隕也没能压过宿傩（第 115 话），最后在火力比拼里被宿傩的火焰之矢烧尽；宿傩认可了他的强（第 116 话）。</dd>
+      </dl>
+    </section>
     <section class="e">
       <h3>鹿紫云一</h3>
       <dl>
@@ -644,6 +663,7 @@ const STY = {
   mahoraga:{bulk:1.3, arm:'#d9d4cc', armB:'#b4ada3', leg:'#18181e', legB:'#101015', body:'#d9d4cc', skin:'#d9d4cc', head:'mahoraga', shoe:'#1a1a20', sash:'#ece8e0', wideLeg:true, armBlade:true, bare:true},
   dabura:{bulk:1.12, arm:'#c9ccd6', armB:'#a4a8b4', leg:'#24222c', legB:'#18171e', body:'#c9ccd6', skin:'#c9ccd6', head:'dabura', shoe:'#1c1b22', sash:'#1a1820', wideLeg:true, bare:true, marks:true, belt:'#3a3428'},
   yuji:{bulk:1.04, arm:'#1c1d26', armB:'#14151c', leg:'#1c1d26', legB:'#14151c', body:'#1c1d26', skin:'#f1d6c4', head:'yuji', shoe:'#16161c', hood:'#b0282f', cuff:'#121218'},
+  jogo:{bulk:.96, arm:'#dcd3c4', armB:'#b9b0a2', leg:'#2e2824', legB:'#201c19', body:'#dcd3c4', skin:'#d6cec4', head:'jogo', shoe:'#1a1614', sash:'#3a2a24', sleeve:true, wideLeg:true, sandal:true, tabi:'#e6e0d6'},
   megumi:{arm:'#1e2333', armB:'#151927', leg:'#1c2030', legB:'#141826', body:'#1e2333', skin:'#f0d8c8', head:'megumi', shoe:'#14161e', collar:true, cuff:'#121624'},
   mahito:{arm:'#22232b', armB:'#16171d', leg:'#22232b', legB:'#16171d', body:'#22232b', skin:'#e6dfd8', head:'mahito', shoe:'#ecebe8', wideLeg:true, stitch:true},
   mahitoX:{bulk:1.3, arm:'#aeb6bf', armB:'#8f97a2', leg:'#22232b', legB:'#16171d', body:'#aeb6bf', skin:'#aeb6bf', head:'mahitoX', shoe:'#ecebe8', wideLeg:true, bare:true, marks:true},
@@ -905,6 +925,28 @@ const HEADS = {
     // 前面的刺
     tufts(c, [[12,-12,24,-26,8,.3],[6,-16,12,-40,10,.15],[-2,-18,-4,-44,11,.05],[-9,-16,-22,-38,10,-.15],[16,-8,22,-2,5,.35],[6,-10,8,0,5,.25],[0,-12,-1,-2,5,.1]], hair);
     strands(c, [[-4,-24,-8,-34],[4,-24,7,-34],[-12,-18,-20,-28]], hs, 1.6);
+  },
+  // 漏瑚：火山一样的头，独眼，黑牙（皮肤颜色是估的）
+  jogo(c, o) {
+    const sk = '#d6cec4', t = o.t || 0;
+    // 头顶的烟和火星
+    for (let i = 0; i < 3; i++) { const k = (t * .7 + i / 3) % 1; c.fillStyle = `rgba(120,110,104,${.45 * (1 - k)})`; c.beginPath(); c.arc(1 + Math.sin(t * 2 + i * 2) * 4 * k, -47 - k * 26, 3 + 6 * k, 0, Math.PI * 2); c.fill(); }
+    // 往上收成锥形的头，顶上是火山口
+    c.beginPath(); c.moveTo(-16, 8); c.quadraticCurveTo(-21, -12, -13, -30); c.lineTo(-8, -44); c.lineTo(9, -44); c.lineTo(13, -30); c.quadraticCurveTo(19, -16, 17, -2); c.quadraticCurveTo(16, 10, 10, 15); c.quadraticCurveTo(2, 18, -6, 15); c.closePath();
+    c.fillStyle = sk; c.fill(); c.strokeStyle = OL; c.lineWidth = 2.4; c.stroke();
+    c.save(); c.clip(); c.fillStyle = 'rgba(80,60,50,.16)'; c.beginPath(); c.ellipse(-12, -6, 12, 34, 0, 0, Math.PI * 2); c.fill(); c.restore();
+    strands(c, [[-12,-28,-7,-19],[10,-36,6,-27],[-15,-12,-10,-7],[-4,-40,-2,-33]], 'rgba(110,96,86,.6)', 1.3);
+    // 火山口：里面的岩浆在发光
+    c.beginPath(); c.ellipse(.5, -44, 8.5, 3, 0, 0, Math.PI * 2); c.fillStyle = '#2a1812'; c.fill(); c.strokeStyle = OL; c.lineWidth = 1.8; c.stroke();
+    c.save(); c.shadowColor = '#ff7a2a'; c.shadowBlur = 10; c.beginPath(); c.ellipse(.5, -44, 5.5, 1.6, 0, 0, Math.PI * 2); c.fillStyle = `rgba(255,${120 + 60 * Math.sin(t * 6)},40,.95)`; c.fill(); c.restore();
+    // 独眼
+    c.beginPath(); c.ellipse(9.5, -4, 4.4, 5.4, 0, 0, Math.PI * 2); c.fillStyle = '#f2ece2'; c.fill(); c.strokeStyle = OL; c.lineWidth = 1.6; c.stroke();
+    c.beginPath(); c.arc(11, -3.4, 2.1, 0, Math.PI * 2); c.fillStyle = '#1a0e0a'; c.fill();
+    c.beginPath(); c.arc(10.2, -4.6, .7, 0, Math.PI * 2); c.fillStyle = '#fff'; c.fill();
+    strands(c, [[4,-11,15.5,-9.4]], OL, 2.4);
+    // 黑色的牙
+    c.beginPath(); c.moveTo(5, 8.5); c.quadraticCurveTo(11, 13, 16.5, 7.5); c.lineTo(15.5, 10.5); c.quadraticCurveTo(11, 14.5, 6, 10.5); c.closePath(); c.fillStyle = '#14100e'; c.fill(); c.strokeStyle = OL; c.lineWidth = 1.4; c.stroke();
+    strands(c, [[8,10,8,12.4],[11,10.8,11,13.2],[14,9.6,14,12]], 'rgba(90,80,74,.8)', .9);
   },
   mahito(c, o) {
     const hair = '#8fa3b8', hs = '#5f7288', tie = '#2a2c34';
@@ -1342,6 +1384,7 @@ const CHAR = {
   dabura: {name:'达布拉', hp:150, ce:180, reg:13, spd:500, K:1.85, atk:[9, 9, 14], col:'#ffe0a0', idle:'stand', rct:3},
   kenjaku:{name:'羂索', hp:132, ce:220, reg:15, spd:470, K:1.76, atk:[8, 8, 13], col:'#d8a8a8', idle:'stand', rct:2},
   yuji:   {name:'虎杖悠仁', hp:144, ce:160, reg:13, spd:570, K:1.7, atk:[8, 8, 12], col:'#ff8fa8', idle:'stand', rct:0},
+  jogo:   {name:'漏瑚', hp:128, ce:210, reg:15, spd:480, K:1.58, atk:[8, 8, 12], col:'#ff8a4a', idle:'stand', rct:2},
   megumi: {name:'伏黑惠', hp:134, ce:190, reg:16, spd:530, K:1.72, atk:[8, 8, 12], col:'#8a9ee0', idle:'stand', rct:0},
   mahito: {name:'真人', hp:138, ce:200, reg:14, spd:500, K:1.7, atk:[8, 8, 12], col:'#9fb8cc', idle:'stand', rct:3},
   kashimo:{name:'鹿紫云一', hp:128, ce:180, reg:13, spd:540, K:1.74, atk:[7, 7, 11], col:'#7fe3f0', idle:'stand', rct:0},
@@ -1363,6 +1406,7 @@ const TECH = {
   dabura: {K:{name:'光线', act:'dlight', ce:15, cd:1.4}, L:{name:'光之牢', act:'dcage', ce:30, cd:6}, U:{name:'光速', act:'dflash', ce:45, cd:5}, I:{name:'暗与光的异界', act:'domain', ce:100}},
   kenjaku:{K:{name:'咒灵群', act:'ghorde', ce:30, cd:4}, L:{name:'重力', act:'kgrav', ce:35, cd:8}, U:{name:'涡', act:'kuzu', ce:25, cd:2.5}, I:{name:'胎藏遍野', act:'domain', ce:150}},
   yuji:   {K:{name:'逕庭拳', act:'ydiv', ce:10, cd:1.6}, L:{name:'突进踢', act:'ykick', ce:15, cd:3}, U:{name:'全力一拳', act:'yheavy', ce:25, cd:4}, I:{name:'集中', act:'yfocus', ce:70, cd:18}},
+  jogo:   {K:{name:'火礫虫', act:'jinsect', ce:15, cd:2.2}, L:{name:'火山', act:'jvolc', ce:25, cd:3.5}, U:{name:'极之番 · 隕', act:'jmeteor', ce:70, cd:9}, I:{name:'盖棺铁围山', act:'domain', ce:100}},
   megumi: {K:{name:'玉犬 · 浑', act:'fdog', ce:20, cd:3}, L:{name:'鵺', act:'fnue', ce:25, cd:4}, U:{name:'蛤蟆', act:'ftoad', ce:20, cd:4}, I:{name:'嵌合暗翳庭', act:'fgarden', ce:100}},
   mahito: {K:{name:'无为转变', act:'mtouch', ce:25, cd:3}, L:{name:'改造人', act:'mkaizo', ce:25, cd:5}, U:{name:'多重魂 · 拨体', act:'mbody', ce:40, cd:6}, I:{name:'自闭圆顿裹', act:'mdomain', ce:120}},
   kashimo:{K:{name:'放电', act:'kzap', ce:20, cd:5}, L:{name:'雷突', act:'kthrust', ce:20, cd:3}, U:{name:'雷击', act:'kbolt', ce:25, cd:2.5}, I:{name:'幻兽琥珀', act:'kamber', ce:100}},
@@ -1402,6 +1446,7 @@ const ACH = [
   {id:'k2', name:'背后', cond:'通关「背后」', card:['斩首', '第 243 话，羂索被高羽史彦拖进一场漫才，没察觉背后的乙骨忧太，被一刀斩首。']},
   {id:'fu', name:'伏黑', cond:'通关「伏黑」', card:['降灵术 · 伏黑甚尔', '涩谷事变中被降灵术唤回的甚尔失去自我，和儿子伏黑惠交手；听到对方姓「伏黑」后，他用游云刺穿了自己的头（第 111–113 话）。']},
   {id:'sh', name:'魂的形状', cond:'通关「魂的形状」', card:['遍杀即灵体', '涩谷事变里，真人撕掉人脸变出的「真正的样子」：身体硬得虎杖的普通攻击打不进去。虎杖判断只有全力的黑闪才能打倒它（第 131–132 话）。']},
+  {id:'jo', name:'一击之约', cond:'通关「一击之约」', card:['极之番 · 隕', '漏瑚的极之番：召唤出像陨石一样巨大的燃烧岩块砸下来。涩谷事变里他对宿傩用了这一招，宿傩接下之后反击（第 115 话）。']},
   {id:'ka', name:'雷神', cond:'通关「雷神」', card:['幻兽琥珀', '鹿紫云一与生俱来的术式，只能用一次：肉体被重构，把咒力转成的电相关现象全部显现出来，头发化成角、多出第三只眼；术式结束后肉体崩坏（第 237 话）。']},
   {id:'all3', name:'全部三星', cond:'闯关所有关卡（不含挑战关）都拿到三星',  card:['八握剑异戒神将魔虚罗', '十种影法术里最强的式神：高大、肌肉发达的人形，四片翅膀从眼窝长出，后脑伸出尾巴状的附肢，头顶悬着八柄的法阵，受到新的刺激时会转动。']},
 ];
@@ -1439,7 +1484,7 @@ function cullMul(att, src) {
   if (G.mode !== 'cull' || att !== G.P || !G.cull) return 1;
   const R = G.cull.rules; return isTechSrc(src) ? 1 + .15 * (R.tech || 0) : 1 + .2 * (R.atk || 0);
 }
-function cullPickOpp() { const pool = ['sukuna', 'gojo', 'yuta', 'mahoraga', 'yujiM', 'dabura', 'toji', 'geto', 'yuki', 'kenjaku', 'kashimo', 'mahito', 'megumi', 'yuji'].filter(w => w !== G.pick && w !== G.cull.last); return pool[Math.floor(rand() * pool.length)]; }
+function cullPickOpp() { const pool = ['sukuna', 'gojo', 'yuta', 'mahoraga', 'yujiM', 'dabura', 'toji', 'geto', 'yuki', 'kenjaku', 'kashimo', 'mahito', 'megumi', 'yuji', 'jogo'].filter(w => w !== G.pick && w !== G.cull.last); return pool[Math.floor(rand() * pool.length)]; }
 function cullStart() {
   const C = G.cull; G.opp = cullPickOpp(); C.last = G.opp; startGame();
   const R = C.rules, E = G.E, P = G.P;
@@ -1633,6 +1678,11 @@ const SFX = {
   tKaizo(){ for (let i = 0; i < 3; i++) tone(180 + 40 * i, 90, .3, .12, {type:'sawtooth', lp:700, delay:i * .08}); noise('bandpass', 400, 900, .4, .15, {q:2}); },
   tBatai(){ tone(110, 45, .6, .3, {type:'sawtooth', lp:600, dist:true}); noise('lowpass', 1200, 200, .5, .3); },
   tMDomain(){ [98, 103.8, 155.6].forEach((f, i) => tone(f, f * .5, 1.1, .2, {type:'sawtooth', lp:800, delay:i * .05})); noise('highpass', 3000, 600, .8, .2, {a:.2}); },
+  // 漏瑚
+  tInsect(){ for (let i = 0; i < 3; i++) tone(1800 + 500 * h(i), 900, .12, .05, {type:'square', lp:4000, delay:i * .06}); noise('bandpass', 1500, 3000, .2, .12, {q:3}); },
+  tVolc(){ tone(55, 35, .9, .5, {type:'sawtooth', lp:220}); noise('lowpass', 300, 1800, .7, .4, {a:.45, dist:true}); },
+  tMeteor(){ tone(48, 30, 1.8, .4, {type:'sawtooth', lp:200, a:.6}); noise('lowpass', 200, 900, 1.6, .35, {a:1.2}); noise('highpass', 2000, 6000, .8, .1, {a:.6}); },
+  tDomainJ(){ [41.2, 49, 61.7].forEach(f => tone(f, f * .85, 3.2, .3, {type:'sawtooth', lp:300, a:.5})); noise('lowpass', 200, 1400, 2.6, .35, {a:.8, dist:true}); for (let i = 0; i < 6; i++) noise('bandpass', 600 + 200 * i, 300, .2, .15, {q:2, delay:.6 + i * .3}); },
   // 鹿紫云一
   tZap(){ noise('highpass', 3000, 8000, .28, .35); for (let i = 0; i < 6; i++) tone(1200 + 900 * h(i), 300, .05, .07, {type:'square', lp:6000, delay:i * .03}); tone(80, 40, .3, .4, {dist:true}); },
   tBolt(){ noise('bandpass', 2500, 5000, .2, .3, {q:1}); tone(900, 200, .15, .12, {type:'sawtooth', lp:4000}); },
@@ -1669,7 +1719,7 @@ const SFX = {
 };
 function sfx(n) { if (AC && !muted) try { SFX[n](); } catch (e) {} }
 // 招式标志音
-const SIG = {blue:'tBlue', red:'tRed', purple:'tPurple', domainG:'tDomainG', domainS:'tDomainS', bf:'tBf', dismantle:'tDismantle', cleave:'tCleave', fuga:'tFuga', pblood:'tPblood', ydismantle:'tYdis', supernova:'tSnova', domainY:'tDomainY', mslash:'tMslash', mslam:'tMslam', mcut:'tDismantle', yspeech:'tSpeech', usurabi:'tUsurabi', rikaArm:'tRika', purelove:'tLove', domainL:'tDomainL', tspear:'tChain', tsoul:'tSoul', tflies:'tFlies', grainbow:'tDragon', ghorde:'tHorde', guzu:'tUzu', ydiv:'heavy', ykick:'heavy', yheavy:'heavy', fdog:'tDog', fnue:'tNue', ftoad:'tToad', fgarden:'tShadow', mtouch:'tTouch', mkaizo:'tKaizo', mbody:'tBatai', mdomain:'tMDomain', kzap:'tZap', kbolt:'tBolt', kthrust:'tStaff', kamber:'tAmber', ymass:'tMass', ygaruda:'tGaruda', ystar:'tStar', yhole:'tDomainD', kgrav:'tGrav', ktrans:'tTrans', domainK:'tDomainK', dlight:'tLight', dcage:'tCage', dflash:'tFlash', domainD:'tDomainD'};
+const SIG = {blue:'tBlue', red:'tRed', purple:'tPurple', domainG:'tDomainG', domainS:'tDomainS', bf:'tBf', dismantle:'tDismantle', cleave:'tCleave', fuga:'tFuga', pblood:'tPblood', ydismantle:'tYdis', supernova:'tSnova', domainY:'tDomainY', mslash:'tMslash', mslam:'tMslam', mcut:'tDismantle', yspeech:'tSpeech', usurabi:'tUsurabi', rikaArm:'tRika', purelove:'tLove', domainL:'tDomainL', tspear:'tChain', tsoul:'tSoul', tflies:'tFlies', grainbow:'tDragon', ghorde:'tHorde', guzu:'tUzu', ydiv:'heavy', ykick:'heavy', yheavy:'heavy', fdog:'tDog', fnue:'tNue', ftoad:'tToad', fgarden:'tShadow', mtouch:'tTouch', mkaizo:'tKaizo', mbody:'tBatai', mdomain:'tMDomain', jinsect:'tInsect', jvolc:'tVolc', jmeteor:'tMeteor', domainJ:'tDomainJ', kzap:'tZap', kbolt:'tBolt', kthrust:'tStaff', kamber:'tAmber', ymass:'tMass', ygaruda:'tGaruda', ystar:'tStar', yhole:'tDomainD', kgrav:'tGrav', ktrans:'tTrans', domainK:'tDomainK', dlight:'tLight', dcage:'tCage', dflash:'tFlash', domainD:'tDomainD'};
 function voice(key) { if (SIG[key]) sfx(SIG[key]); }
 
 /* ================= 特效与提示 ================= */
@@ -2046,6 +2096,24 @@ const ACT = {
     f.vx = 0;
     if (once(a, 's', .35)) { f.zone = Math.max(f.zone, 6); const b = body(f); ringFx(b.x, b.y, 220, '#ff3a3a', .5, 10); flashScreen('#ff2020', .15, .2); toast('集中', '#ff6a6a', {size:110, life:.9, y:300, sub:'状态绝佳 · 黑闪窗口变宽'}); }
   }},
+  // 漏瑚 · 火礫虫：放出三只会飞的小咒灵，碰到就炸
+  jinsect:{dur:.4, pose:a => a.t < .12 ? 'charge' : 'palm', upd(f, a) {
+    f.vx = 0;
+    if (once(a, 's', .12)) { const J = f.J, x = J ? J.hF[0] : f.x + f.face * 50, y = J ? J.hF[1] : f.y - 110 * f.K;
+      for (let i = 0; i < 3; i++) G.projs.push({kind:'insect', owner:f, x, y:y + (i - 1) * 18, vx:f.face * (760 + 120 * i), vy:(i - 1) * 320, r:16, dmg:5, kb:140, life:1.5, home:true, hit:new Set(), ce:2, seed:rand() * 99});
+      muzzle(x, y, '#ff9a4a', 50); }
+  }},
+  // 漏瑚 · 火山：对手脚下鼓起一座小火山，过一会儿喷发
+  jvolc:{dur:.45, pose:a => a.t < .18 ? 'charge' : 'palm', upd(f, a) {
+    f.vx = 0;
+    if (once(a, 's', .18)) { const e = opp(f); G.fields.push({kind:'volc', owner:f, x:clamp(e.x, WALL_L + 40, WALL_R - 40), life:1.15, max:1.15, tick:0}); shake(5); }
+  }},
+  // 漏瑚 · 极之番 · 隕：燃烧的巨岩从天上砸下来（第 115 话）
+  jmeteor:{dur:.9, pose:a => a.t < .6 ? 'charge' : 'spread', upd(f, a) {
+    f.vx = 0;
+    if (once(a, 'c', 0)) cutin('jogo', '隕', '极之番', '#ff5a2a', .7);
+    if (once(a, 's', .55)) { const e = opp(f); G.fields.push({kind:'meteor', owner:f, x:clamp(e.x, WALL_L + 60, WALL_R - 60), from:-f.face, life:1.6, max:1.6, tick:0}); flashScreen('#ff5a1a', .2, .25); shake(10); }
+  }},
   // 伏黑惠 · 玉犬 · 浑：从影子里窜出来的式神
   fdog:{dur:.45, pose:a => a.t < .15 ? 'sign' : 'spread', upd(f, a) {
     f.vx = 0;
@@ -2370,7 +2438,7 @@ function swordArc(f, i) {
    原作：第一次受到某种攻击后开始分析，法阵每转一圈代表一步进展，同一攻击挨得越多越快；适应完成后对该攻击获得抗性乃至免疫，
    并治好适应前受的伤，还能改造自己的攻击绕过对方的防御（对无下限转了五圈后斩中五条悟所占的空间）。
    游戏里：每种攻击单独计进度，转满 4 圈适应完成（圈数是游戏里定的）；斩击类合并为一类（宿傩判断它能推广到所有斩击）。 */
-const ADAPT_KEY = {ydiv:'体术', ykick:'体术', yheavy:'体术', gdog:'式神', nue:'式神', ftoad:'式神', sdog:'式神', mtouch:'灵魂', mdomain:'灵魂', batai:'灵魂', kaizo:'咒灵', kzap:'电', kthrust:'电', bolt:'电', emw:'电', kgrav:'重力', ktrans:'灵魂', womb:'胎藏遍野', ymass:'质量', garuda:'质量', yhole:'黑洞', dragon:'咒灵', imp:'咒灵', gkuchi:'咒灵', uzu:'涡', tspear:'咒具', tcloud:'咒具', tsoul:'咒具', atk:'体术', dismantle:'斩击', cleave:'斩击', ydismantle:'斩击', shrine:'斩击', mcut:'斩击', mslash:'斩击', blue:'苍', red:'赫', purple:'茈', fuga:'开',
+const ADAPT_KEY = {insect:'火', jinsect:'火', jvolc:'火', jmeteor:'火', meteor:'火', volcano:'盖棺铁围山', ydiv:'体术', ykick:'体术', yheavy:'体术', gdog:'式神', nue:'式神', ftoad:'式神', sdog:'式神', mtouch:'灵魂', mdomain:'灵魂', batai:'灵魂', kaizo:'咒灵', kzap:'电', kthrust:'电', bolt:'电', emw:'电', kgrav:'重力', ktrans:'灵魂', womb:'胎藏遍野', ymass:'质量', garuda:'质量', yhole:'黑洞', dragon:'咒灵', imp:'咒灵', gkuchi:'咒灵', uzu:'涡', tspear:'咒具', tcloud:'咒具', tsoul:'咒具', atk:'体术', dismantle:'斩击', cleave:'斩击', ydismantle:'斩击', shrine:'斩击', mcut:'斩击', mslash:'斩击', blue:'苍', red:'赫', purple:'茈', fuga:'开',
   void:'无量空处', blood:'穿血', pblood:'穿血', supernova:'超新星', town:'灵魂打击', yspeech:'咒言', usurabi:'薄冰', rikaArm:'里香', love:'纯爱', jacob:'雅各的梯子', mslam:'体术', dfist:'体术',
   bf:'体术', wslash:'斩击', light:'光', dlight:'光', dcage:'光', dflash:'光', other:'光', dhole:'正能量'};   // 达布拉的光算同一类
 const adaptKey = src => ADAPT_KEY[src] || '术式';
@@ -2417,7 +2485,7 @@ const COPY = {
   dlight:{name:'光线', from:'达布拉', ce:15, cd:2},
 };
 // 里香吞下谁，能复制到什么（宿傩的捌出自原作；其余是自创）
-const EAT = {sukuna:['cleave', 'dismantle'], gojo:['blue', 'red'], yujiM:['pblood', 'ydismantle'], yuta:[], dabura:['dlight'], toji:[], geto:[], yuki:[], kenjaku:[], kashimo:[], mahito:[], megumi:[], yuji:[]};
+const EAT = {sukuna:['cleave', 'dismantle'], gojo:['blue', 'red'], yujiM:['pblood', 'ydismantle'], yuta:[], dabura:['dlight'], toji:[], geto:[], yuki:[], kenjaku:[], kashimo:[], mahito:[], megumi:[], yuji:[], jogo:[]};
 const inLove = f => (G.domain && G.domain.kind === 'love' && G.domain.owner === f) || (G.dual && G.dual.kind === 'love' && G.dual.go === f);
 function techView(f, slot) {
   if (f.who === 'yuta') {
@@ -2523,6 +2591,41 @@ function drawGrav(c, fl, t) {
   c.strokeStyle = 'rgba(216,168,168,.9)'; c.lineWidth = 4; c.beginPath(); c.ellipse(x, GROUND + 4, 150, 16, 0, 0, Math.PI * 2); c.stroke();
   c.restore();
 }
+// 火山：地面鼓起、裂开发光，然后喷发
+function drawVolc(c, fl, t) {
+  const k = clamp((fl.max - fl.life) / .55, 0, 1), x = fl.x, after = fl.done;
+  c.save();
+  if (!after) {
+    c.globalAlpha = .5 + .5 * k; c.strokeStyle = 'rgba(255,120,50,.8)'; c.setLineDash([12, 8]); c.lineWidth = 3; c.beginPath(); c.ellipse(x, GROUND + 6, 125, 16, 0, 0, Math.PI * 2); c.stroke(); c.setLineDash([]);
+    const hh = 26 + 40 * k; c.globalAlpha = 1; c.fillStyle = '#3a2a24'; c.strokeStyle = OL; c.lineWidth = 3;
+    c.beginPath(); c.moveTo(x - 90, GROUND + 2); c.lineTo(x - 22, GROUND - hh); c.lineTo(x + 22, GROUND - hh); c.lineTo(x + 90, GROUND + 2); c.closePath(); c.fill(); c.stroke();
+    c.shadowColor = '#ff7a2a'; c.shadowBlur = 14; c.strokeStyle = `rgba(255,${140 + 80 * Math.sin(t * 30)},60,${.5 + .5 * k})`; c.lineWidth = 2.5;
+    c.beginPath(); c.moveTo(x - 8, GROUND - hh); c.lineTo(x - 18, GROUND - hh * .5); c.lineTo(x - 40, GROUND); c.moveTo(x + 10, GROUND - hh); c.lineTo(x + 24, GROUND - hh * .4); c.lineTo(x + 30, GROUND); c.stroke();
+    c.fillStyle = '#ff8a3a'; c.beginPath(); c.ellipse(x, GROUND - hh, 20, 5, 0, 0, Math.PI * 2); c.fill();
+  } else {
+    const u = 1 - fl.life / Math.max(.01, fl.max - .55);
+    c.globalAlpha = Math.max(0, 1 - u); c.fillStyle = '#3a2a24'; c.beginPath(); c.moveTo(x - 90, GROUND + 2); c.lineTo(x - 26, GROUND - 60); c.lineTo(x + 26, GROUND - 60); c.lineTo(x + 90, GROUND + 2); c.closePath(); c.fill();
+  }
+  c.restore();
+}
+// 隕：燃烧的巨岩从斜上方砸向预警圈
+function drawMeteor(c, fl, t) {
+  const u = clamp(1 - fl.life / fl.max, 0, 1), x1 = fl.x, y1 = GROUND - 90, x0 = x1 + fl.from * 700, y0 = -280, q = Math.pow(u, 1.4);
+  const x = lerp(x0, x1, q), y = lerp(y0, y1, q), R = 150;
+  c.save();
+  c.globalAlpha = .4 + .6 * u; c.strokeStyle = '#ff4a2a'; c.lineWidth = 4; c.setLineDash([18, 10]); c.beginPath(); c.ellipse(x1, GROUND + 6, 270, 26, 0, 0, Math.PI * 2); c.stroke(); c.setLineDash([]);
+  c.fillStyle = `rgba(255,70,30,${.12 + .2 * u})`; c.beginPath(); c.ellipse(x1, GROUND + 6, 270 * (.3 + .7 * u), 26 * (.3 + .7 * u), 0, 0, Math.PI * 2); c.fill();
+  c.globalAlpha = 1;
+  const ang = Math.atan2(y1 - y0, x1 - x0), tx = -Math.cos(ang), ty = -Math.sin(ang);
+  const g = c.createLinearGradient(x, y, x + tx * 700, y + ty * 700); g.addColorStop(0, 'rgba(255,170,80,.85)'); g.addColorStop(.4, 'rgba(255,80,20,.45)'); g.addColorStop(1, 'rgba(255,60,20,0)');
+  c.fillStyle = g; c.beginPath(); c.moveTo(x - ty * R * 1.1, y + tx * R * 1.1); c.lineTo(x + tx * 700 - ty * 30, y + ty * 700 + tx * 30); c.lineTo(x + tx * 700 + ty * 30, y + ty * 700 - tx * 30); c.lineTo(x + ty * R * 1.1, y - tx * R * 1.1); c.closePath(); c.fill();
+  c.shadowColor = '#ff6a1a'; c.shadowBlur = 60; c.fillStyle = '#4a2a20'; c.strokeStyle = OL; c.lineWidth = 5;
+  c.beginPath(); for (let i = 0; i < 14; i++) { const a = i / 14 * Math.PI * 2 + t * .8, r = R * (.86 + .14 * h(i * 5)); i ? c.lineTo(x + Math.cos(a) * r, y + Math.sin(a) * r) : c.moveTo(x + Math.cos(a) * r, y + Math.sin(a) * r); } c.closePath(); c.fill(); c.stroke();
+  c.shadowBlur = 0; c.strokeStyle = `rgba(255,${150 + 60 * Math.sin(t * 20)},60,.9)`; c.lineWidth = 4;
+  for (let i = 0; i < 6; i++) { const a = h(i * 3) * Math.PI * 2; c.beginPath(); c.moveTo(x + Math.cos(a) * R * .2, y + Math.sin(a) * R * .2); c.lineTo(x + Math.cos(a + .3) * R * .55, y + Math.sin(a + .3) * R * .55); c.lineTo(x + Math.cos(a) * R * .8, y + Math.sin(a) * R * .8); c.stroke(); }
+  for (let i = 0; i < 12; i++) { const k = (t * 3 + h(i)) % 1; c.globalAlpha = 1 - k; c.fillStyle = i % 2 ? '#ffcf70' : '#ff5a1a'; c.beginPath(); c.arc(x + tx * (R + 260 * k) + (h(i * 7) - .5) * 160, y + ty * (R + 260 * k) + (h(i * 3) - .5) * 160, 5 + 6 * h(i), 0, Math.PI * 2); c.fill(); }
+  c.restore();
+}
 function lanceFx(x, y) {
   const sk = (rand() - .5) * 400;
   addFx(.3, (c, u) => { c.save(); c.globalAlpha = 1 - u; c.lineCap = 'round'; c.shadowColor = '#ffd870'; c.shadowBlur = 20;
@@ -2573,14 +2676,14 @@ function useTech(f, slot) {
   }
   if (T.act === 'domain' && G.domain && G.domain.owner === f) return;
   f.ce -= T.ce;
-  const label = {blue:['术式顺转', '苍', '#6fc4ff'], red:['术式反转', '赫', '#ff4b3e'], pblood:['赤血操术', '穿血', '#ff3a4a'], ydismantle:[null, '解', '#ff6a6a'], supernova:['赤血操术', '超新星', '#ff3a4a'], yspeech:['咒言', '别动', '#e2d6ff'], rikaArm:[null, '里香', '#e2d6ff'], kgrav:['重力', '重力', '#d8a8a8'], ktrans:['抽出的术式', '无为转变', '#bfe6ff'], kuzu:['极之番', '涡', '#b48cff'], ykick:[null, '突进踢', '#ff8fa8'], yheavy:[null, '全力一拳', '#ff8fa8'], fdog:['十种影法术', '玉犬 · 浑', '#8a9ee0'], fnue:['十种影法术', '鵺', '#8a9ee0'], ftoad:['十种影法术', '蛤蟆', '#8a9ee0'], mtouch:['无为转变', '触碰', '#cfe0ef'], mkaizo:['无为转变', '改造人', '#cfe0ef'], mbody:['多重魂', '拨体', '#cfe0ef'], kzap:['电荷', '放电', '#7fe3f0'], kthrust:['如意', '雷突', '#7fe3f0'], ymass:['星之怒', '质量拳', '#ffd36a'], ygaruda:['式神', '伽楼罗', '#ffe2a0'], ystar:['术式', '星之怒', '#ffd36a'], grainbow:['咒灵操术', '虹龙', '#dfe8ff'], gkuchi:['咒灵操术', '口裂女', '#ff9aa8'], ghorde:['咒灵操术', '咒灵群', '#c9b6e8'], tspear:['万里锁 · 天逆鉾', '天逆鉾', '#e6e6ee'], tcloud:['特级咒具', '游云', '#ffb08a'], tsoul:['特级咒具', '释魂刀', '#d8fff0'], tflies:['收纳咒灵', '蝇头', '#b8b8c0'], dlight:['术式 · 光', '光线', '#ffe9a0'], dcage:['术式 · 光', '光之牢', '#ffe9a0'], dflash:['术式 · 光', '光速', '#fff6d0']}[T.act];
+  const label = {blue:['术式顺转', '苍', '#6fc4ff'], red:['术式反转', '赫', '#ff4b3e'], pblood:['赤血操术', '穿血', '#ff3a4a'], ydismantle:[null, '解', '#ff6a6a'], supernova:['赤血操术', '超新星', '#ff3a4a'], yspeech:['咒言', '别动', '#e2d6ff'], rikaArm:[null, '里香', '#e2d6ff'], kgrav:['重力', '重力', '#d8a8a8'], ktrans:['抽出的术式', '无为转变', '#bfe6ff'], kuzu:['极之番', '涡', '#b48cff'], ykick:[null, '突进踢', '#ff8fa8'], yheavy:[null, '全力一拳', '#ff8fa8'], fdog:['十种影法术', '玉犬 · 浑', '#8a9ee0'], fnue:['十种影法术', '鵺', '#8a9ee0'], ftoad:['十种影法术', '蛤蟆', '#8a9ee0'], mtouch:['无为转变', '触碰', '#cfe0ef'], mkaizo:['无为转变', '改造人', '#cfe0ef'], mbody:['多重魂', '拨体', '#cfe0ef'], jinsect:['咒灵', '火礫虫', '#ffb070'], jvolc:['术式', '火山', '#ff7a3a'], jmeteor:['极之番', '隕', '#ff5a2a'], kzap:['电荷', '放电', '#7fe3f0'], kthrust:['如意', '雷突', '#7fe3f0'], ymass:['星之怒', '质量拳', '#ffd36a'], ygaruda:['式神', '伽楼罗', '#ffe2a0'], ystar:['术式', '星之怒', '#ffd36a'], grainbow:['咒灵操术', '虹龙', '#dfe8ff'], gkuchi:['咒灵操术', '口裂女', '#ff9aa8'], ghorde:['咒灵操术', '咒灵群', '#c9b6e8'], tspear:['万里锁 · 天逆鉾', '天逆鉾', '#e6e6ee'], tcloud:['特级咒具', '游云', '#ffb08a'], tsoul:['特级咒具', '释魂刀', '#d8fff0'], tflies:['收纳咒灵', '蝇头', '#b8b8c0'], dlight:['术式 · 光', '光线', '#ffe9a0'], dcage:['术式 · 光', '光之牢', '#ffe9a0'], dflash:['术式 · 光', '光速', '#fff6d0']}[T.act];
   if (label) toast(label[1], label[2], {sub:label[0], size:label[1].length > 2 ? 120 : 170});
-  if (['blue', 'red', 'purple', 'pblood', 'ydismantle', 'supernova', 'yspeech', 'rikaArm', 'purelove', 'dlight', 'dcage', 'dflash', 'tspear', 'tsoul', 'tflies', 'grainbow', 'ghorde', 'guzu', 'ymass', 'ygaruda', 'ystar', 'yhole', 'kgrav', 'ktrans', 'kzap', 'kthrust', 'kbolt', 'kamber', 'mtouch', 'mkaizo', 'mbody', 'fdog', 'fnue', 'ftoad'].includes(T.act)) voice(T.act);
+  if (['blue', 'red', 'purple', 'pblood', 'ydismantle', 'supernova', 'yspeech', 'rikaArm', 'purelove', 'dlight', 'dcage', 'dflash', 'tspear', 'tsoul', 'tflies', 'grainbow', 'ghorde', 'guzu', 'ymass', 'ygaruda', 'ystar', 'yhole', 'kgrav', 'ktrans', 'kzap', 'kthrust', 'kbolt', 'kamber', 'mtouch', 'mkaizo', 'mbody', 'fdog', 'fnue', 'ftoad', 'jinsect', 'jvolc', 'jmeteor'].includes(T.act)) voice(T.act);
   start(f, T.act);
 }
 
 /* ================= 领域 ================= */
-const DKIND = {gojo:'void', sukuna:'shrine', yujiM:'town', yuta:'love', mahoraga:null, dabura:'other', kenjaku:'womb'};
+const DKIND = {gojo:'void', sukuna:'shrine', yujiM:'town', yuta:'love', mahoraga:null, dabura:'other', kenjaku:'womb', jogo:'volcano'};
 function activateDomain(f) {
   const e = opp(f);
   if (G.domain && G.domain.owner === e) {
@@ -2593,7 +2696,7 @@ function activateDomain(f) {
 }
 /* 领域并存（原作第 225–228 话）：必中在五条悟的结界内互相抵消；伏魔御厨子不设结界，从外侧斩击结界；
    一方受重创维持不住领域时，另一方的必中生效；双方撑到最后则两个领域同时消失 */
-const BURN = {gojo:3, yujiM:2.5, yuta:2.5, sukuna:4, dabura:2.5, kenjaku:3};
+const BURN = {gojo:3, yujiM:2.5, yuta:2.5, sukuna:4, dabura:2.5, kenjaku:3, jogo:3};
 function startDual(f) {
   const go = f.who === 'sukuna' ? opp(f) : f, su = opp(go), kind = DKIND[go.who];
   const cx = (go.x + su.x) / 2, r = clamp(Math.abs(go.x - su.x) / 2 + 260, 380, 620);
@@ -2604,6 +2707,7 @@ function startDual(f) {
   else if (f === go && kind === 'love') { cutin('yuta', '真赝相爱', '领域展开', '#e8dcff', .9); voice('domainL'); }
   else if (f === go && kind === 'womb') { cutin('kenjaku', '胎藏遍野', '领域展开', '#d8a8a8', .9); voice('domainK'); }
   else if (f === go && kind === 'other') { cutin('dabura', '暗与光的异界', '领域展开 · 逆超越', '#fff0b0', .9); voice('domainD'); }
+  else if (f === go && kind === 'volcano') { cutin('jogo', '盖棺铁围山', '领域展开', '#ff7a3a', .9); voice('domainJ'); }
   else if (f === go) { cutin('yujiM', '领域展开', '灵魂打击 · 必中', '#ffc8a8', .9); voice('domainY'); }
   else { cutin('sukuna', '伏魔御厨子', '领域展开', '#ff4a4a', .9); voice('domainS'); }
   G.timers.push({t:.05, fn() { toast('领域并存', '#ffffff', {size:110, life:1.8, y:440, sub:'必中互相抵消 · 伏魔御厨子从外侧斩击结界'}); }});
@@ -2617,8 +2721,8 @@ function dualToSingle(winner, why) {
   const kind = winner === D.su ? 'shrine' : D.kind, life = Math.max(2.5, Math.min(4.5, D.life));
   G.domain = {owner:winner, kind, life, max:life, x:winner.x, tick:0, t:.8};
   if (kind === 'void' && loser.who !== 'toji') { loser.stun = life; loser.act = null; loser.guard = false; }
-  toast(why, {void:'#bfe9ff', town:'#ffc8a8', love:'#e8dcff', other:'#ffe9a0', womb:'#d8a8a8'}[kind] || '#ff6a6a', {size:84, life:1.6, y:420, sub:{void:'无量空处的必中生效', town:'灵魂打击的必中生效', love:'术式消灭与雅各的梯子必中', other:'光枪必中', womb:'重力必中'}[kind] || '伏魔御厨子的必中生效'});
-  flashScreen({void:'#dff4ff', town:'#ffe0c8', love:'#f0e8ff', other:'#fff6d8', womb:'#3a1018'}[kind] || '#ff2020', .35, .25); shake(18);
+  toast(why, {void:'#bfe9ff', town:'#ffc8a8', love:'#e8dcff', other:'#ffe9a0', womb:'#d8a8a8', volcano:'#ff9a5a'}[kind] || '#ff6a6a', {size:84, life:1.6, y:420, sub:{void:'无量空处的必中生效', town:'灵魂打击的必中生效', love:'术式消灭与雅各的梯子必中', other:'光枪必中', womb:'重力必中', volcano:'灼烧必中'}[kind] || '伏魔御厨子的必中生效'});
+  flashScreen({void:'#dff4ff', town:'#ffe0c8', love:'#f0e8ff', other:'#fff6d8', womb:'#3a1018', volcano:'#ff7a3a'}[kind] || '#ff2020', .35, .25); shake(18);
 }
 function updDual(dt) {
   const D = G.dual, go = D.go, su = D.su;
@@ -2630,7 +2734,7 @@ function updDual(dt) {
   D.outT -= dt;
   if (Math.abs(go.x - D.cx) > D.r - 30 && D.outT <= 0 && !go.ko) { D.outT = .25; const b = body(go); const r = hit(su, go, 3.5, {src:'shrine', sure:true, kb:40, stunT:.1, stop:0, shake:3, quiet:true}); if (r === 'hit') slashFx(b.x, b.y, 2); }
   if (go.ko || su.ko) { G.dual = null; return; }
-  if (D.heavy) { const v = D.heavy; D.heavy = null; dualToSingle(opp(v), v === su ? '伏魔御厨子崩溃' : ({void:'无量空处崩溃', love:'真赝相爱崩溃', other:'暗与光的异界崩溃', womb:'胎藏遍野崩溃'}[D.kind] || '领域崩溃')); return; }
+  if (D.heavy) { const v = D.heavy; D.heavy = null; dualToSingle(opp(v), v === su ? '伏魔御厨子崩溃' : ({void:'无量空处崩溃', love:'真赝相爱崩溃', other:'暗与光的异界崩溃', womb:'胎藏遍野崩溃', volcano:'盖棺铁围山崩溃'}[D.kind] || '领域崩溃')); return; }
   if (D.hp <= 0) { dualToSingle(su, '结界破碎'); return; }
   if (D.life <= 0) {
     G.dual = null; go.burnout = BURN[go.who] || 3; su.burnout = 4; if (go.who === 'gojo') go.infT = G.time;
@@ -2647,6 +2751,7 @@ function setDomain(f) {
   else if (kind === 'love') { cutin('yuta', '真赝相爱', '领域展开', '#e8dcff', .9); voice('domainL'); }
   else if (kind === 'other') { cutin('dabura', '暗与光的异界', '领域展开 · 逆超越', '#fff0b0', .9); voice('domainD'); }
   else if (kind === 'womb') { cutin('kenjaku', '胎藏遍野', '领域展开', '#d8a8a8', .9); voice('domainK'); }
+  else if (kind === 'volcano') { cutin('jogo', '盖棺铁围山', '领域展开', '#ff7a3a', .9); voice('domainJ'); }
   else if (kind === 'town') { cutin('yujiM', '领域展开', '灵魂打击 · 必中', '#ffc8a8', .9); voice('domainY'); }
   else { cutin('sukuna', '伏魔御厨子', '领域展开', '#ff4a4a', .9); voice('domainS'); }
   shake(10);
@@ -2668,10 +2773,10 @@ function kamado(f, cx) {
 }
 function endDomain() {
   const d = G.domain; if (!d) return;
-  d.owner.burnout = {gojo:3, yujiM:2.5, yuta:2.5, dabura:2.5, kenjaku:3}[d.owner.who] || 4;
+  d.owner.burnout = {gojo:3, yujiM:2.5, yuta:2.5, dabura:2.5, kenjaku:3, jogo:3}[d.owner.who] || 4;
   if (d.kind === 'shrine') { scar({kind:'cracks', x:d.x, life:6}); if (!d.owner.ko) kamado(d.owner, d.x); }
   if (d.kind === 'void') opp(d.owner).stun = 0;
-  toast('术式烧断', '#cfd6e4', {size:56, life:1.2, y:320, sub:{gojo:'无下限暂时失效，反转术式修复中', yujiM:'术式暂时无法使用，反转术式修复中', yuta:'术式暂时无法使用，反转术式修复中', dabura:'术式暂时无法使用，反转术式修复中', kenjaku:'术式暂时无法使用，反转术式修复中'}[d.owner.who] || '宿傩的术式暂时无法使用'});
+  toast('术式烧断', '#cfd6e4', {size:56, life:1.2, y:320, sub:{gojo:'无下限暂时失效，反转术式修复中', yujiM:'术式暂时无法使用，反转术式修复中', yuta:'术式暂时无法使用，反转术式修复中', dabura:'术式暂时无法使用，反转术式修复中', kenjaku:'术式暂时无法使用，反转术式修复中', jogo:'术式暂时无法使用'}[d.owner.who] || '宿傩的术式暂时无法使用'});
   G.domain = null;
 }
 function startClash(f) {
@@ -2732,7 +2837,7 @@ function aiThink(f, dt) {
   if (f.act || f.hitstun > 0 || f.stun > 0) return;
   f.face = Math.sign(dx) || f.face;
   // 看到对手结印，跟着展开领域
-  const domCost = f.who === 'sukuna' ? 150 : (TECH[f.who].I && TECH[f.who].I.act === 'domain' ? TECH[f.who].I.ce : Infinity);
+  const domCost = storyLock(f, 'I') ? Infinity : f.who === 'sukuna' ? 150 : (TECH[f.who].I && TECH[f.who].I.act === 'domain' ? TECH[f.who].I.ce : Infinity);
   if (p.hidden > 0) { f.vx = 0; return; }   // 蝇头掩护：电脑找不到他
   if (p.act && p.act.name === 'domain' && !p.act.seenDom && f.burnout <= 0 && f.ce >= domCost && !G.domain && !G.dual) {
     p.act.seenDom = true;
@@ -2765,7 +2870,7 @@ function aiThink(f, dt) {
   }
   if (f.basket > 0) { f.vx = 0; return; }
   if (f.who === 'sukuna') {
-    const domainOK = canTech && ce >= 150 && (cd.domain || 0) <= 0 && free;
+    const domainOK = canTech && ce >= 150 && (cd.domain || 0) <= 0 && free && !storyLock(f, 'I');
     if (domainOK && p.who !== 'toji' && rand() < (p.who === 'gojo' ? .55 : .4)) { f.ce -= 150; cd.domain = 22; start(f, 'domain'); return; }
     if (canTech && f.prepD && f.prepC && ce >= 60 && (cd.fuga || 0) <= 0 && dist > 190 && rand() < .6) { f.ce -= 60; cd.fuga = 9; start(f, 'fuga'); return; }   // 解和捌都打中过才能开
     if (canTech && f.prepD && f.prepC && ce >= 60 && (cd.fuga || 0) <= 0 && dist <= 190 && rand() < .6) { f.plan = 'retreat'; f.think = .7; return; }   // 准备好了就退开，找距离放开
@@ -2835,6 +2940,15 @@ function aiThink(f, dt) {
     if (dist < 170) {
       if (rand() < .85) { start(f, 'atk', {i:0, queue:true, aiChain:rand() < .75}); return; }
       f.plan = 'hold'; return;
+    }
+  } else if (f.who === 'jogo') {
+    if (free && rand() < .25 && aiTech(f, 'I', 'domain', 20)) return;
+    if (dist > 240 && rand() < .2 && aiTech(f, 'U', 'meteor', 10)) return;
+    if (dist < 900 && rand() < .35 && aiTech(f, 'L', 'volc', 4)) return;
+    if (dist > 200 && rand() < .45 && aiTech(f, 'K', 'insect', 2.6)) return;
+    if (dist < 170) {
+      if (rand() < .8) { start(f, 'atk', {i:0, queue:true, aiChain:rand() < .7}); return; }
+      f.plan = 'retreat'; return;
     }
   } else if (f.who === 'mahito') {
     if (f.ce >= 120 && rand() < .25 && aiTech(f, 'I', 'mdom', 16)) return;
@@ -2993,7 +3107,7 @@ function updProjs(dt) {
     const t = opp(p.owner), b = body(t);
     if (!p.hit.has(t) && Math.abs(b.x - p.x) < p.r + 30 * t.K && Math.abs(b.y - p.y) < p.r + 110 * t.K) {
       p.hit.add(t);
-      const col = {red:'#ff6a50', purple:'#d9a6ff', dismantle:'#ff8080', fuga:'#ffb060', blood:'#ff3a4a', love:'#ffd6f0', mcut:'#fff2c8', light:'#fff2b0', dragon:'#e0ecff', imp:'#c9b6e8', uzu:'#b48cff', garuda:'#ffd36a', bolt:'#bff6ff', emw:'#e8ffff', kaizo:'#cfe0ef', batai:'#cfe0ef', gdog:'#c8d0ec', nue:'#e8f0ff', sdog:'#8a9ee0'}[p.kind];
+      const col = {red:'#ff6a50', purple:'#d9a6ff', dismantle:'#ff8080', fuga:'#ffb060', blood:'#ff3a4a', love:'#ffd6f0', mcut:'#fff2c8', light:'#fff2b0', dragon:'#e0ecff', imp:'#c9b6e8', uzu:'#b48cff', garuda:'#ffd36a', bolt:'#bff6ff', emw:'#e8ffff', kaizo:'#cfe0ef', batai:'#cfe0ef', gdog:'#c8d0ec', nue:'#e8f0ff', sdog:'#8a9ee0', insect:'#ffb070'}[p.kind];
       const r = hit(p.owner, t, p.dmg, {src:p.kind, kb:p.kb, launch:p.launch, stop:p.kind === 'purple' ? .15 : .07, shake:p.kind === 'purple' ? 24 : 10, heavy:p.dmg > 15, col, ce:p.ce || 4, stunT:p.dmg > 15 ? .6 : .3});
       if (p.kind === 'dismantle' && r === 'blocked') { slashFx(p.x, p.y, 3, '#ffd0d0', 70); sparks(p.x, p.y, '#bff1ff', 16, 380); }
       if (p.kind === 'dismantle') { p.didHit = true; if (r === 'hit') { bigSlash(b.x, b.y, 3, 200, .4, rand() * 999, false); sfx('slash'); scar({kind:'cut', x:t.x, life:4}); } }
@@ -3006,6 +3120,7 @@ function updProjs(dt) {
       if (p.charge && r === 'hit') { addCharge(t, p.charge, p.owner); t.stun = Math.max(t.stun, p.kind === 'bolt' ? .3 : 0); }
       if ((p.kind === 'bolt' || p.kind === 'emw') && r !== 'miss') { zapFx(p.x - Math.sign(p.vx) * 80, p.y, b.x, b.y, p.kind === 'emw' ? 1.4 : .8); }
       if (p.kind === 'garuda' && r !== 'miss') { ringFx(p.x, p.y, 130, '#ffd36a', .3, 8); dustFx(p.x, 1.6); }
+      if (p.kind === 'insect') { ringFx(p.x, p.y, 70, '#ff9a4a', .25, 6); sparks(p.x, p.y, '#ffb060', 12, 300); if (rand() < .5) sfx('tInsect'); }
       if (p.kind === 'dragon' && r === 'hit') { ringFx(p.x, p.y, 150, '#e0ecff', .35, 8); }
       if (p.kind === 'purple') { flashScreen('#ffffff', .4, .25); ringFx(p.x, p.y, 320, '#e8c8ff', .5, 12); }
       if (!p.pierce) p.life = 0;
@@ -3041,6 +3156,16 @@ function updFields(dt) {
       }
       if (fl.life <= .06 && !fl.done) { fl.done = true; shake(14); ringFx(fl.x, GROUND - 10, 170, '#d8a8a8', .35, 10); dustFx(fl.x, 2);
         if (!e.ko && Math.abs(e.x - fl.x) < 170) hit(fl.owner, e, 7, {src:'kgrav', kb:0, launch:0, stunT:.5, heavy:false, shake:12, col:'#d8a8a8'}); }
+    } else if (fl.kind === 'volc') {   // 火山：鼓起来，过一会儿喷发
+      const e = opp(fl.owner);
+      if (fl.max - fl.life >= .55 && !fl.done) { fl.done = true; sfx('tVolc'); shake(12); firePillar(fl.x, GROUND); scar({kind:'burn', x:fl.x, life:3});
+        if (!e.ko && Math.abs(e.x - fl.x) < 125 && e.y > GROUND - 300) hit(fl.owner, e, 13, {src:'jvolc', kb:150, launch:-760, stunT:.5, heavy:true, shake:12, col:'#ff8a3a', ce:6}); }
+    } else if (fl.kind === 'meteor') {   // 隕：砸到地面时炸开
+      const e = opp(fl.owner);
+      if (fl.life <= .06 && !fl.done) { fl.done = true; sfx('blast'); shake(28); flashScreen('#ff7a20', .45, .35); ringFx(fl.x, GROUND - 60, 420, '#ff9a40', .6, 16);
+        for (const dx of [-170, 0, 170]) firePillar(fl.x + dx, GROUND); scar({kind:'burn', x:fl.x - 120, life:6}); scar({kind:'burn', x:fl.x + 120, life:6});
+        if (!e.ko && Math.abs(e.x - fl.x) < 270 && e.y > GROUND - 420) { const d = Math.sign(e.x - fl.x) || fl.from;
+          const r = hit(fl.owner, e, 30, {src:'meteor', kb:0, launch:-700, stunT:.7, heavy:true, shake:22, stop:.15, col:'#ffb060', ce:12}); if (r === 'hit') e.vx = d * 700; } }
     } else if (fl.kind === 'hole') {   // 黑洞：把对手吸进去，最后塌缩
       const e = opp(fl.owner);
       if (!e.ko && Math.abs(e.x - fl.x) < 600 && e.invul <= 0) {
@@ -3067,6 +3192,10 @@ function updFields(dt) {
       d.x = d.owner.x; d.tick -= dt;
       if (Math.abs(e.x - d.x) < 600 && !e.ko) { e.vx *= .5; if (e.y < GROUND) e.vy = Math.max(e.vy, 900); }
       if (d.tick <= 0) { d.tick = .3; if (Math.abs(e.x - d.x) < 600 && !e.ko) { const b = body(e); const r = hit(d.owner, e, 3.8, {sure:true, kb:0, stunT:.15, stop:0, shake:4, quiet:true, numCol:'#d8a8a8'}); if (r === 'hit') { ringFx(e.x, GROUND, 80, '#d8a8a8', .2, 4); sparks(b.x, b.y, '#d8a8a8', 6, 200); } } }
+    }
+    else if (d.kind === 'volcano') {   // 盖棺铁围山：必中设为持续灼烧（必中的具体效果尚未确认）
+      d.tick -= dt;
+      if (d.tick <= 0) { d.tick = .3; if (!e.ko) { const b = body(e); const r = hit(d.owner, e, 3.5, {sure:true, kb:20, stunT:.12, stop:0, shake:3, quiet:true, numCol:'#ffb070'}); if (r === 'hit') { sparks(b.x, b.y, '#ff8a3a', 8, 260); ringFx(e.x, GROUND, 70, '#ff7a3a', .2, 4); } } }
     }
     else if (d.kind === 'other') {   // 暗与光的异界：光枪从上方持续必中（必中效果是游戏里定的）
       d.tick -= dt;
@@ -3183,7 +3312,7 @@ function buildBg() {
   c.fillStyle = '#353b55'; c.fillRect(0, GROUND, VW, 3);
   c.fillStyle = 'rgba(230,230,240,.25)'; for (let x = 60; x < VW; x += 120) c.fillRect(x, GROUND + 40, 70, 10);
 }
-const DBG = {void:(c, t) => drawVoid(c, t), town:(c, t) => drawTown(c, t), love:(c, t) => drawLove(c, t), other:(c, t) => drawOther(c, t), womb:(c, t) => drawWomb(c, t)};
+const DBG = {void:(c, t) => drawVoid(c, t), town:(c, t) => drawTown(c, t), love:(c, t) => drawLove(c, t), other:(c, t) => drawOther(c, t), womb:(c, t) => drawWomb(c, t), volcano:(c, t) => drawVolcano(c, t)};
 function drawDual(c, D, t) {
   c.drawImage(bgc, -20, -20, VW + 40, VH + 40);
   drawShrineBg(c, t, D.sx);
@@ -3257,6 +3386,23 @@ function drawWomb(c, t) {
   c.restore();
   c.strokeStyle = 'rgba(216,168,168,.25)'; c.lineWidth = 2; for (let i = 0; i < 14; i++) { const x = h(i * 11) * VW, ph = (t * .8 + h(i)) % 1; c.beginPath(); c.moveTo(x, ph * VH - 60); c.lineTo(x, ph * VH); c.stroke(); }
   c.fillStyle = '#14060a'; c.fillRect(-100, GROUND, VW + 200, VH - GROUND + 100);
+}
+// 盖棺铁围山：火山口里面，四周是岩壁，脚下是岩浆（具体样子尚未确认，按火山画的）
+function drawVolcano(c, t) {
+  const g = c.createLinearGradient(0, 0, 0, VH); g.addColorStop(0, '#120604'); g.addColorStop(.55, '#4a1408'); g.addColorStop(1, '#ff6a1a');
+  c.fillStyle = g; c.fillRect(-100, -100, VW + 200, VH + 200);
+  for (const s0 of [-1, 1]) {   // 两侧的岩壁
+    c.fillStyle = '#1c0e0a'; c.strokeStyle = '#080302'; c.lineWidth = 4; c.beginPath(); const x0 = s0 < 0 ? -100 : VW + 100;
+    c.moveTo(x0, -100); for (let i = 0; i <= 10; i++) c.lineTo(VW / 2 + s0 * (380 + 260 * (i / 10) + 60 * h(i * 3 + s0)), -100 + i * (GROUND + 100) / 10); c.lineTo(x0, GROUND); c.closePath(); c.fill(); c.stroke();
+    c.strokeStyle = `rgba(255,${110 + 50 * Math.sin(t * 2 + s0)},40,.55)`; c.lineWidth = 3;
+    for (let i = 0; i < 6; i++) { const yy = 80 + i * 110, xx = VW / 2 + s0 * (480 + 200 * h(i * 7)); c.beginPath(); c.moveTo(xx, yy); c.lineTo(xx + s0 * 50, yy + 40); c.lineTo(xx + s0 * 30, yy + 90); c.stroke(); }
+  }
+  for (let i = 0; i < 40; i++) { const k = (t * (.15 + .25 * h(i)) + h(i * 5)) % 1; c.globalAlpha = 1 - k; c.fillStyle = i % 3 ? '#ff9a3a' : '#ffe08a'; c.beginPath(); c.arc(h(i) * VW + Math.sin(t + i) * 20, GROUND - k * 820, 2 + 3 * h(i * 3), 0, Math.PI * 2); c.fill(); }
+  c.globalAlpha = 1;
+  const lg = c.createLinearGradient(0, GROUND - 10, 0, VH); lg.addColorStop(0, '#ffb04a'); lg.addColorStop(.2, '#e0501a'); lg.addColorStop(1, '#3a0e04');
+  c.fillStyle = lg; c.fillRect(-100, GROUND, VW + 200, VH - GROUND + 100);
+  c.fillStyle = 'rgba(40,14,8,.85)'; for (let i = 0; i < 14; i++) { const x = (h(i * 11) * (VW + 200) - 100 + t * 12 * (i % 2 ? 1 : -1)) % (VW + 200); c.beginPath(); c.ellipse(x, GROUND + 18 + 40 * h(i * 3), 60 + 50 * h(i), 8, 0, 0, Math.PI * 2); c.fill(); }
+  c.fillStyle = '#ffd890'; c.fillRect(-100, GROUND, VW + 200, 3);
 }
 // 暗与光的异界：方块状的抽象空间，一半暗一半光（具体样子是按资料"方块状、抽象"的描述画的）
 function drawOther(c, t) {
@@ -3494,6 +3640,7 @@ function portrait(c, kind, u) {
     yuki:{bg:'#f4dccb', hair:'#f0cf72', hs:'#c9a64a', lash:'#2a1608', iris:['#f0d8b8', '#b07a48', '#6a3a1a', '#2a1208'], pupil:'#140804'},
     kenjaku:{bg:'#efd6c2', hair:'#141418', hs:'#3a3640', lash:'#140a10', iris:['#d8cce6', '#6a5a80', '#2a2038', '#0e0814'], pupil:'#06030a'},
     geto:{bg:'#efd6c2', hair:'#141418', hs:'#3a3640', lash:'#140a10', iris:['#d8cce6', '#6a5a80', '#2a2038', '#0e0814'], pupil:'#06030a'},
+    jogo:{bg:'#d6cec4', hair:'#3a2a24', hs:'#ff7a3a', lash:'#14100e', iris:['#fff6ea', '#e8dccc', '#6a4a3a', '#1a0e0a'], pupil:'#0a0605'},
     dabura:{bg:'#c9ccd6', hair:'#eef0ea', hs:'#b4bab4', lash:'#1a1018', iris:['#fff0c0', '#ffb050', '#e0601a', '#5a1a05'], pupil:'#200800'},
     yujiM:{bg:'#f1d6c4', hair:'#cdd5e0', hs:'#8f98a6', lash:'#1a0a0a', iris:['#e8c8a0', '#a06a40', '#6a3f2a', '#2a1508'], pupil:'#140a04'},
   }[kind];
@@ -3657,6 +3804,13 @@ function drawProj(c, p, t) {
     c.fillStyle = '#ffffff'; c.beginPath(); c.arc(8, -5, 5, 0, Math.PI * 2); c.arc(18, -2, 3.6, 0, Math.PI * 2); c.fill();
     c.fillStyle = '#100810'; c.beginPath(); c.arc(9, -5, 2, 0, Math.PI * 2); c.arc(18.5, -2, 1.5, 0, Math.PI * 2); c.fill();
     c.strokeStyle = '#100810'; c.lineWidth = 2; c.beginPath(); c.moveTo(10, 7); c.lineTo(22, 6); c.stroke();
+    c.restore();
+  } else if (p.kind === 'insect') {   // 火礫虫：发着火光的小虫，翅膀快速扇动（外形简化）
+    c.save(); c.translate(p.x, p.y); c.scale(d, 1); c.shadowColor = '#ff7a2a'; c.shadowBlur = 16;
+    c.fillStyle = 'rgba(255,200,150,.55)'; for (const s0 of [-1, 1]) { c.beginPath(); c.ellipse(-2, s0 * 9 * Math.abs(Math.sin(t * 50 + p.seed)), 9, 4, s0 * .5, 0, Math.PI * 2); c.fill(); }
+    c.fillStyle = '#5a2a18'; c.strokeStyle = OL; c.lineWidth = 2; c.beginPath(); c.ellipse(0, 0, 13, 8, 0, 0, Math.PI * 2); c.fill(); c.stroke();
+    c.fillStyle = '#ff8a3a'; c.beginPath(); c.ellipse(-4, 0, 6, 4, 0, 0, Math.PI * 2); c.fill();
+    c.fillStyle = '#fff2c0'; c.beginPath(); c.arc(8, -2, 2.2, 0, Math.PI * 2); c.fill();
     c.restore();
   } else if (p.kind === 'uzu') {   // 涡：压缩成一团的咒灵，旋转着往前推
     c.save(); c.translate(p.x, p.y);
@@ -3953,7 +4107,7 @@ function hud(c, t) {
     else if (f.burnout > 0) chips.push([`术式烧断 ${f.burnout.toFixed(1)}s`, '#cfd6e4']);
     if (f.zone > 0) chips.push(['状态绝佳', '#ff6a6a']);
     if (f.vow && f.vow !== 'none') chips.push(f.vowBroken ? ['破誓', '#ff6a6a'] : f.vow === 'overtime' ? [G.time < 30 ? `时间外劳动 · ${Math.ceil(30 - G.time)}s` : '时间外劳动 · 加班中', G.time < 30 ? '#c9c2b0' : '#ffd36a'] : [`束缚 · ${VOWS[f.vow].name}`, '#ffd36a']);
-    if ((f.rct ?? CHAR[f.who].rct) && G.time - f.lastHit > 3 && f.hp < f.maxHp && f.burnout <= 0 && f.soulLock <= 0 && !f.ko) chips.push([f.who === 'mahito' ? '无为转变 · 修复' : '反转术式', '#b8f5c8']);
+    if ((f.rct ?? CHAR[f.who].rct) && G.time - f.lastHit > 3 && f.hp < f.maxHp && f.burnout <= 0 && f.soulLock <= 0 && !f.ko) chips.push([f.who === 'mahito' ? '无为转变 · 修复' : f.who === 'jogo' ? '咒灵 · 再生' : '反转术式', '#b8f5c8']);
     if (f.soulLock > 0 && !f.ko) chips.push(['灵魂受创 · 无法反转', '#bfe6ff']);
     if (f.bfChain > 0) chips.push([`黑闪 ×${f.bfChain}`, '#ff3a3a']);
     c.font = `700 18px ${SANS}`;
@@ -3994,15 +4148,15 @@ function hud(c, t) {
     const D = G.dual, dy = top ? 250 : 200;
     c.textAlign = 'center'; c.font = `900 22px ${SANS}`; c.fillStyle = '#ffffff';
     c.fillText(`领域并存  ${Math.max(0, D.life).toFixed(1)}s`, 800, dy);
-    c.font = `700 16px ${SANS}`; c.fillStyle = '#bfe9ff'; c.fillText(`${{gojo:'无量空处', yujiM:'虎杖的领域', yuta:'真赝相爱', dabura:'暗与光的异界', kenjaku:'胎藏遍野'}[D.go.who]} · 结界`, 800, dy + 26);
+    c.font = `700 16px ${SANS}`; c.fillStyle = '#bfe9ff'; c.fillText(`${{gojo:'无量空处', yujiM:'虎杖的领域', yuta:'真赝相爱', dabura:'暗与光的异界', kenjaku:'胎藏遍野', jogo:'盖棺铁围山'}[D.go.who]} · 结界`, 800, dy + 26);
     bar(c, 620, dy + 34, 360, 10, D.hp / 100, D.hp > 30 ? '#bfe9ff' : '#ff6a6a');
     if (G.P === D.go) { c.font = `600 15px ${SANS}`; c.fillStyle = 'rgba(230,240,255,.85)'; c.fillText('I 重新展开强化结界（30 咒力） · 重创宿傩可让伏魔御厨子崩溃', 800, dy + 66); }
     else if (G.P === D.su) { c.font = `600 15px ${SANS}`; c.fillStyle = 'rgba(255,220,220,.85)'; c.fillText('伏魔御厨子正在从外侧斩击对方的结界 · 别吃重击', 800, dy + 66); }
   }
   if (G.domain) {
-    const d = G.domain, col = {void:'#bfe9ff', town:'#ffb0a0', love:'#e2d6ff', other:'#ffe9a0', womb:'#d8a8a8'}[d.kind] || '#ff6a6a', dy = top ? 250 : 200;
+    const d = G.domain, col = {void:'#bfe9ff', town:'#ffb0a0', love:'#e2d6ff', other:'#ffe9a0', womb:'#d8a8a8', volcano:'#ff9a5a'}[d.kind] || '#ff6a6a', dy = top ? 250 : 200;
     c.textAlign = 'center'; c.font = `900 22px ${SANS}`; c.fillStyle = col;
-    c.fillText(`${{void:'无量空处', shrine:'伏魔御厨子', town:'领域展开', love:'真赝相爱', other:'暗与光的异界', womb:'胎藏遍野'}[d.kind] || '领域展开'}  ${d.life.toFixed(1)}s`, 800, dy);
+    c.fillText(`${{void:'无量空处', shrine:'伏魔御厨子', town:'领域展开', love:'真赝相爱', other:'暗与光的异界', womb:'胎藏遍野', volcano:'盖棺铁围山'}[d.kind] || '领域展开'}  ${d.life.toFixed(1)}s`, 800, dy);
     bar(c, 650, dy + 10, 300, 6, d.life / d.max, col);
   }
 }
@@ -4047,13 +4201,13 @@ function draw(t) {
   if (G.dual) drawDual(c, G.dual, t); else
   if (d && d.kind !== 'shrine' && intro >= 1) DBG[d.kind](c, t); else c.drawImage(bgc, -20, -20, VW + 40, VH + 40);
   if (d && intro < 1) {
-    const o = d.owner, r = intro * intro * 2100, col = {void:'#e6f6ff', town:'#ffd8b0', love:'#efe6ff', other:'#fff2c0', womb:'#e0b0b0'}[d.kind] || '#ff4040';
+    const o = d.owner, r = intro * intro * 2100, col = {void:'#e6f6ff', town:'#ffd8b0', love:'#efe6ff', other:'#fff2c0', womb:'#e0b0b0', volcano:'#ffb070'}[d.kind] || '#ff4040';
     c.save(); c.beginPath(); c.arc(o.x, o.y - 150, r, 0, Math.PI * 2); c.clip(); d.kind === 'shrine' ? drawShrineBg(c, t, d.x) : DBG[d.kind](c, t); c.restore();
     c.save(); c.strokeStyle = col; c.shadowColor = col; c.shadowBlur = 30; c.lineWidth = 8; c.beginPath(); c.arc(o.x, o.y - 150, r, 0, Math.PI * 2); c.stroke(); c.restore();
   } else if (d && d.kind === 'shrine') drawShrineBg(c, t, d.x);
   drawScars(c, t);
   if (G.dim > .01) { c.fillStyle = `rgba(0,0,0,${G.dim})`; c.fillRect(-100, -100, VW + 200, VH + 200); }
-  for (const fl of G.fields) if (fl.kind === 'grav') drawGrav(c, fl, t); else if (fl.kind === 'blue') drawBlue(c, fl, t); else if (fl.kind === 'hole') drawHole(c, fl, t);
+  for (const fl of G.fields) if (fl.kind === 'grav') drawGrav(c, fl, t); else if (fl.kind === 'blue') drawBlue(c, fl, t); else if (fl.kind === 'hole') drawHole(c, fl, t); else if (fl.kind === 'volc') drawVolc(c, fl, t); else if (fl.kind === 'meteor') drawMeteor(c, fl, t);
   for (const f of G.fx) if (!f.front) f.draw(c, f.t / f.life);
   const order = G.P.act ? [G.E, G.P] : [G.P, G.E];
   for (const f of order) drawFighterAll(c, f, t);
@@ -4123,6 +4277,16 @@ const LEVELS = [
     },
     outro:{megumi:'原作结局：甚尔问出儿子的名字后，用游云刺穿了自己的头（第 113 话）。之后惠被重面春太从背后偷袭，召唤了魔虚罗（第 114–117 话），也就是下一关「涩谷事变」。',
       toji:'IF 结局：原作里甚尔听到「伏黑」这个姓之后自尽了，没有对儿子下手（第 113 话）。'}},
+  {id:'jo', title:'一击之约', vs:'两面宿傩 对 漏瑚', pair:['sukuna', 'jogo'], hero:'sukuna', opp:'jogo', hp:{jogo:1.1, sukuna:.6}, jogoBet:true,
+    src:'《咒术回战》涩谷事变篇 · 第 111–116 话',
+    txt:'涩谷事变。特级咒灵漏瑚在涩谷站烧倒了禅院直毘人、七海建人和禅院真希（第 111 话），又把手里的宿傩手指全塞给了虎杖，让宿傩醒了过来。他想请诅咒之王站到咒灵这一边。宿傩跟他打了个赌：只要漏瑚能打中他一下（赌约的具体条件各资料概括不一【尚未确认】）。漏瑚放出了极之番 · 隕，宿傩接下之后反击（第 115 话）；最后两人比拼火力，漏瑚被宿傩的火焰之矢烧尽（第 116 话）。原作里宿傩用的是虎杖的身体，游戏里画的是他自己的样子。',
+    rule:'本关双方都不能展开领域（按查到的各话梗概，这一战没有领域）。漏瑚体力掉到六成时会放出极之番 · 隕：天上出现红圈就冲刺跑出去。漏瑚体力低于四分之一时进入火力比拼，宿傩的竈 · 开直接解锁，不用先打中解和捌。本关漏瑚体力 ×1.1；用漏瑚打是 IF，宿傩体力 ×0.6。',
+    stars:{
+      sukuna:[['击败漏瑚', () => true], ['一下也没被漏瑚打中（赌约）', S => !S.betLost], ['用竈 · 开给最后一击（第 116 话）', S => S.kill === 'fuga']],
+      jogo:[['击败宿傩（IF：原作里漏瑚输了）', () => true], ['用极之番 · 隕打中宿傩（第 115 话）', S => (S.src || {}).meteor > 0], ['火礫虫打中宿傩 5 次', S => (S.insectHits || 0) >= 5]],
+    },
+    outro:{sukuna:'原作结局：火力比拼里，宿傩的火焰之矢烧尽了漏瑚，宿傩认可了他的强（第 116 话）。之后伏黑惠召唤了魔虚罗，宿傩出手接下（第 117 话），也就是下一关「涩谷事变」。',
+      jogo:'IF 结局：原作里漏瑚在火力比拼中被宿傩烧尽（第 116 话）。这一次，灾厄之火压过了诅咒之王。'}},
   {id:'s1', title:'涩谷事变', vs:'两面宿傩 对 魔虚罗', pair:['sukuna', 'mahoraga'], hero:'sukuna', opp:'mahoraga', hp:.8, fullCe:true,
     src:'《咒术回战》涩谷事变篇 · 第 114–120 话',
     txt:'伏黑惠被重面春太从背后偷袭重伤，召唤了从未被调伏过的式神魔虚罗，把对方一起拖进调伏仪式，自己却被魔虚罗打进了大楼。这时掌控虎杖身体的宿傩出手，用反转术式救下伏黑惠，接手了与魔虚罗的战斗（第 117 话）。原作里宿傩用的是虎杖的身体，游戏里画的是他自己的样子。',
@@ -4240,7 +4404,7 @@ function showIntro(i) {
   const L = LEVELS[i]; G.lv = i; inPick = L.hero;
   $('inTitle').textContent = L.title; $('inSrc').textContent = L.src; $('inTxt').textContent = L.txt; $('inRule').textContent = L.rule;
   const box = $('inPicks'); box.textContent = '';
-  for (const w of ['sukuna', 'gojo', 'yuta', 'mahoraga', 'yujiM', 'dabura', 'toji', 'geto', 'yuki', 'kenjaku', 'kashimo', 'mahito', 'megumi', 'yuji']) {
+  for (const w of ['sukuna', 'gojo', 'yuta', 'mahoraga', 'yujiM', 'dabura', 'toji', 'geto', 'yuki', 'kenjaku', 'kashimo', 'mahito', 'megumi', 'yuji', 'jogo']) {
     if (w === L.opp && !L.pair.includes(w)) continue;
     const b = document.createElement('button'); b.type = 'button'; b.dataset.w = w; if (L.pair.includes(w)) b.className = 'canon';
     b.innerHTML = '<b></b>'; b.querySelector('b').textContent = CHAR[w].name; b.querySelector('b').style.color = CHAR[w].col;
@@ -4300,6 +4464,11 @@ function storyHit(att, def, src) {
   if (L.fu && src === 'tcloud' && def === G.P) S.cloudHit = true;
   if (L.fu && src === 'ftoad' && def === G.P) S.toadCaught = true;
   if (L.amberLimit && att === G.P && att.who === 'kashimo' && def.hp <= 0) S.amberLeft10 = att.amberT >= 10;
+  if (L.jogoBet && att.who === 'jogo' && def.who === 'sukuna') {   // 赌约：漏瑚碰到宿傩一下
+    if (def === G.P) S.betLost = true;
+    if (!G.flags.betHit) { G.flags.betHit = true; const b = body(def); toast('碰到了', '#ff8a4a', {size:70, life:1.4, x:b.x, y:b.y - 260, sub:'赌约 · 漏瑚打中了宿傩一下'}); }
+  }
+  if (L.jogoBet && att === G.P && src === 'insect') S.insectHits = (S.insectHits || 0) + 1;
 }
 // 被锁住的招式（觉醒前的五条、被破掉的咒灵）
 function storyLock(f, slot) {
@@ -4307,6 +4476,7 @@ function storyLock(f, slot) {
   if (L.awaken && f.who === 'gojo' && G.ph && G.ph.stage === 1 && slot !== 'K') return '还没觉醒：现在只会苍';
   if (L.fu && f.who === 'toji' && slot !== 'L') return '这时的甚尔只带着游云';
   if (L.fu && f.who === 'megumi' && slot === 'I') return '咒力不够，展开不了领域';
+  if (L.jogoBet && slot === 'I' && TECH[f.who].I && TECH[f.who].I.act === 'domain') return '这一战没有展开领域';
   if (L.curseBreak && f.who === 'geto' && G.stats) { if (slot === 'K' && G.stats.rainbowCut) return '虹龙已被斩开'; if (slot === 'L' && G.stats.kuchiCut) return '口裂女已被破掉'; }
   return null;
 }
@@ -4336,6 +4506,22 @@ const STAGE2 = {
       startScene(SCRIPT.fu.name(), () => { if (t.ko) return; const b = body(t); t.lastSrc = 'self'; t.hp = 0; t.lastHit = G.time; t.rct = 0; toast('伏黑', '#a8d8b0', {size:120, life:1.8, y:330, sub:'第 113 话'}); flashScreen('#ffffff', .3, .3); sparks(b.x, b.y, '#a8d8b0', 20, 400); });
     } else if (m.ai && m.hp < m.maxHp * .35 && !m.ko && !t.ko) {   // 用甚尔打：问出名字，但这次没有停手
       G.flags.named = true; G.stats.named = true; startScene(SCRIPT.fu.nameT());
+    }
+  },
+  jo() {
+    const j = findW('jogo'), su = findW('sukuna'); if (!j || j.ko || j.hp <= 0) return;
+    if (j.ai && !G.flags.meteorForced && j.hp < j.maxHp * .6 && j.hp >= j.maxHp * .25 && freeF(j) && !G.domain && !G.dual) {   // 第 115 话：极之番 · 隕
+      G.flags.meteorForced = true;
+      startScene(SCRIPT.jo.meteor(), () => { if (j.ko) return; j.act = null; j.ce = Math.max(j.ce, 70); j.cd = {}; j.burnout = 0; useTech(j, 'U'); });
+    }
+    if (!G.flags.fireDuel && su && !su.ko && j.hp < j.maxHp * .25) {   // 第 116 话：火力比拼，竈 · 开直接解锁
+      G.flags.fireDuel = true; G.stats.fireDuel = true; clearField();
+      startScene(SCRIPT.jo.fire(), () => {
+        if (su.ko || j.ko) return;
+        su.prepD = su.prepC = true; su.ce = Math.max(su.ce, 60); su.cd = {}; su.burnout = 0; j.ce = Math.max(j.ce, 70);
+        if (su.ai) G.timers.push({t:.5, fn() { if (!su.ko && !j.ko && !su.act) { su.face = Math.sign(j.x - su.x) || su.face; useTech(su, 'U'); } }});
+        else toast('竈 · 开', '#ff9a4a', {size:90, life:1.4, y:330, sub:'火力比拼 · 按 U 射出火焰之矢'});
+      });
     }
   },
   sh() {
@@ -4489,6 +4675,15 @@ const SCRIPT = {
     end:() => G.pick === 'megumi' ? [N('甚尔临死前告诉惠：选了伏黑这个姓，没有错（第 113 话）。'), N('降灵术随着他的死散去了。')]
       : G.pick === 'toji' ? [N('原作里，甚尔听到「伏黑」这个姓后自尽了（第 113 话）。这一次，倒下的是惠。')] : [],
   },
+  jo:{
+    open:() => [N('涩谷事变。漏瑚在涩谷站烧倒了禅院直毘人、七海建人和禅院真希（第 111 话）。'), N('他把手里的宿傩手指全塞给了虎杖。宿傩醒了过来。'),
+      N('漏瑚想请诅咒之王站到咒灵这一边。宿傩提出一个赌约：只要漏瑚能打中他一下。'),
+      ...(G.pick === 'sukuna' ? [O('宿傩', '来吧。一下就好。', '#ff6a5a')] : G.pick === 'jogo' ? [O('漏瑚', '……一下就够了。', '#ff8a4a')] : [])],
+    meteor:() => [N('漏瑚举起双手——极之番 · 隕（第 115 话）。'), N(G.P.who === 'jogo' ? '燃烧的巨岩从天上砸了下来。' : '燃烧的巨岩从天上砸下来。看准地上的红圈，冲刺躲开！')],
+    fire:() => [N('两人拼起了火力：宿傩在指尖凝出火焰之矢，漏瑚把火压成一团（第 116 话）。'), N(G.P.who === 'sukuna' ? '竈 · 开解锁了。按 U 射出火焰之矢！' : '宿傩的指尖亮了起来。')],
+    end:() => G.pick === 'sukuna' ? [N('火焰之矢烧尽了漏瑚（第 116 话）。'), N('宿傩认可了他：在千年来的对手里，漏瑚算是强的（概括自第 116 话）。')]
+      : G.pick === 'jogo' ? [N('原作里，漏瑚在火力比拼中输了，被宿傩烧尽（第 116 话）。'), N('这一次，灾厄之火压过了诅咒之王。')] : [],
+  },
   sh:{
     open:() => [N('涩谷事变。钉崎野蔷薇被真人的无为转变碰到，倒在虎杖面前（第 125 话）。'), N('虎杖的心被击垮，真人用黑闪把他打穿了车站（第 126 话）。'),
       N('就在真人要下杀手的时候，东堂葵赶到了。他的术式「不义游戏」，拍一下手就能交换位置（第 126 话）。'),
@@ -4641,6 +4836,8 @@ function startGame() {
     : G.pick === 'mahoraga' ? '提示：适应要真的挨打，防御时法阵几乎不转。适应完成后同一种攻击只剩三成伤害。对五条悟时多去碰无下限，适应后就能打穿。'
     : G.pick === 'yuji' ? '提示：贴身用 J 三连，拳头上出现红圈时只按一次 J 就是黑闪，你的时机比别人宽。K 逕庭拳的第二下穿过防御，对手缩着防御时用 U 全力一拳。I 集中后黑闪最好打。'
     : G.opp === 'yuji' ? '提示：别跟他贴身对拳，他的黑闪很容易打出来。用远程招式拉开距离；他身上冒红光（状态绝佳）时先躲开。'
+    : G.pick === 'jogo' ? '提示：K 火礫虫会自己追人，远了就放；L 火山放在对手脚下，逼他走位。对手被火山掀上天或者僵住时放 U 隕，落点躲不开。I 领域里持续灼烧。'
+    : G.opp === 'jogo' ? '提示：脚下地面鼓起来就马上走开，那是火山。天上出现红圈是隕，冲刺跑出圈外。火礫虫会追着你飞，防御或者用飞行物抵掉。'
     : G.pick === 'megumi' ? '提示：U 蛤蟆把对手拉过来后马上按 J。远了用 K 玉犬、L 鵺骚扰，鵺打中会麻痹一下。I 嵌合暗翳庭开着的 8 秒里玉犬会自动补刀，趁机贴上去打。'
     : G.opp === 'megumi' ? '提示：他身前冒出蛤蟆时往旁边跳，被舌头缠住会被拉过去挨打。地面变黑后影子里会窜出玉犬，按住防御或者跳起来。'
     : G.pick === 'mahito' ? '提示：K 贴身一掌无视防御，打中后对手变慢、不能回血。I 结印 0.7 秒后必中，趁对手僵直时放。别碰宿傩。血少时会自动变成遍杀即灵体，抓紧这 10 秒反扑。'
@@ -4667,7 +4864,7 @@ function startGame() {
   fitView();
 }
 function fitView() { const a = $('arena'); if (a.classList.contains('land') && !a.classList.contains('max')) a.scrollIntoView({block:'start'}); }
-const WIN_LINE = {yuji:'（虎杖甩了甩拳头）', megumi:'（伏黑惠解开手印，影子缩回脚下）', mahito:'（真人歪着头笑了笑）', kashimo:'（鹿紫云一把如意扛回肩上）', kenjaku:'（羂索摸了摸额头的缝合线）', yuki:'（九十九由基跨上摩托，扬长而去）', geto:'（夏油杰把咒灵收回体内）', toji:'（伏黑甚尔把咒具塞回咒灵的肚子里）', dabura:'（光芒散去）', mahoraga:'（法阵转动的声音）', yuta:'乙骨忧太：「真失礼啊，这是纯爱哦。」', gojo:'五条悟：「放心吧，我是最强的。」', yujiM:'虎杖悠仁：「我还要再活三百年呢。」', sukuna:'两面宿傩：「认清你的立场。」'};
+const WIN_LINE = {jogo:'（漏瑚头顶的火山口喷出一股热气）', yuji:'（虎杖甩了甩拳头）', megumi:'（伏黑惠解开手印，影子缩回脚下）', mahito:'（真人歪着头笑了笑）', kashimo:'（鹿紫云一把如意扛回肩上）', kenjaku:'（羂索摸了摸额头的缝合线）', yuki:'（九十九由基跨上摩托，扬长而去）', geto:'（夏油杰把咒灵收回体内）', toji:'（伏黑甚尔把咒具塞回咒灵的肚子里）', dabura:'（光芒散去）', mahoraga:'（法阵转动的声音）', yuta:'乙骨忧太：「真失礼啊，这是纯爱哦。」', gojo:'五条悟：「放心吧，我是最强的。」', yujiM:'虎杖悠仁：「我还要再活三百年呢。」', sukuna:'两面宿傩：「认清你的立场。」'};
 function showResult() {
   G.state = 'result';
   const win = G.E.ko, s = G.stats, sec = Math.max(1, Math.round((performance.now() - s.start) / 1000 - (G.sceneTime || 0)));   // 剧情演出的时间不算
@@ -4726,6 +4923,7 @@ const PASSIVE = {
   mahoraga:['被动 · 适应', '挨同一类攻击会转动法阵，转满 4 圈后这类攻击只剩三成伤害并回血。防御时几乎不转。'],
   yujiM:['被动 · 黑闪 / 灵魂攻击', 'J 三连最后一下必出黑闪（游戏设定）；打中后对手 3 秒内不能用反转术式回血。'],
   yuji:['被动 · 体术 / 黑闪', '没有术式，拳脚最快最重。黑闪的判定窗口比别人宽，打出后进入 6 秒状态绝佳，窗口更宽；I 集中直接进入状态绝佳。连续 4 次黑闪会提示追平七海的纪录。拳头打得到灵魂：对手 3 秒内不能反转回血。没有领域和反转术式。'],
+  jogo:['被动 · 再生', 'K 火礫虫会追着对手飞；L 火山在对手脚下鼓起来，约半秒后喷发；U 极之番 · 隕从天上砸下来，落点有预警圈。3 秒没挨打慢慢回血（游戏设定）。'],
   megumi:['十种影法术', 'K、L、U 都是从影子里召唤式神。U 蛤蟆把对手拉到面前，马上接 J。I 嵌合暗翳庭是未完成的领域：没有必中，8 秒内影子里的玉犬会不断从对手脚下窜出来。没有反转术式。'],
   mahito:['被动 · 修复 / 遍杀即灵体', '3 秒没挨打就慢慢回血，灵魂受创时修不了。体力第一次低于 35% 时变成遍杀即灵体：10 秒内只吃四成伤害、伤害 ×1.2，被黑闪打中就会打破。K 碰到宿傩会反被斩伤，对模块虎杖改不动灵魂。'],
   kashimo:['被动 · 带电的咒力', 'J、L、U 打中会在对手体内留下电荷（最多 3 层，5 秒不补就散）。K 放电一次放掉全部电荷，防御和无下限都挡不住。I 幻兽琥珀一局一次，10 秒后肉体崩坏：扣三成体力、僵直。没有领域和反转术式。'],
@@ -4863,7 +5061,7 @@ $('fs').addEventListener('click', toggleFs); $('padFs').addEventListener('click'
 $('rotBtn').addEventListener('click', enterFs);
 layout();
 if (document.fonts) {
-  document.fonts.load(`80px "Zhi Mang Xing"`, '魔虚罗法阵适应退魔之剑猛击远斩乙骨忧太里香纯爱真赝相爱咒言别动雅各的梯子五条悟虎杖悠仁两面宿傩苍赫虚式茈领域展开无量空处伏魔御厨子黑闪卍踢捌开胜败开战术式烧断对撞……落空连续次鹿紫云一幻兽琥珀放电雷突击神肉体崩坏电磁波如意真人无为转变触碰改造多重魂拨体自闭圆顿裹遍杀即灵体破伏黑惠玉犬浑鵺蛤蟆嵌合暗翳庭十种影法术逕庭拳突进踢全力一拳集中纪录').then(() => buildBg()).catch(() => {});
+  document.fonts.load(`80px "Zhi Mang Xing"`, '魔虚罗法阵适应退魔之剑猛击远斩乙骨忧太里香纯爱真赝相爱咒言别动雅各的梯子五条悟虎杖悠仁两面宿傩苍赫虚式茈领域展开无量空处伏魔御厨子黑闪卍踢捌开胜败开战术式烧断对撞……落空连续次鹿紫云一幻兽琥珀放电雷突击神肉体崩坏电磁波如意真人无为转变触碰改造多重魂拨体自闭圆顿裹遍杀即灵体破伏黑惠玉犬浑鵺蛤蟆嵌合暗翳庭十种影法术逕庭拳突进踢全力一拳集中纪录漏瑚火礫虫火山隕极之番盖棺铁围山再生一击之约灼烧').then(() => buildBg()).catch(() => {});
 }
 let last = performance.now();
 function frame(now) {
