@@ -240,7 +240,7 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
         <h2>选择你的咒术师</h2>
         <div class="picks">
           <button class="pick s" type="button" data-char="sukuna" aria-pressed="false"><b style="color:var(--red)">两面宿傩</b><span>诅咒之王。解与捌，竈 · 开，领域展开 · 伏魔御厨子。</span></button>
-          <button class="pick" type="button" data-char="gojo" aria-pressed=""true"><b style="color:var(--blue)">五条悟</b><span>无下限挡下几乎所有攻击。苍、赫、虚式 · 茈，领域展开 · 无量空处。</span></button>
+          <button class="pick" type="button" data-char="gojo" aria-pressed="true"><b style="color:var(--blue)">五条悟</b><span>无下限挡下几乎所有攻击。苍、赫、虚式 · 茈，领域展开 · 无量空处。</span></button>
           <button class="pick y" type="button" data-char="yuta" aria-pressed="false"><b style="color:#d9c8ff">乙骨忧太</b><span>特级咒术师，与里香相连。复制他人的术式：咒言、纯爱，领域展开 · 真赝相爱。</span></button>
           <button class="pick h" type="button" data-char="mahoraga" aria-pressed="false"><b style="color:#e8d9a8">魔虚罗</b><span>十种影法术最强式神。头顶法阵转动，适应一切攻击；前臂上长着退魔之剑。</span></button>
           <button class="pick m" type="button" data-char="yujiM" aria-pressed="false"><b style="color:#ffb0a0">虎杖悠仁 · 模块</b><span>68 年后的最强咒术师。黑闪随手打出，会穿血、解、超新星，还有领域展开和灵魂攻击。</span></button>
@@ -1384,7 +1384,7 @@ const CHAR = {
   dabura: {name:'达布拉', hp:150, ce:180, reg:13, spd:500, K:1.85, atk:[9, 9, 14], col:'#ffe0a0', idle:'stand', rct:3},
   kenjaku:{name:'羂索', hp:132, ce:220, reg:15, spd:470, K:1.76, atk:[8, 8, 13], col:'#d8a8a8', idle:'stand', rct:2},
   yuji:   {name:'虎杖悠仁', hp:144, ce:160, reg:13, spd:570, K:1.7, atk:[8, 8, 12], col:'#ff8fa8', idle:'stand', rct:0},
-  jogo:   {name:'漏瑚', hp:128, ce:210, reg:15, spd:480, K:1.58, atk:[8, 8, 12], col:'#ff8a4a', idle:'stand', rct:2},
+  jogo:   {name:'漏瑚', hp:132, ce:210, reg:15, spd:480, K:1.58, atk:[8, 8, 12], col:'#ff8a4a', idle:'stand', rct:2},
   megumi: {name:'伏黑惠', hp:134, ce:190, reg:16, spd:530, K:1.72, atk:[8, 8, 12], col:'#8a9ee0', idle:'stand', rct:0},
   mahito: {name:'真人', hp:138, ce:200, reg:14, spd:500, K:1.7, atk:[8, 8, 12], col:'#9fb8cc', idle:'stand', rct:3},
   kashimo:{name:'鹿紫云一', hp:128, ce:180, reg:13, spd:540, K:1.74, atk:[7, 7, 11], col:'#7fe3f0', idle:'stand', rct:0},
@@ -3028,11 +3028,16 @@ function aiThink(f, dt) {
 }
 
 /* ================= 玩家操作 ================= */
+const BUF_KEYS = ['KeyJ', 'KeyK', 'KeyL', 'KeyU', 'KeyI', 'ShiftLeft', 'ShiftRight', 'KeyW', 'ArrowUp', 'Space'];
 function control(f) {
   if (f.who === 'yuta') {
     if (isPressed('KeyK')) f.kT = performance.now();
     if (f.kT && isHeld('KeyK') && !f.kCycled && performance.now() - f.kT > 350 && !inLove(f)) { f.kCycled = true; cycleCopy(f); }
   }
+  // 输入缓冲：硬直或出招中按下的键记 0.3 秒，能动了再生效（乙骨的 K 松开才放，不缓冲；三连中的 J 由出拳自己接）
+  if (f.ko || f.hitstun > 0 || f.stun > 0 || f.act) {
+    for (const k of BUF_KEYS) if (isPressed(k) && !(k === 'KeyK' && f.who === 'yuta') && !(k === 'KeyJ' && f.act && f.act.name === 'atk')) f.buf = {k, until:G.time + .3};
+  } else if (f.buf) { if (G.time <= f.buf.until) pressed.add(f.buf.k); f.buf = null; }
   if (f.ko || f.hitstun > 0 || f.stun > 0) { f.guard = false; if (isReleased('KeyK')) { f.kT = 0; f.kCycled = false; } return; }
   const a = f.act;
   if (a) {
