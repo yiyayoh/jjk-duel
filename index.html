@@ -65,6 +65,10 @@ canvas{display:block;width:100%;height:100%}
 .info section.f h3{color:#8a9ee0}
 .pick.u[aria-pressed="true"]{border-color:#ff8fa8;box-shadow:inset 0 0 0 1px #ff8fa8}
 .info section.u h3{color:#ff8fa8}
+.pick.r[aria-pressed="true"]{border-color:#e0506a;box-shadow:inset 0 0 0 1px #e0506a}
+.info section.r h3{color:#e0506a}
+.pick.j[aria-pressed="true"]{border-color:#d8c48a;box-shadow:inset 0 0 0 1px #d8c48a}
+.info section.j h3{color:#d8c48a}
 .pick.v[aria-pressed="true"]{border-color:#ff8a4a;box-shadow:inset 0 0 0 1px #ff8a4a}
 .info section.v h3{color:#ff8a4a}
 .row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
@@ -247,6 +251,8 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
           <button class="pick q" type="button" data-char="kenjaku" aria-pressed="false"><b style="color:#d8a8a8">羂索</b><span>占据夏油杰身体的千年诅咒师。咒灵操术、重力、极之番 · 涡（可蓄力）；领域展开 · 胎藏遍野。</span></button>
           <button class="pick u" type="button" data-char="yuji" aria-pressed="false"><b style="color:#ff8fa8">虎杖悠仁</b><span>涩谷事变时期。没有术式，靠超人的体能、逕庭拳和黑闪硬打。</span></button>
           <button class="pick f" type="button" data-char="megumi" aria-pressed="false"><b style="color:#8a9ee0">伏黑惠</b><span>十种影法术。用影子召唤式神：玉犬、鵺、满象，还有未完成的领域。</span></button>
+          <button class="pick r" type="button" data-char="choso" aria-pressed="false"><b style="color:#e0506a">胀相</b><span>咒胎九相图的长兄。赤血操术：百敛压缩血液射出穿血，超新星、血星磊，赤鳞跃动强化身体。</span></button>
+          <button class="pick j" type="button" data-char="higuruma" aria-pressed="false"><b style="color:#d8c48a">日车宽见</b><span>当过律师的死灭回游参赛者。挥着法槌作战；领域展开 · 诛伏赐死会开庭审判对手。</span></button>
           <button class="pick v" type="button" data-char="jogo" aria-pressed="false"><b style="color:#ff8a4a">漏瑚</b><span>未登记的特级咒灵，从人类对大地的恐惧中诞生。火礫虫、火山、极之番 · 隕，领域展开 · 盖棺铁围山。</span></button>
           <button class="pick w" type="button" data-char="mahito" aria-pressed="false"><b style="color:#9fb8cc">真人</b><span>特级咒灵。碰到对方就能改变灵魂的形状；改造人、多重魂，还有只开 0.2 秒的领域。</span></button>
           <button class="pick e" type="button" data-char="kashimo" aria-pressed="false"><b style="color:#7fe3f0">鹿紫云一</b><span>四百年前的「雷神」。咒力带电，用如意给对手留下电荷再放电；一生一次的术式 · 幻兽琥珀。</span></button>
@@ -279,6 +285,8 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
           <button type="button" data-opp="megumi" aria-pressed="false">伏黑惠</button>
           <button type="button" data-opp="yuji" aria-pressed="false">虎杖悠仁</button>
           <button type="button" data-opp="jogo" aria-pressed="false">漏瑚</button>
+          <button type="button" data-opp="choso" aria-pressed="false">胀相</button>
+          <button type="button" data-opp="higuruma" aria-pressed="false">日车宽见</button>
         </div>
         <div class="row" role="group" aria-label="难度">
           <button type="button" data-diff="easy" aria-pressed="false">简单</button>
@@ -504,6 +512,32 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
         <dt>没有做的</dt><dd>几魂异性体（第 129 话，分出来的改造体）、分身。乙骨的里香吞了他也复制不到术式（游戏规则）。</dd>
       </dl>
     </section>
+    <section class="r">
+      <h3>胀相</h3>
+      <dl>
+        <dt>出处</dt><dd>《咒术回战》。特级咒物「咒胎九相图」的一号，受肉后成为九相图兄弟里最像人的一个。涩谷事变里为了被祓除的弟弟们找虎杖复仇（第 104–105 话），之后站到虎杖一边，自称哥哥；死灭回游时和九十九一起在薨星宫迎击羂索。</dd>
+        <dt>外观</dt><dd>黑发，头顶两侧扎起两束翘起的头发，鼻梁上横着一道深色的纹；发动赤鳞跃动时眼睛上会多出纹路。衣服游戏里画成浅色宽袖上衣、深色裤子和腰带，颜色和样式【尚未确认】。</dd>
+        <dt><kbd>J</kbd> 体术三连</dt><dd>普通拳脚。</dd>
+        <dt><kbd>K</kbd> 百敛 · 穿血</dt><dd>原作：赤血操术里，百敛把血液压缩到极限，再一口气射出就是穿血，速度极快。游戏里：按住 K 压缩（百敛），松开射出一道贯穿的血线，按得越久越粗、越痛，最多约 1 秒。</dd>
+        <dt><kbd>L</kbd> 超新星</dt><dd>原作：把压缩过的血珠在身边炸开，像散弹一样打出去。游戏里：七颗血珠向前方散射，离得越近中得越多。</dd>
+        <dt><kbd>U</kbd> 血星磊</dt><dd>原作：把血硬化成子弹打出去，涩谷时用它打穿了虎杖的肝（第 104 话）。游戏里：连射三发。</dd>
+        <dt><kbd>I</kbd> 赤鳞跃动 · 载</dt><dd>原作：控制体内的血流，大幅提升动态视力、力量和耐力；「载」是更强的版本。游戏里：8 秒内移动 ×1.2、伤害 ×1.15，挨打时的硬直变短。</dd>
+        <dt>没有做的</dt><dd>苅祓（血做成的回旋圆盘）、血刃等其他招式；原作里没见到他用领域展开【尚未确认】。乙骨的里香吞了他也复制不到术式（游戏规则）。</dd>
+      </dl>
+    </section>
+    <section class="j">
+      <h3>日车宽见</h3>
+      <dl>
+        <dt>出处</dt><dd>《咒术回战》。原本是律师，常替被冤枉的被告辩护，卷进死灭回游后觉醒了术式。在东京第一结界和虎杖交手（第 164–166 话），之后和虎杖一起行动。</dd>
+        <dt>外观</dt><dd>因为过度劳累，总是一脸疲惫；黑色西装。游戏里加了白衬衫、领带和律师徽章，发型做了简化【尚未确认】。</dd>
+        <dt><kbd>J</kbd> 法槌三连</dt><dd>拿着法槌（木槌）打，攻击距离比徒手长。</dd>
+        <dt><kbd>K</kbd> 法槌 · 巨大化</dt><dd>游戏里编的招式：法槌变大，从头顶砸下去，能压穿防御。法槌能改变大小这一点没有查到可靠出处【尚未确认】。</dd>
+        <dt><kbd>L</kbd> 法槌 · 投掷</dt><dd>游戏里编的招式：把法槌扔出去，飞一段再转回来，来回各打一次。</dd>
+        <dt><kbd>I</kbd> 诛伏赐死</dt><dd>原作：领域展开。领域里是一座法庭，禁止一切暴力，式神 Judgeman 指控被告、宣判。判决有「没收」（被告暂时不能用术式；虎杖没有术式，被没收的是咒力）和「死刑」（日车的法槌化成处刑人之剑）（第 164–166 话）。游戏里：开庭时战斗暂停；判决按这场战斗里对手打了日车多少来定（游戏设定）：没打或打得很少判无罪；打了 12 点以上判「没收」，对手 10 秒内不能用 K、L、U、I（五条悟的无下限也失效）；打了 40 点以上判「死刑」，在没收之外，日车拿到处刑人之剑。甚尔咒力为零，领域锁定不了他。</dd>
+        <dt><kbd>U</kbd> 处刑人之剑</dt><dd>只有判了死刑才能用，10 秒内有效。原作里据说一击就能斩杀对象；游戏里改成按对手最大体力算的重伤（最多 70），无视防御和无下限，砍中一次剑就消失。</dd>
+        <dt>没有做的</dt><dd>被告的陈述、再审（原作里被判决后可以申请再审）。乙骨的里香吞了他也复制不到术式（游戏规则）。</dd>
+      </dl>
+    </section>
     <section class="v">
       <h3>漏瑚</h3>
       <dl>
@@ -663,6 +697,8 @@ const STY = {
   mahoraga:{bulk:1.3, arm:'#d9d4cc', armB:'#b4ada3', leg:'#18181e', legB:'#101015', body:'#d9d4cc', skin:'#d9d4cc', head:'mahoraga', shoe:'#1a1a20', sash:'#ece8e0', wideLeg:true, armBlade:true, bare:true},
   dabura:{bulk:1.12, arm:'#c9ccd6', armB:'#a4a8b4', leg:'#24222c', legB:'#18171e', body:'#c9ccd6', skin:'#c9ccd6', head:'dabura', shoe:'#1c1b22', sash:'#1a1820', wideLeg:true, bare:true, marks:true, belt:'#3a3428'},
   yuji:{bulk:1.04, arm:'#1c1d26', armB:'#14151c', leg:'#1c1d26', legB:'#14151c', body:'#1c1d26', skin:'#f1d6c4', head:'yuji', shoe:'#16161c', hood:'#b0282f', cuff:'#121218'},
+  choso:{arm:'#ddd6e2', armB:'#b8b0c0', leg:'#2a2430', legB:'#1e1a24', body:'#ddd6e2', skin:'#ecd6c6', head:'choso', shoe:'#16141a', sash:'#2a2430', sleeve:true, wideLeg:true},
+  higuruma:{arm:'#1d1e25', armB:'#15161b', leg:'#1d1e25', legB:'#15161b', body:'#1d1e25', skin:'#ead2c0', head:'higuruma', shoe:'#0e0e12', under:'#e8e6e0', tie:'#5a2a32', badge:true, gavel:true, cuff:'#e8e6e0'},
   jogo:{bulk:.96, arm:'#dcd3c4', armB:'#b9b0a2', leg:'#2e2824', legB:'#201c19', body:'#dcd3c4', skin:'#d6cec4', head:'jogo', shoe:'#1a1614', sash:'#3a2a24', sleeve:true, wideLeg:true, sandal:true, tabi:'#e6e0d6'},
   megumi:{arm:'#1e2333', armB:'#151927', leg:'#1c2030', legB:'#141826', body:'#1e2333', skin:'#f0d8c8', head:'megumi', shoe:'#14161e', collar:true, cuff:'#121624'},
   mahito:{arm:'#22232b', armB:'#16171d', leg:'#22232b', legB:'#16171d', body:'#22232b', skin:'#e6dfd8', head:'mahito', shoe:'#ecebe8', wideLeg:true, stitch:true},
@@ -925,6 +961,42 @@ const HEADS = {
     // 前面的刺
     tufts(c, [[12,-12,24,-26,8,.3],[6,-16,12,-40,10,.15],[-2,-18,-4,-44,11,.05],[-9,-16,-22,-38,10,-.15],[16,-8,22,-2,5,.35],[6,-10,8,0,5,.25],[0,-12,-1,-2,5,.1]], hair);
     strands(c, [[-4,-24,-8,-34],[4,-24,7,-34],[-12,-18,-20,-28]], hs, 1.6);
+  },
+  // 胀相：头顶两侧翘起的两束头发，鼻梁上一道横纹（细节简化）
+  choso(c, o) {
+    const hair = '#17151b', hs = '#3a3442';
+    c.beginPath(); c.moveTo(-2, -24); c.quadraticCurveTo(-24, -20, -22, -4); c.lineTo(-25, 6); c.lineTo(-18, 6); c.lineTo(-17, 14); c.lineTo(-10, 8); c.lineTo(-4, -6); c.closePath();
+    c.fillStyle = hair; c.fill(); c.strokeStyle = OL; c.lineWidth = 2.2; c.stroke();
+    tufts(c, [[-14,-18,-32,-36,6,-.15],[-6,-23,-18,-44,6,-.1]], hair);   // 扎起来往后翘的两束
+    c.fillStyle = '#5a2a36'; for (const [x, y] of [[-16, -21], [-8, -26]]) { c.beginPath(); c.arc(x, y, 3, 0, Math.PI * 2); c.fill(); }
+    face(c, '#ecd6c6');
+    c.fillStyle = '#2a1418'; c.beginPath(); c.moveTo(-1, 1.5); c.lineTo(17.5, .5); c.lineTo(17.5, 4.5); c.lineTo(-1, 5); c.closePath(); c.fill();   // 鼻梁上的横纹
+    c.beginPath(); c.ellipse(10.4, -5, 2.6, 2.4, 0, 0, Math.PI * 2); c.fillStyle = '#3a1a26'; c.fill();
+    c.beginPath(); c.arc(9.8, -6, .7, 0, Math.PI * 2); c.fillStyle = '#fff'; c.fill();
+    strands(c, [[5.6,-8,15,-8.6]], OL, 2.4);
+    strands(c, [[6.5,-2.6,13.5,-2.8]], 'rgba(90,50,60,.45)', 1.1);   // 眼袋
+    if (o.scale) strands(c, [[3,-5.5,17,-6.5],[3,-3.5,16,-4]], '#ff3a4a', 1.4);   // 赤鳞跃动：眼睛上的纹
+    c.beginPath(); c.moveTo(8.5, 10.6); c.lineTo(13.4, 10.4); c.strokeStyle = '#7a4a40'; c.lineWidth = 1.5; c.stroke();
+    c.beginPath(); c.moveTo(18, -7); c.quadraticCurveTo(18, -24, 3, -27); c.quadraticCurveTo(-14, -30, -21, -14); c.quadraticCurveTo(-23, -4, -18, 4);
+    c.lineTo(-13, -6); c.lineTo(-8, -2); c.lineTo(-5, -12); c.lineTo(0, -6); c.lineTo(3, -14); c.lineTo(8, -8); c.lineTo(11, -14); c.lineTo(15, -9); c.lineTo(17, -12); c.closePath();
+    c.fillStyle = hair; c.fill(); c.strokeStyle = OL; c.lineWidth = 2; c.stroke();
+    strands(c, [[-6,-22,-10,-11],[4,-23,2,-14],[11,-18,10,-11]], hs, 1.4);
+  },
+  // 日车宽见：短黑发，疲惫的眼神和黑眼圈，胡茬（细节简化）
+  higuruma(c, o) {
+    const hair = '#1b191d', hs = '#3a3640';
+    c.beginPath(); c.moveTo(-2, -24); c.quadraticCurveTo(-23, -20, -21, -4); c.quadraticCurveTo(-20, 4, -15, 8); c.lineTo(-6, -4); c.closePath(); c.fillStyle = hair; c.fill(); c.strokeStyle = OL; c.lineWidth = 2.2; c.stroke();
+    face(c, '#ead2c0');
+    c.fillStyle = 'rgba(70,60,60,.35)'; for (const [x, y] of [[4, 10], [7, 12.5], [10, 13.5], [13, 12.4], [1, 8], [-2, 11]]) { c.beginPath(); c.arc(x, y, .7, 0, Math.PI * 2); c.fill(); }   // 胡茬
+    c.beginPath(); c.ellipse(10.6, -2.4, 2.4, 1.9, 0, 0, Math.PI * 2); c.fillStyle = '#2a2420'; c.fill();
+    strands(c, [[5.6,-4.8,15.2,-4.6]], OL, 2.6);   // 半闭的眼皮
+    strands(c, [[6,.4,13.8,.2],[7,2.2,12.6,2]], 'rgba(80,60,70,.5)', 1.2);   // 黑眼圈
+    strands(c, [[5,-9.2,14.6,-8.6]], '#1b191d', 1.8);
+    c.beginPath(); c.moveTo(8.4, 9.8); c.lineTo(14, 9.8); c.strokeStyle = '#6a4a40'; c.lineWidth = 1.6; c.stroke();
+    c.beginPath(); c.moveTo(18, -6); c.quadraticCurveTo(18, -23, 3, -26); c.quadraticCurveTo(-14, -28, -20, -14); c.quadraticCurveTo(-22, -6, -18, 2);
+    c.lineTo(-12, -8); c.quadraticCurveTo(0, -13, 8, -12); c.quadraticCurveTo(14, -11, 18, -6); c.closePath();
+    c.fillStyle = hair; c.fill(); c.strokeStyle = OL; c.lineWidth = 2; c.stroke();
+    strands(c, [[-8,-22,-12,-12],[2,-24,0,-14],[10,-20,12,-12]], hs, 1.4);
   },
   // 漏瑚：火山一样的头，独眼，黑牙（皮肤颜色是估的）
   jogo(c, o) {
@@ -1237,6 +1309,8 @@ function fig(c, who, P, x, gy, d, K, wt, o = {}) {
       dot(c, p2, 6 * K, '#7c6c80', OL); dot(c, at(p2, u, 2 * K), 1.4 * K, '#f2e8d0', null);
     }
     if (st.under) { c.save(); torso(); c.clip(); cloth(c, [at(J.N, fr, -sw * .25), at(at(J.N, u, -24 * K), fr, 7 * K), at(J.N, fr, sw * .75), at(at(J.N, u, 6 * K), fr, 2 * K)], st.under, 'rgba(0,0,0,0)'); c.restore(); }
+    if (st.tie) poly(c, [at(at(J.N, u, -3 * K), fr, 5 * K), at(sp(.5), fr, 8 * K)], 3.6 * K, st.tie, OL);   // 领带
+    if (st.badge) dot(c, at(at(J.N, u, -18 * K), fr, 13 * K * B), 2.4 * K, '#d8b24a', OL);   // 律师徽章
     if (st.sash) {
       c.beginPath(); c.moveTo(...at(J.H, pp, hw)); c.lineTo(...at(J.H, pp, -hw)); c.strokeStyle = st.belt || st.sash; c.lineWidth = (st.belt ? 11 : 8) * K; c.stroke();
       if (!st.bare) { c.beginPath(); c.moveTo(...at(J.N, fr, -sw * .6)); c.lineTo(...at(at(J.N, u, -26 * K), fr, 4 * K)); c.lineTo(...at(J.N, fr, sw * .8)); c.strokeStyle = '#9a9184'; c.lineWidth = 2; c.stroke(); }
@@ -1263,11 +1337,27 @@ function fig(c, who, P, x, gy, d, K, wt, o = {}) {
   if (st.shortSleeve && !sil) forearm(c, J.eF, J.hF, K, st.bandage || st.skin, 9.2 * K, !!st.bandage);
   if (st.cuff && !sil) cuff(c, J.eF, J.hF, K * B, st.cuff);
   if (st.katana) katana(c, J, K, d, ol, sil);
+  if (st.gavel) gavel(c, J, K, d, ol, sil, o.sword);
   if (st.armBlade) armBlade(c, J, K, d, ol, sil, o.t || 0);
   hand(c, J, true, f(st.skin), ol, st);
   c.restore();
   if (o.wheel != null && !sil) { c.save(); if (o.alpha != null) c.globalAlpha *= o.alpha; wheel(c, J.Hd[0] - d * 4 * K, J.Hd[1] - 40 * K, K, o.wheel, o.t || 0, o.wheelGlow || 0); c.restore(); }
   return J;
+}
+// 日车的法槌；判了死刑之后化成处刑人之剑
+function gavel(c, J, K, d, ol, sil, sword) {
+  const p = J.hF, a = J.aF, dir = [Math.sin(a) * d, Math.cos(a)], n = [-dir[1], dir[0]], at = (q, v, k) => [q[0] + v[0] * k, q[1] + v[1] * k];
+  if (sword) {
+    c.save(); if (!sil) { c.shadowColor = '#fff2c0'; c.shadowBlur = 18; }
+    poly(c, [at(p, dir, 8 * K), at(p, dir, 118 * K)], 6.5 * K, sil ? '#06070a' : '#f2f2f4', ol);
+    c.restore();
+    poly(c, [at(at(p, dir, 8 * K), n, 10 * K), at(at(p, dir, 8 * K), n, -10 * K)], 4 * K, sil ? '#06070a' : '#d8c48a', ol);
+    return;
+  }
+  const end = at(p, dir, 30 * K);
+  poly(c, [at(p, dir, -6 * K), end], 4 * K, sil ? '#06070a' : '#6a3e20', ol);
+  poly(c, [at(end, n, 11 * K), at(end, n, -11 * K)], 12 * K, sil ? '#06070a' : '#8a5a30', ol);
+  if (!sil) poly(c, [at(end, n, 7 * K), at(end, n, 9 * K)], 12 * K, '#d8c48a', ol);
 }
 // 退魔之剑：长在前臂上的宽刃，带正能量的淡金色辉光
 function armBlade(c, J, K, d, ol, sil, t) {
@@ -1384,6 +1474,8 @@ const CHAR = {
   dabura: {name:'达布拉', hp:150, ce:180, reg:13, spd:500, K:1.85, atk:[9, 9, 14], col:'#ffe0a0', idle:'stand', rct:3},
   kenjaku:{name:'羂索', hp:132, ce:220, reg:15, spd:470, K:1.76, atk:[8, 8, 13], col:'#d8a8a8', idle:'stand', rct:2},
   yuji:   {name:'虎杖悠仁', hp:144, ce:160, reg:13, spd:570, K:1.7, atk:[8, 8, 12], col:'#ff8fa8', idle:'stand', rct:0},
+  choso:  {name:'胀相', hp:140, ce:200, reg:15, spd:500, K:1.74, atk:[9, 9, 13], col:'#e0506a', idle:'stand', rct:0},
+  higuruma:{name:'日车宽见', hp:138, ce:190, reg:14, spd:490, K:1.76, atk:[10, 10, 14], col:'#d8c48a', idle:'stand', rct:0},
   jogo:   {name:'漏瑚', hp:132, ce:210, reg:15, spd:480, K:1.58, atk:[8, 8, 12], col:'#ff8a4a', idle:'stand', rct:2},
   megumi: {name:'伏黑惠', hp:140, ce:190, reg:16, spd:530, K:1.72, atk:[8, 8, 12], col:'#8a9ee0', idle:'stand', rct:0},
   mahito: {name:'真人', hp:138, ce:200, reg:14, spd:500, K:1.7, atk:[8, 8, 12], col:'#9fb8cc', idle:'stand', rct:3},
@@ -1406,6 +1498,8 @@ const TECH = {
   dabura: {K:{name:'光线', act:'dlight', ce:15, cd:1.4}, L:{name:'光之牢', act:'dcage', ce:30, cd:6}, U:{name:'光速', act:'dflash', ce:45, cd:5}, I:{name:'暗与光的异界', act:'domain', ce:100}},
   kenjaku:{K:{name:'咒灵群', act:'ghorde', ce:30, cd:4}, L:{name:'重力', act:'kgrav', ce:35, cd:8}, U:{name:'涡', act:'kuzu', ce:25, cd:2.5}, I:{name:'胎藏遍野', act:'domain', ce:150}},
   yuji:   {K:{name:'逕庭拳', act:'ydiv', ce:10, cd:1.6}, L:{name:'突进踢', act:'ykick', ce:15, cd:3}, U:{name:'全力一拳', act:'yheavy', ce:25, cd:4}, I:{name:'集中', act:'yfocus', ce:70, cd:18}},
+  choso:  {K:{name:'百敛 · 穿血', act:'cpierce', ce:20, cd:1.8}, L:{name:'超新星', act:'cnova', ce:25, cd:3}, U:{name:'血星磊', act:'bmet', ce:20, cd:2.5}, I:{name:'赤鳞跃动 · 载', act:'cscale', ce:60, cd:16}},
+  higuruma:{K:{name:'法槌 · 巨大化', act:'hsmash', ce:20, cd:3}, L:{name:'法槌 · 投掷', act:'hthrow', ce:15, cd:2.5}, U:{name:'处刑人之剑', act:'hsword', ce:0, cd:1.5}, I:{name:'诛伏赐死', act:'hcourt', ce:100, cd:20}},
   jogo:   {K:{name:'火礫虫', act:'jinsect', ce:15, cd:2.2}, L:{name:'火山', act:'jvolc', ce:25, cd:3.5}, U:{name:'极之番 · 隕', act:'jmeteor', ce:70, cd:9}, I:{name:'盖棺铁围山', act:'domain', ce:100}},
   megumi: {K:{name:'玉犬 · 浑', act:'fdog', ce:20, cd:3}, L:{name:'鵺', act:'fnue', ce:25, cd:4}, U:{name:'满象', act:'felephant', ce:35, cd:6}, I:{name:'嵌合暗翳庭', act:'fgarden', ce:100}},
   mahito: {K:{name:'无为转变', act:'mtouch', ce:25, cd:3}, L:{name:'改造人', act:'mkaizo', ce:25, cd:5}, U:{name:'多重魂 · 拨体', act:'mbody', ce:40, cd:6}, I:{name:'自闭圆顿裹', act:'mdomain', ce:120}},
@@ -1447,6 +1541,8 @@ const ACH = [
   {id:'fu', name:'伏黑', cond:'通关「伏黑」', card:['降灵术 · 伏黑甚尔', '涩谷事变中被降灵术唤回的甚尔失去自我，和儿子伏黑惠交手；听到对方姓「伏黑」后，他用游云刺穿了自己的头（第 111–113 话）。']},
   {id:'sh', name:'魂的形状', cond:'通关「魂的形状」', card:['遍杀即灵体', '涩谷事变里，真人撕掉人脸变出的「真正的样子」：身体硬得虎杖的普通攻击打不进去。虎杖判断只有全力的黑闪才能打倒它（第 131–132 话）。']},
   {id:'gj', name:'课外教学', cond:'通关「课外教学」', card:['无量空处', '五条悟的领域：把无穷无尽的信息灌进对手的脑子里，让对方什么也做不了。对漏瑚时，他用它压过了盖棺铁围山（第 15 话）。']},
+  {id:'cy', name:'不存在的记忆', cond:'通关「不存在的记忆」', card:['赤血操术 · 百敛', '加茂家相传的术式，操纵自己的血液。胀相把血压缩到极限（百敛），再一口气射出就是穿血。涩谷事变里，机械丸放出的水冲散了他的百敛（第 104 话）。']},
+  {id:'hg', name:'诛伏赐死', cond:'通关「诛伏赐死」', card:['处刑人之剑', '日车的领域里，式神 Judgeman 判处死刑时，日车的法槌会化成处刑人之剑，据说能一击斩杀对象（第 165–166 话）。']},
   {id:'jo', name:'一击之约', cond:'通关「一击之约」', card:['极之番 · 隕', '漏瑚的极之番：召唤出像陨石一样巨大的燃烧岩块砸下来。涩谷事变里他对宿傩用了这一招，宿傩接下之后反击（第 115 话）。']},
   {id:'ka', name:'雷神', cond:'通关「雷神」', card:['幻兽琥珀', '鹿紫云一与生俱来的术式，只能用一次：肉体被重构，把咒力转成的电相关现象全部显现出来，头发化成角、多出第三只眼；术式结束后肉体崩坏（第 237 话）。']},
   {id:'all3', name:'全部三星', cond:'闯关所有关卡（不含挑战关）都拿到三星',  card:['八握剑异戒神将魔虚罗', '十种影法术里最强的式神：高大、肌肉发达的人形，四片翅膀从眼窝长出，后脑伸出尾巴状的附肢，头顶悬着八柄的法阵，受到新的刺激时会转动。']},
@@ -1485,7 +1581,7 @@ function cullMul(att, src) {
   if (G.mode !== 'cull' || att !== G.P || !G.cull) return 1;
   const R = G.cull.rules; return isTechSrc(src) ? 1 + .15 * (R.tech || 0) : 1 + .2 * (R.atk || 0);
 }
-function cullPickOpp() { const pool = ['sukuna', 'gojo', 'yuta', 'mahoraga', 'yujiM', 'dabura', 'toji', 'geto', 'yuki', 'kenjaku', 'kashimo', 'mahito', 'megumi', 'yuji', 'jogo'].filter(w => w !== G.pick && w !== G.cull.last); return pool[Math.floor(rand() * pool.length)]; }
+function cullPickOpp() { const pool = ['sukuna', 'gojo', 'yuta', 'mahoraga', 'yujiM', 'dabura', 'toji', 'geto', 'yuki', 'kenjaku', 'kashimo', 'mahito', 'megumi', 'yuji', 'jogo', 'choso', 'higuruma'].filter(w => w !== G.pick && w !== G.cull.last); return pool[Math.floor(rand() * pool.length)]; }
 function cullStart() {
   const C = G.cull; G.opp = cullPickOpp(); C.last = G.opp; startGame();
   const R = C.rules, E = G.E, P = G.P;
@@ -1680,6 +1776,9 @@ const SFX = {
   tKaizo(){ for (let i = 0; i < 3; i++) tone(180 + 40 * i, 90, .3, .12, {type:'sawtooth', lp:700, delay:i * .08}); noise('bandpass', 400, 900, .4, .15, {q:2}); },
   tBatai(){ tone(110, 45, .6, .3, {type:'sawtooth', lp:600, dist:true}); noise('lowpass', 1200, 200, .5, .3); },
   tMDomain(){ [98, 103.8, 155.6].forEach((f, i) => tone(f, f * .5, 1.1, .2, {type:'sawtooth', lp:800, delay:i * .05})); noise('highpass', 3000, 600, .8, .2, {a:.2}); },
+  // 日车宽见
+  tGavel(){ tone(320, 200, .1, .45, {type:'triangle'}); noise('bandpass', 1400, 900, .07, .35, {q:3}); },
+  tCourt(){ for (let i = 0; i < 3; i++) { tone(300, 190, .1, .4, {type:'triangle', delay:i * .32}); noise('bandpass', 1400, 900, .06, .3, {q:3, delay:i * .32}); } [110, 138.6, 164.8].forEach(f => tone(f, f, 2.2, .12, {type:'sawtooth', lp:600, a:.6})); },
   // 漏瑚
   tInsect(){ for (let i = 0; i < 3; i++) tone(1800 + 500 * h(i), 900, .12, .05, {type:'square', lp:4000, delay:i * .06}); noise('bandpass', 1500, 3000, .2, .12, {q:3}); },
   tVolc(){ tone(55, 35, .9, .5, {type:'sawtooth', lp:220}); noise('lowpass', 300, 1800, .7, .4, {a:.45, dist:true}); },
@@ -1721,7 +1820,7 @@ const SFX = {
 };
 function sfx(n) { if (AC && !muted) try { SFX[n](); } catch (e) {} }
 // 招式标志音
-const SIG = {blue:'tBlue', red:'tRed', purple:'tPurple', domainG:'tDomainG', domainS:'tDomainS', bf:'tBf', dismantle:'tDismantle', cleave:'tCleave', fuga:'tFuga', pblood:'tPblood', ydismantle:'tYdis', supernova:'tSnova', domainY:'tDomainY', mslash:'tMslash', mslam:'tMslam', mcut:'tDismantle', yspeech:'tSpeech', usurabi:'tUsurabi', rikaArm:'tRika', purelove:'tLove', domainL:'tDomainL', tspear:'tChain', tsoul:'tSoul', tflies:'tFlies', grainbow:'tDragon', ghorde:'tHorde', guzu:'tUzu', ydiv:'heavy', ykick:'heavy', yheavy:'heavy', fdog:'tDog', fnue:'tNue', felephant:'tElephant', fgarden:'tShadow', mtouch:'tTouch', mkaizo:'tKaizo', mbody:'tBatai', mdomain:'tMDomain', jinsect:'tInsect', jvolc:'tVolc', jmeteor:'tMeteor', domainJ:'tDomainJ', kzap:'tZap', kbolt:'tBolt', kthrust:'tStaff', kamber:'tAmber', ymass:'tMass', ygaruda:'tGaruda', ystar:'tStar', yhole:'tDomainD', kgrav:'tGrav', ktrans:'tTrans', domainK:'tDomainK', dlight:'tLight', dcage:'tCage', dflash:'tFlash', domainD:'tDomainD'};
+const SIG = {blue:'tBlue', red:'tRed', purple:'tPurple', domainG:'tDomainG', domainS:'tDomainS', bf:'tBf', dismantle:'tDismantle', cleave:'tCleave', fuga:'tFuga', pblood:'tPblood', ydismantle:'tYdis', supernova:'tSnova', domainY:'tDomainY', mslash:'tMslash', mslam:'tMslam', mcut:'tDismantle', yspeech:'tSpeech', usurabi:'tUsurabi', rikaArm:'tRika', purelove:'tLove', domainL:'tDomainL', tspear:'tChain', tsoul:'tSoul', tflies:'tFlies', grainbow:'tDragon', ghorde:'tHorde', guzu:'tUzu', ydiv:'heavy', ykick:'heavy', yheavy:'heavy', fdog:'tDog', fnue:'tNue', felephant:'tElephant', fgarden:'tShadow', mtouch:'tTouch', mkaizo:'tKaizo', mbody:'tBatai', mdomain:'tMDomain', hsmash:'tGavel', hthrow:'tGavel', hsword:'tSoul', cpierce:'tPblood', cnova:'tSnova', bmet:'tBolt', jinsect:'tInsect', jvolc:'tVolc', jmeteor:'tMeteor', domainJ:'tDomainJ', kzap:'tZap', kbolt:'tBolt', kthrust:'tStaff', kamber:'tAmber', ymass:'tMass', ygaruda:'tGaruda', ystar:'tStar', yhole:'tDomainD', kgrav:'tGrav', ktrans:'tTrans', domainK:'tDomainK', dlight:'tLight', dcage:'tCage', dflash:'tFlash', domainD:'tDomainD'};
 function voice(key) { if (SIG[key]) sfx(SIG[key]); }
 
 /* ================= 特效与提示 ================= */
@@ -1785,7 +1884,7 @@ function hit(att, def, dmg, o = {}) {
     return 'miss';
   }
   const pierce = def.who === 'gojo' && ((att.who === 'toji' && G.mode === 'story' && LEVELS[G.lv].awaken && G.ph && G.ph.stage === 1) || o.nullify || o.inside || adapted(att, '无下限') || (att.who === 'sukuna' && G.worldCut && ['dismantle', 'cleave', 'shrine'].includes(src)));   // 适应无下限后穿透；第 2 关里宿傩学到后也能斩开
-  if (def.who === 'gojo' && !def.guard && !o.sure && !pierce && def.burnout <= 0 && !(G.time < (def.infOff || 0)) && def.ce >= infCost) {   // 防御时主动关闭无下限
+  if (def.who === 'gojo' && !def.guard && !o.sure && !pierce && def.burnout <= 0 && !(G.time < (def.infOff || 0)) && !(G.time < (def.confUntil || 0)) && def.ce >= infCost) {   // 防御时主动关闭无下限
     adaptGain(att, '无下限', .4);
     def.ce -= infCost; def.blockT = G.time; infFx(def); sfx('inf');
     if (o.melee) { att.hitstun = .22; att.vx = -att.face * 350; att.act = null; }
@@ -1799,6 +1898,7 @@ function hit(att, def, dmg, o = {}) {
   if (att.zone > 0) dmg *= 1.2;
   if (att.massT > 0) dmg *= 1.2;   // 星之怒：加了质量
   if (att.amberT > 0) dmg *= 1.15;   // 幻兽琥珀
+  if (att.scaleT > 0) dmg *= 1.15;   // 赤鳞跃动
   if (att.distortT > 0) dmg *= 1.2;   // 遍杀即灵体
   if (def.distortT > 0) {   // 遍杀即灵体：普通攻击打不进去，只有黑闪能打出全额并打破它
     if (src === 'bf') { def.distortT = 0; if (att === G.P && G.stats) G.stats.distortBroken = true; toast('遍杀即灵体 · 被打破', '#ff6a6a', {size:64, life:1.3, x:b.x, y:b.y - 300, sub:'黑闪'}); ringFx(b.x, b.y, 240, '#ff3a3a', .45, 10); }
@@ -1821,6 +1921,7 @@ function hit(att, def, dmg, o = {}) {
   if (!o.sure) def.chain = G.time - def.lastHit < 1 ? (def.chain || 0) + 1 : 1;
   if (adK && def.adapt[adK] && !def.adapt[adK].done) { def.adapt[adK].taken = (def.adapt[adK].taken || 0) + dmg; if (m === 1) def.adapt[adK].last = G.time; }
   def.hp = Math.max(0, def.hp - dmg); def.lastHit = G.time; def.flash = .08; def.lastSrc = src;
+  if (def.who === 'higuruma') def.harm = (def.harm || 0) + dmg;   // 诛伏赐死的「罪状」
   if (att === G.P && G.stats) { const S = G.stats.src || (G.stats.src = {}); S[src] = (S[src] || 0) + dmg; }
   if (G.mode === 'story') storyHit(att, def, src);
   if (def === G.P && src === 'dhole' && G.stats) G.stats.holeTaken = true;
@@ -1831,6 +1932,7 @@ function hit(att, def, dmg, o = {}) {
     const keepSign = o.sure && def.act && def.act.name === 'domain';   // 必中打不断结印：在对方领域里展开自己的领域是原作里对抗必中的办法
     const armor = def.massT > 0 && !o.sure;   // 加了质量：几乎打不动
     if (armor) def.hitstun *= .3;
+    if (def.scaleT > 0) def.hitstun *= .6;   // 赤鳞跃动：身体更耐打
     if (def.stun <= 0 && !keepSign) { if (!(armor && dmg < 15)) def.act = null; def.vx = att.face * (o.kb ?? 220) * (armor ? .25 : 1); if (o.launch && !armor) def.vy = o.launch; }
   } else def.vx = att.face * 120;
   G.hitstop = Math.max(G.hitstop, o.stop ?? .05); shake(o.shake ?? 6);
@@ -1867,10 +1969,11 @@ const ACT = {
     if (once(a, 'h', .1)) {
       // 黑闪：拳头命中前的一瞬间（0.055–0.1 秒）只按一次 J 才算抓住时机；乱按不算。魔虚罗是式神，游戏里不触发
       const timed = f.who !== 'mahoraga' && f.who !== 'toji' && (f.ai ? rand() < DIFF[G.diff].bf * (f.who === 'yuji' ? (f.zone > 0 ? 2.2 : 1.5) : 1) : (a.np === 1 && a.pt >= bfWin(f)));
-      if ((f.who === 'yujiM' && a.i === 2) || timed) { if (f.who === 'yuta') { swordArc(f, a.i); sfx('slash'); } if (f.who === 'geto' || f.who === 'kashimo') { staffArc(f, 'abc'[a.i]); sfx('tStaff'); } modBF(f, CHAR[f.who].atk[a.i], timed && !(f.who === 'yujiM' && a.i === 2)); }
+      if ((f.who === 'yujiM' && a.i === 2) || timed) { if (f.who === 'yuta') { swordArc(f, a.i); sfx('slash'); } if (f.who === 'geto' || f.who === 'kashimo' || f.who === 'higuruma') { staffArc(f, 'abc'[a.i]); sfx('tStaff'); } modBF(f, CHAR[f.who].atk[a.i], timed && !(f.who === 'yujiM' && a.i === 2)); }
       else if (f.who === 'mahoraga') { swordArc(f, a.i); sfx('heavy'); melee(f, 125, CHAR.mahoraga.atk[a.i], {kb:a.i === 2 ? 900 : 220, launch:a.i === 2 ? -420 : 0, stunT:a.i === 2 ? .5 : .32, col:'#fff2c8', shake:a.i === 2 ? 12 : 6}); }
       else if (f.who === 'yuta') { swordArc(f, a.i); sfx('slash'); f.bfChain = 0; melee(f, 175, CHAR.yuta.atk[a.i], {kb:a.i === 2 ? 600 : 180, launch:a.i === 2 ? -360 : 0, stunT:a.i === 2 ? .45 : .3, col:'#e8f0ff'}); }
       else if (f.who === 'kashimo') { staffArc(f, 'abc'[a.i]); sfx('tStaff'); f.bfChain = 0; const r = melee(f, 175, CHAR.kashimo.atk[a.i], {kb:a.i === 2 ? 600 : 170, launch:a.i === 2 ? -320 : 0, stunT:a.i === 2 ? .45 : .3, col:'#bff6ff'}); if (r === 'hit') { addCharge(opp(f), 1, f); const b = body(opp(f)); sparks(b.x, b.y, '#7fe3f0', 8, 260); } }
+      else if (f.who === 'higuruma') { staffArc(f, 'abc'[a.i]); sfx('tGavel'); f.bfChain = 0; melee(f, 165, CHAR.higuruma.atk[a.i], {kb:a.i === 2 ? 600 : 170, launch:a.i === 2 ? -320 : 0, stunT:a.i === 2 ? .45 : .3, col:'#d8c48a'}); }
       else if (f.who === 'geto') { staffArc(f, 'abc'[a.i]); sfx('tStaff'); f.bfChain = 0; melee(f, 175, CHAR.geto.atk[a.i], {kb:a.i === 2 ? 620 : 170, launch:a.i === 2 ? -340 : 0, stunT:a.i === 2 ? .45 : .3, col:'#ffb08a'}); }
       else { f.bfChain = 0; melee(f, 120, CHAR[f.who].atk[a.i], {kb:a.i === 2 ? 520 : 160, launch:a.i === 2 ? -320 : 0, stunT:a.i === 2 ? .45 : .3}); }
     }
@@ -2097,6 +2200,70 @@ const ACT = {
   yfocus:{dur:.6, pose:a => a.t < .4 ? 'charge' : 'stand', upd(f, a) {
     f.vx = 0;
     if (once(a, 's', .35)) { f.zone = Math.max(f.zone, 6); const b = body(f); ringFx(b.x, b.y, 220, '#ff3a3a', .5, 10); flashScreen('#ff2020', .15, .2); toast('集中', '#ff6a6a', {size:110, life:.9, y:300, sub:'状态绝佳 · 黑闪窗口变宽'}); }
+  }},
+  // 胀相 · 百敛 → 穿血：按住 K 压缩血液，松开射出贯穿的血线（按得越久越粗、越痛）
+  cpierce:{dur:9, hold:true, pose:a => a.fired ? 'fire' : 'dual', upd(f, a) {
+    f.vx = 0;
+    if (a.fired) { if (a.t >= a.end) f.act = null; return; }
+    const release = f.ai ? a.t >= (a.aiT ?? .3) : !isHeld('KeyK');
+    if ((!release && a.t < 1.15) || a.t < .15) return;
+    const k = clamp((a.t - .15) / .85, 0, 1); a.fired = true; a.end = a.t + .3;
+    const J = f.J, x = J ? (J.hF[0] + J.hB[0]) / 2 : f.x + f.face * 60, y = J ? (J.hF[1] + J.hB[1]) / 2 : f.y - 120 * f.K;
+    muzzle(x, y, '#ff2a3a', 50 + 40 * k);
+    G.projs.push({kind:'cpierce', owner:f, x0:x, x, y, vx:f.face * 4200, vy:0, r:10 + 12 * k, dmg:10 + 12 * k, kb:200 + 400 * k, life:.45, pierce:true, hit:new Set(), ce:3 + 5 * k});
+    flashScreen('#ff1a2a', .1 + .15 * k, .12); shake(6 + 8 * k); sfx('tPblood');
+  }},
+  // 胀相 · 超新星：压缩的血珠在身前炸开，像散弹一样往前飞
+  cnova:{dur:.6, pose:a => a.t < .3 ? 'dual' : 'spread', upd(f, a) {
+    f.vx = 0;
+    const cx = f.x + f.face * 40, cy = f.y - 120 * f.K;
+    if (once(a, 'o', 0)) addFx(.32, (c, u) => { c.save(); for (let i = 0; i < 7; i++) { const an = i / 7 * Math.PI * 2 + u * 4; c.fillStyle = '#b0102a'; c.strokeStyle = OL; c.lineWidth = 2; c.beginPath(); c.arc(cx + Math.cos(an) * 46, cy + Math.sin(an) * 40, 7 + 5 * u, 0, Math.PI * 2); c.fill(); c.stroke(); } c.restore(); });
+    if (once(a, 's', .3)) { for (let i = 0; i < 7; i++) G.projs.push({kind:'cnova', owner:f, x:cx + f.face * 30, y:cy + (i - 3) * 8, vx:f.face * (1500 + 260 * h(i * 3 + G.time)), vy:(i - 3) * 190, r:14, dmg:4, kb:160, life:.42, hit:new Set(), ce:2});
+      ringFx(cx, cy, 160, '#ff3a4a', .3, 8); sparks(cx, cy, '#ff2a3a', 20, 420); shake(8); }
+  }},
+  // 胀相 · 血星磊：把血硬化成子弹连射
+  bmet:{dur:.5, pose:() => 'flick', upd(f, a) {
+    f.vx = 0;
+    for (const [k, tt] of [['a', .12], ['b', .2], ['c', .28]]) if (once(a, k, tt)) { const J = f.J, x = J ? J.tipF[0] : f.x + f.face * 70, y = J ? J.tipF[1] : f.y - 120 * f.K;
+      G.projs.push({kind:'bmet', owner:f, x, y, vx:f.face * 2600, vy:0, r:12, dmg:6, kb:120, life:.6, hit:new Set(), ce:2}); muzzle(x, y, '#a01020', 36); }
+  }},
+  // 胀相 · 赤鳞跃动 · 载：控制血流，强化身体
+  cscale:{dur:.55, pose:a => a.t < .35 ? 'charge' : 'stand', upd(f, a) {
+    f.vx = 0;
+    if (once(a, 's', .3)) { f.scaleT = 8; const b = body(f); ringFx(b.x, b.y, 220, '#ff3a4a', .45, 10); flashScreen('#ff1a2a', .15, .2); sfx('tStar'); toast('赤鳞跃动 · 载', '#ff5a6a', {size:80, life:1, x:b.x, y:b.y - 260, sub:'血流加速 · 身体能力提升'}); }
+  }},
+  // 日车 · 法槌 · 巨大化：变大的法槌从头顶砸下（招式是游戏里编的）
+  hsmash:{dur:.62, pose:a => a.t < .28 ? 'charge' : 'punch', upd(f, a) {
+    if (a.t < .28) { f.vx = 0; return; }
+    const e = opp(f); f.vx = a.t < .36 && (e.x - f.x) * f.face > 150 ? f.face * 700 : 0;
+    if (once(a, 'h', .36)) { const x = f.x + f.face * 150 * f.K / 1.5;
+      addFx(.4, (c, u) => { const k = Math.min(1, u * 5), y = lerp(GROUND - 380, GROUND - 52, k); c.save(); c.globalAlpha = 1 - Math.max(0, (u - .6) / .4); c.translate(x, y); c.strokeStyle = OL; c.lineWidth = 4;
+        c.fillStyle = '#6a3e20'; c.fillRect(-9, -210, 18, 165); c.strokeRect(-9, -210, 18, 165);
+        c.fillStyle = '#8a5a30'; c.fillRect(-95, -48, 190, 96); c.strokeRect(-95, -48, 190, 96);
+        c.fillStyle = '#d8c48a'; for (const bx of [-95, 75]) { c.fillRect(bx, -48, 20, 96); c.strokeRect(bx, -48, 20, 96); } c.restore(); });
+      G.timers.push({t:.07, fn() { dustFx(x, 2); shake(14); ringFx(x, GROUND - 10, 190, '#d8c48a', .3, 8);
+        if (!e.ko && Math.abs(e.x - x) < 160 && e.y > GROUND - 280) hit(f, e, 17, {melee:true, src:'hsmash', mass:true, kb:500, launch:-300, stunT:.55, heavy:true, col:'#d8c48a', shake:14, stop:.1}); }}); }
+  }},
+  // 日车 · 法槌 · 投掷：扔出去再转回来（招式是游戏里编的）
+  hthrow:{dur:.4, pose:a => a.t < .14 ? 'charge' : 'flick', upd(f, a) {
+    f.vx = 0;
+    if (once(a, 's', .14)) { const J = f.J, x = J ? J.hF[0] : f.x + f.face * 50, y = J ? J.hF[1] : f.y - 120 * f.K;
+      G.projs.push({kind:'gavel', owner:f, x, y, vx:f.face * 1300, vy:0, r:30, dmg:8, kb:220, life:1.1, L0:1.1, hit:new Set(), ce:3}); f.thrownT = 1.1; }
+  }},
+  // 日车 · 处刑人之剑：死刑判决后才有（原作里据说一击斩杀，游戏里改成按最大体力算的重伤）
+  hsword:{dur:.62, pose:a => a.t < .25 ? 'charge' : 'slashC', upd(f, a) {
+    if (a.t < .25) { f.vx = 0; return; }
+    const e = opp(f); f.vx = a.t < .36 && (e.x - f.x) * f.face > 120 ? f.face * 1150 : f.vx * .7;
+    if (once(a, 'h', .36)) { const b = body(f); soulSlash(f.x + f.face * 120, b.y, f.face);
+      const r = melee(f, 190, Math.min(70, e.maxHp * .45), {src:'hsword', soul:true, inside:true, kb:600, launch:-400, stunT:.8, heavy:true, col:'#fff2c0', shake:22, stop:.2});
+      if (r === 'hit') { f.swordT = 0; toast('处刑', '#fff2c0', {size:130, life:1.2, y:330, sub:'处刑人之剑'}); flashScreen('#ffffff', .5, .3); } }
+  }},
+  // 日车 · 领域展开 · 诛伏赐死：开庭审判
+  hcourt:{dur:.8, pose:a => a.t < .55 ? 'sign' : 'spread', upd(f, a) {
+    f.vx = 0;
+    if (once(a, 's', .55)) { const e = opp(f);
+      if (e.who === 'toji') { toast('必中锁定不了', '#a8d8b0', {size:60, life:1.2, y:420, sub:'天与咒缚 · 咒力为零'}); return; }
+      runTrial(f); }
   }},
   // 漏瑚 · 火礫虫：放出三只会飞的小咒灵，碰到就炸
   jinsect:{dur:.4, pose:a => a.t < .12 ? 'charge' : 'palm', upd(f, a) {
@@ -2380,6 +2547,24 @@ function addCharge(e, n, att) {
   const cap = att && att.amberT > 0 ? 5 : 3;
   e.charge = Math.min(cap, (e.charge || 0) + n); e.chargeT = 5;
 }
+// 诛伏赐死的审判：判决标准是游戏设定（按这场战斗里对手打了日车多少来定）；「不存在的记忆」「诛伏赐死」两关里按原作的罪状
+function runTrial(f) {
+  const e = opp(f), n = (f.trials = (f.trials || 0) + 1), harm = f.harm || 0; f.harm = 0;
+  let verdict = harm >= 40 ? 'death' : harm >= 12 ? 'conf' : 'none', charge = `在这场战斗里对日车造成了 ${Math.round(harm)} 点伤害`;
+  if (G.mode === 'story' && LEVELS[G.lv] && LEVELS[G.lv].court && ['yuji', 'yujiM'].includes(e.who)) {
+    if (n === 1) { verdict = 'conf'; charge = '未成年时进入柏青哥店（第 165 话）'; } else { verdict = 'death'; charge = '涩谷事变中的大量杀人（第 165 话）'; }
+  }
+  if (verdict !== 'none' && f === G.P && G.stats) G.stats.guilty = (G.stats.guilty || 0) + 1;
+  G.court = {t:0}; sfx('tCourt'); e.act = null; e.stun = 0; e.guard = false;
+  const lines = [N('领域展开 · 诛伏赐死。领域里禁止一切暴力，式神 Judgeman 开庭。'), N(`Judgeman：被告${CHAR[e.who].name}。罪状——${charge}。`),
+    N(verdict === 'none' ? '判决：无罪。' : verdict === 'conf' ? (e.who === 'yuji' ? '判决：有罪 · 没收。被告没有术式，被没收的是咒力（第 165 话）。' : '判决：有罪 · 没收。被告的术式暂时被没收。') : '判决：有罪 · 死刑。日车的法槌化成了处刑人之剑。')];
+  startScene(lines, () => {
+    G.court = null;
+    if (verdict === 'none') { toast('无罪', '#e8ecf4', {size:110, life:1.2, y:330, sub:'诛伏赐死'}); return; }
+    e.confUntil = G.time + 10; toast(verdict === 'death' ? '死刑' : '没收', verdict === 'death' ? '#fff2c0' : '#d8c48a', {size:130, life:1.4, y:330, sub:verdict === 'death' ? '没收 · 处刑人之剑出现' : `${CHAR[e.who].name}的术式被没收 10 秒`});
+    if (verdict === 'death') { f.swordT = 10; flashScreen('#ffffff', .3, .3); }
+  });
+}
 // 一道锯齿状的电弧
 function zapFx(x0, y0, x1, y1, w = 1) {
   const seed = rand() * 999;
@@ -2431,7 +2616,7 @@ function swordArc(f, i) {
    原作：第一次受到某种攻击后开始分析，法阵每转一圈代表一步进展，同一攻击挨得越多越快；适应完成后对该攻击获得抗性乃至免疫，
    并治好适应前受的伤，还能改造自己的攻击绕过对方的防御（对无下限转了五圈后斩中五条悟所占的空间）。
    游戏里：每种攻击单独计进度，转满 4 圈适应完成（圈数是游戏里定的）；斩击类合并为一类（宿傩判断它能推广到所有斩击）。 */
-const ADAPT_KEY = {insect:'火', jinsect:'火', jvolc:'火', jmeteor:'火', meteor:'火', volcano:'盖棺铁围山', ydiv:'体术', ykick:'体术', yheavy:'体术', gdog:'式神', nue:'式神', felephant:'式神', flood:'式神', sdog:'式神', mtouch:'灵魂', mdomain:'灵魂', batai:'灵魂', kaizo:'咒灵', kzap:'电', kthrust:'电', bolt:'电', emw:'电', kgrav:'重力', ktrans:'灵魂', womb:'胎藏遍野', ymass:'质量', garuda:'质量', yhole:'黑洞', dragon:'咒灵', imp:'咒灵', gkuchi:'咒灵', uzu:'涡', tspear:'咒具', tcloud:'咒具', tsoul:'咒具', atk:'体术', dismantle:'斩击', cleave:'斩击', ydismantle:'斩击', shrine:'斩击', mcut:'斩击', mslash:'斩击', blue:'苍', red:'赫', purple:'茈', fuga:'开',
+const ADAPT_KEY = {cpierce:'穿血', cnova:'超新星', bmet:'血星磊', hsmash:'咒具', gavel:'咒具', hthrow:'咒具', hsword:'处刑人之剑', insect:'火', jinsect:'火', jvolc:'火', jmeteor:'火', meteor:'火', volcano:'盖棺铁围山', ydiv:'体术', ykick:'体术', yheavy:'体术', gdog:'式神', nue:'式神', felephant:'式神', flood:'式神', sdog:'式神', mtouch:'灵魂', mdomain:'灵魂', batai:'灵魂', kaizo:'咒灵', kzap:'电', kthrust:'电', bolt:'电', emw:'电', kgrav:'重力', ktrans:'灵魂', womb:'胎藏遍野', ymass:'质量', garuda:'质量', yhole:'黑洞', dragon:'咒灵', imp:'咒灵', gkuchi:'咒灵', uzu:'涡', tspear:'咒具', tcloud:'咒具', tsoul:'咒具', atk:'体术', dismantle:'斩击', cleave:'斩击', ydismantle:'斩击', shrine:'斩击', mcut:'斩击', mslash:'斩击', blue:'苍', red:'赫', purple:'茈', fuga:'开',
   void:'无量空处', blood:'穿血', pblood:'穿血', supernova:'超新星', town:'灵魂打击', yspeech:'咒言', usurabi:'薄冰', rikaArm:'里香', love:'纯爱', jacob:'雅各的梯子', mslam:'体术', dfist:'体术',
   bf:'体术', wslash:'斩击', light:'光', dlight:'光', dcage:'光', dflash:'光', other:'光', dhole:'正能量'};   // 达布拉的光算同一类
 const adaptKey = src => ADAPT_KEY[src] || '术式';
@@ -2478,7 +2663,7 @@ const COPY = {
   dlight:{name:'光线', from:'达布拉', ce:15, cd:2},
 };
 // 里香吞下谁，能复制到什么（宿傩的捌出自原作；其余是自创）
-const EAT = {sukuna:['cleave', 'dismantle'], gojo:['blue', 'red'], yujiM:['pblood', 'ydismantle'], yuta:[], dabura:['dlight'], toji:[], geto:[], yuki:[], kenjaku:[], kashimo:[], mahito:[], megumi:[], yuji:[], jogo:[]};
+const EAT = {sukuna:['cleave', 'dismantle'], gojo:['blue', 'red'], yujiM:['pblood', 'ydismantle'], yuta:[], dabura:['dlight'], toji:[], geto:[], yuki:[], kenjaku:[], kashimo:[], mahito:[], megumi:[], yuji:[], jogo:[], choso:[], higuruma:[]};
 const inLove = f => (G.domain && G.domain.kind === 'love' && G.domain.owner === f) || (G.dual && G.dual.kind === 'love' && G.dual.go === f);
 function techView(f, slot) {
   if (f.who === 'yuta') {
@@ -2635,11 +2820,14 @@ function soulFx(x, y) {
 function start(f, name, extra = {}) {
   f.act = Object.assign({name, t:0, dur:ACT[name].dur, ev:{}}, extra);
 }
+const T_SWORD = (f, slot) => { if (f.who !== 'higuruma' || slot !== 'U' || f.swordT > 0) return false; if (!f.ai) toast('判了死刑才有处刑人之剑', '#fff2c0', {size:46, life:.9, y:300}); return true; };
 // 第 4 关：达布拉学会反转术式后，把正能量反转成黑洞一样的东西（《≡》第 20 话），只有一次机会
 const HOLE = {name:'逆转 · 黑洞', act:'dhole', ce:100};
 const holeStage = () => G.mode === 'story' && LEVELS[G.lv] && LEVELS[G.lv].hole;
-function techOf(f, slot) { if (storyLock(f, slot)) return null; return f.who === 'dabura' && slot === 'I' && holeStage() ? (f.holeUsed || (f.ai && !f.rctOn) ? null : HOLE) : TECH[f.who][slot]; }
+function techOf(f, slot) { if (storyLock(f, slot) || G.time < (f.confUntil || 0)) return null; return f.who === 'dabura' && slot === 'I' && holeStage() ? (f.holeUsed || (f.ai && !f.rctOn) ? null : HOLE) : TECH[f.who][slot]; }
 function useTech(f, slot) {
+  if (G.time < (f.confUntil || 0)) { if (!f.ai) toast('术式被没收', '#d8c48a', {size:50, life:.8, y:300, sub:'诛伏赐死'}); return; }
+  if (T_SWORD(f, slot)) return;
   if (f.who === 'yuta') {
     if (slot === 'U' && inLove(f)) { castJacob(f); return; }
     if (slot === 'K') { inLove(f) ? castKatana(f) : castCopy(f); return; }
@@ -2669,9 +2857,9 @@ function useTech(f, slot) {
   }
   if (T.act === 'domain' && G.domain && G.domain.owner === f) return;
   f.ce -= T.ce;
-  const label = {blue:['术式顺转', '苍', '#6fc4ff'], red:['术式反转', '赫', '#ff4b3e'], pblood:['赤血操术', '穿血', '#ff3a4a'], ydismantle:[null, '解', '#ff6a6a'], supernova:['赤血操术', '超新星', '#ff3a4a'], yspeech:['咒言', '别动', '#e2d6ff'], rikaArm:[null, '里香', '#e2d6ff'], kgrav:['重力', '重力', '#d8a8a8'], ktrans:['抽出的术式', '无为转变', '#bfe6ff'], kuzu:['极之番', '涡', '#b48cff'], ykick:[null, '突进踢', '#ff8fa8'], yheavy:[null, '全力一拳', '#ff8fa8'], fdog:['十种影法术', '玉犬 · 浑', '#8a9ee0'], fnue:['十种影法术', '鵺', '#8a9ee0'], felephant:['十种影法术', '满象', '#8a9ee0'], mtouch:['无为转变', '触碰', '#cfe0ef'], mkaizo:['无为转变', '改造人', '#cfe0ef'], mbody:['多重魂', '拨体', '#cfe0ef'], jinsect:['咒灵', '火礫虫', '#ffb070'], jvolc:['术式', '火山', '#ff7a3a'], jmeteor:['极之番', '隕', '#ff5a2a'], kzap:['电荷', '放电', '#7fe3f0'], kthrust:['如意', '雷突', '#7fe3f0'], ymass:['星之怒', '质量拳', '#ffd36a'], ygaruda:['式神', '伽楼罗', '#ffe2a0'], ystar:['术式', '星之怒', '#ffd36a'], grainbow:['咒灵操术', '虹龙', '#dfe8ff'], gkuchi:['咒灵操术', '口裂女', '#ff9aa8'], ghorde:['咒灵操术', '咒灵群', '#c9b6e8'], tspear:['万里锁 · 天逆鉾', '天逆鉾', '#e6e6ee'], tcloud:['特级咒具', '游云', '#ffb08a'], tsoul:['特级咒具', '释魂刀', '#d8fff0'], tflies:['收纳咒灵', '蝇头', '#b8b8c0'], dlight:['术式 · 光', '光线', '#ffe9a0'], dcage:['术式 · 光', '光之牢', '#ffe9a0'], dflash:['术式 · 光', '光速', '#fff6d0']}[T.act];
+  const label = {blue:['术式顺转', '苍', '#6fc4ff'], red:['术式反转', '赫', '#ff4b3e'], pblood:['赤血操术', '穿血', '#ff3a4a'], ydismantle:[null, '解', '#ff6a6a'], supernova:['赤血操术', '超新星', '#ff3a4a'], yspeech:['咒言', '别动', '#e2d6ff'], rikaArm:[null, '里香', '#e2d6ff'], kgrav:['重力', '重力', '#d8a8a8'], ktrans:['抽出的术式', '无为转变', '#bfe6ff'], kuzu:['极之番', '涡', '#b48cff'], ykick:[null, '突进踢', '#ff8fa8'], yheavy:[null, '全力一拳', '#ff8fa8'], fdog:['十种影法术', '玉犬 · 浑', '#8a9ee0'], fnue:['十种影法术', '鵺', '#8a9ee0'], felephant:['十种影法术', '满象', '#8a9ee0'], mtouch:['无为转变', '触碰', '#cfe0ef'], mkaizo:['无为转变', '改造人', '#cfe0ef'], mbody:['多重魂', '拨体', '#cfe0ef'], cnova:['赤血操术', '超新星', '#ff3a4a'], bmet:['赤血操术', '血星磊', '#ff3a4a'], hsmash:['法槌', '巨大化', '#d8c48a'], hthrow:['法槌', '投掷', '#d8c48a'], hsword:['死刑', '处刑人之剑', '#fff2c0'], jinsect:['咒灵', '火礫虫', '#ffb070'], jvolc:['术式', '火山', '#ff7a3a'], jmeteor:['极之番', '隕', '#ff5a2a'], kzap:['电荷', '放电', '#7fe3f0'], kthrust:['如意', '雷突', '#7fe3f0'], ymass:['星之怒', '质量拳', '#ffd36a'], ygaruda:['式神', '伽楼罗', '#ffe2a0'], ystar:['术式', '星之怒', '#ffd36a'], grainbow:['咒灵操术', '虹龙', '#dfe8ff'], gkuchi:['咒灵操术', '口裂女', '#ff9aa8'], ghorde:['咒灵操术', '咒灵群', '#c9b6e8'], tspear:['万里锁 · 天逆鉾', '天逆鉾', '#e6e6ee'], tcloud:['特级咒具', '游云', '#ffb08a'], tsoul:['特级咒具', '释魂刀', '#d8fff0'], tflies:['收纳咒灵', '蝇头', '#b8b8c0'], dlight:['术式 · 光', '光线', '#ffe9a0'], dcage:['术式 · 光', '光之牢', '#ffe9a0'], dflash:['术式 · 光', '光速', '#fff6d0']}[T.act];
   if (label) toast(label[1], label[2], {sub:label[0], size:label[1].length > 2 ? 120 : 170});
-  if (['blue', 'red', 'purple', 'pblood', 'ydismantle', 'supernova', 'yspeech', 'rikaArm', 'purelove', 'dlight', 'dcage', 'dflash', 'tspear', 'tsoul', 'tflies', 'grainbow', 'ghorde', 'guzu', 'ymass', 'ygaruda', 'ystar', 'yhole', 'kgrav', 'ktrans', 'kzap', 'kthrust', 'kbolt', 'kamber', 'mtouch', 'mkaizo', 'mbody', 'fdog', 'fnue', 'felephant', 'jinsect', 'jvolc', 'jmeteor'].includes(T.act)) voice(T.act);
+  if (['blue', 'red', 'purple', 'pblood', 'ydismantle', 'supernova', 'yspeech', 'rikaArm', 'purelove', 'dlight', 'dcage', 'dflash', 'tspear', 'tsoul', 'tflies', 'grainbow', 'ghorde', 'guzu', 'ymass', 'ygaruda', 'ystar', 'yhole', 'kgrav', 'ktrans', 'kzap', 'kthrust', 'kbolt', 'kamber', 'mtouch', 'mkaizo', 'mbody', 'fdog', 'fnue', 'felephant', 'jinsect', 'jvolc', 'jmeteor', 'cnova', 'bmet', 'hsmash', 'hthrow', 'hsword'].includes(T.act)) voice(T.act);
   start(f, T.act);
 }
 
@@ -2806,6 +2994,7 @@ function aiTech(f, slot, cdKey, cdT) {
   if (T.act === 'kamber' && f.amberUsed) return false;
   if (T.act === 'mdomain' && (['toji', 'sukuna', 'yuji'].includes(opp(f).who) || (G.mode === 'story' && LEVELS[G.lv] && LEVELS[G.lv].todo))) return false;   // 锁定不了甚尔；碰宿傩会反伤；剧情关里由剧本触发
   if (T.act === 'kzap' && !(opp(f).charge > 0)) return false;
+  if (T.act === 'hsword' && !(f.swordT > 0)) return false;
   if (T.act === 'domain' && opp(f).who === 'toji') return false;   // 领域对他没用
   if (f.ce < T.ce || (f.cd[cdKey] || 0) > 0) return false;
   if (f.burnout > 0 && !(f.who === 'yuta' && inLove(f))) return false;
@@ -2835,7 +3024,7 @@ function aiThink(f, dt) {
   if (f.act || f.hitstun > 0 || f.stun > 0) return;
   f.face = Math.sign(dx) || f.face;
   // 看到对手结印，跟着展开领域
-  const domCost = storyLock(f, 'I') ? Infinity : f.who === 'sukuna' ? 150 : (TECH[f.who].I && TECH[f.who].I.act === 'domain' ? TECH[f.who].I.ce : Infinity);
+  const domCost = storyLock(f, 'I') || G.time < (f.confUntil || 0) ? Infinity : f.who === 'sukuna' ? 150 : (TECH[f.who].I && TECH[f.who].I.act === 'domain' ? TECH[f.who].I.ce : Infinity);
   if (p.hidden > 0) { f.vx = 0; return; }   // 蝇头掩护：电脑找不到他
   if (p.act && p.act.name === 'domain' && !p.act.seenDom && f.burnout <= 0 && f.ce >= domCost && !G.domain && !G.dual) {
     p.act.seenDom = true;
@@ -2852,13 +3041,13 @@ function aiThink(f, dt) {
     p.act.seen = true;
     if (rand() < D.guard * (p.who === 'toji' ? .6 : 1)) { f.guardT = .35; return; }
   }
-  const spd = CHAR[f.who].spd * (f.amberT > 0 ? 1.3 : 1) * (f.twistT > 0 ? .6 : 1) * (f.gardenT > 0 ? 1.15 : 1), keep = f.who === 'gojo' ? 380 : 140;   // 五条悟喜欢保持中距离
+  const spd = CHAR[f.who].spd * (f.amberT > 0 ? 1.3 : 1) * (f.twistT > 0 ? .6 : 1) * (f.gardenT > 0 ? 1.15 : 1) * (f.scaleT > 0 ? 1.2 : 1), keep = f.who === 'gojo' ? 380 : 140;   // 五条悟喜欢保持中距离
   if (f.plan === 'approach') f.vx = Math.sign(dx) * spd * (dist > keep ? 1 : 0);
   else if (f.plan === 'retreat') f.vx = -Math.sign(dx) * spd * .8;
   else f.vx = 0;
   f.think -= dt; if (f.think > 0) return;
   f.think = D.think * (.7 + .6 * rand());
-  const cd = f.cd, ce = f.ce, canTech = f.burnout <= 0;
+  const cd = f.cd, ce = f.ce, canTech = f.burnout <= 0 && !(G.time < (f.confUntil || 0));
   // 领域并存时，有结界的一方会重新展开补结界
   if (G.dual && G.dual.go === f && G.dual.hp < 55 && rand() < .6 && aiTech(f, 'I', 'reinf', 1.2)) return;
   const free = !G.domain && !G.dual;
@@ -2936,6 +3125,26 @@ function aiThink(f, dt) {
     if (dist > 90 && rand() < .5 && aiTech(f, 'K', 'dog', 3)) return;
     if (rand() < .45 && aiTech(f, 'L', 'nue', 4)) return;
     if (dist < 170) {
+      if (rand() < .85) { start(f, 'atk', {i:0, queue:true, aiChain:rand() < .75}); return; }
+      f.plan = 'hold'; return;
+    }
+  } else if (f.who === 'higuruma') {
+    const courtLv = G.mode === 'story' && LEVELS[G.lv] && LEVELS[G.lv].court;
+    if (f.swordT > 0 && dist < 260 && aiTech(f, 'U', 'sword', 1.5)) return;
+    if (f.swordT > 0) { f.plan = 'approach'; return; }
+    if (!courtLv && (f.harm || 0) >= 12 && rand() < .45 && aiTech(f, 'I', 'court', 20)) return;
+    if (dist < 230 && rand() < .35 && aiTech(f, 'K', 'smash', 3)) return;
+    if (dist > 260 && dist < 820 && rand() < .35 && aiTech(f, 'L', 'throw', 2.6)) return;
+    if (dist < 190) {
+      if (rand() < .85) { start(f, 'atk', {i:0, queue:true, aiChain:rand() < .75}); return; }
+      f.plan = 'hold'; return;
+    }
+  } else if (f.who === 'choso') {
+    if (!(f.scaleT > 0) && rand() < .15 && aiTech(f, 'I', 'scale', 16)) return;
+    if (dist > 240 && rand() < .35 && aiTech(f, 'K', 'pierce', 1.8)) { if (f.act && f.act.name === 'cpierce') f.act.aiT = .2 + rand() * .9; return; }
+    if (dist > 140 && dist < 520 && rand() < .35 && aiTech(f, 'L', 'nova', 3)) return;
+    if (dist > 300 && rand() < .3 && aiTech(f, 'U', 'bmet', 2.6)) return;
+    if (dist < 180) {
       if (rand() < .85) { start(f, 'atk', {i:0, queue:true, aiChain:rand() < .75}); return; }
       f.plan = 'hold'; return;
     }
@@ -3041,7 +3250,7 @@ function control(f) {
   f.guard = isHeld('KeyS', 'ArrowDown') && onGround(f);
   if (f.guard && f.vow === 'noguard' && !f.vowBroken) { f.vowBroken = true; unlock('vowBreak'); f.burnout = Math.max(f.burnout, 3); const b = body(f); toast('破誓', '#ff5a4a', {size:90, life:1.2, x:b.x, y:b.y - 240, sub:'违背了不防之誓 · 加成消失 · 术式烧断'}); flashScreen('#ff2020', .25, .2); shake(10); }
   if (f.guard) { f.vx = 0; return; }
-  f.vx = dir * CHAR[f.who].spd * (f.zone > 0 ? 1.1 : 1) * (f.amberT > 0 ? 1.3 : 1) * (f.twistT > 0 ? .6 : 1) * (f.gardenT > 0 ? 1.15 : 1);
+  f.vx = dir * CHAR[f.who].spd * (f.zone > 0 ? 1.1 : 1) * (f.amberT > 0 ? 1.3 : 1) * (f.twistT > 0 ? .6 : 1) * (f.gardenT > 0 ? 1.15 : 1) * (f.scaleT > 0 ? 1.2 : 1);
   if (isPressed('KeyW', 'ArrowUp', 'Space') && onGround(f)) { f.vy = -980; sfx('jump'); }
   if (isPressed('ShiftLeft', 'ShiftRight') && f.dashCd <= 0 && f.ce >= 5) { f.ce -= 5; f.dashCd = .45; f.invul = .14; start(f, 'dash', {dir:dir || f.face}); dustFx(f.x, f.K, -(dir || f.face)); sfx('whoosh'); return; }
   if (isPressed('KeyJ')) { start(f, 'atk', {i:0}); sfx('whoosh'); return; }
@@ -3053,7 +3262,7 @@ function control(f) {
 function updFighter(f, dt) {
   const D = CHAR[f.who];
   for (const k in f.cd) f.cd[k] -= dt;
-  f.dashCd -= dt; f.invul -= dt; f.flash -= dt; f.zone -= dt; f.soulLock -= dt; if (f.hidden > 0) f.hidden -= dt; if (f.massT > 0) f.massT -= dt;
+  f.dashCd -= dt; f.invul -= dt; f.flash -= dt; f.zone -= dt; f.soulLock -= dt; if (f.hidden > 0) f.hidden -= dt; if (f.massT > 0) f.massT -= dt; if (f.swordT > 0) f.swordT -= dt; if (f.scaleT > 0) f.scaleT -= dt;
   if (f.chargeT > 0) { f.chargeT -= dt; if (f.chargeT <= 0) f.charge = 0; }
   if (f.twistT > 0) f.twistT -= dt;
   if (f.gardenT > 0) { f.gardenT -= dt; f.gardenTick -= dt; const e = opp(f);
@@ -3105,12 +3314,13 @@ function updFighter(f, dt) {
 }
 function updProjs(dt) {
   for (const p of G.projs) {
+    if (p.kind === 'gavel' && !p.back && p.life < p.L0 / 2) { p.back = true; p.vx = -p.vx; p.hit = new Set(); }
     if (p.home) { const tb = body(opp(p.owner)); p.vy += clamp((tb.y - p.y) * 22, -5000, 5000) * dt; p.vy *= Math.pow(.2, dt); }
     p.life -= dt; p.x += p.vx * dt; p.y += p.vy * dt;
     const t = opp(p.owner), b = body(t);
     if (!p.hit.has(t) && Math.abs(b.x - p.x) < p.r + 30 * t.K && Math.abs(b.y - p.y) < p.r + 110 * t.K) {
       p.hit.add(t);
-      const col = {red:'#ff6a50', purple:'#d9a6ff', dismantle:'#ff8080', fuga:'#ffb060', blood:'#ff3a4a', love:'#ffd6f0', mcut:'#fff2c8', light:'#fff2b0', dragon:'#e0ecff', imp:'#c9b6e8', uzu:'#b48cff', garuda:'#ffd36a', bolt:'#bff6ff', emw:'#e8ffff', kaizo:'#cfe0ef', batai:'#cfe0ef', gdog:'#c8d0ec', nue:'#e8f0ff', sdog:'#8a9ee0', insect:'#ffb070'}[p.kind];
+      const col = {red:'#ff6a50', purple:'#d9a6ff', dismantle:'#ff8080', fuga:'#ffb060', blood:'#ff3a4a', love:'#ffd6f0', mcut:'#fff2c8', light:'#fff2b0', dragon:'#e0ecff', imp:'#c9b6e8', uzu:'#b48cff', garuda:'#ffd36a', bolt:'#bff6ff', emw:'#e8ffff', kaizo:'#cfe0ef', batai:'#cfe0ef', gdog:'#c8d0ec', nue:'#e8f0ff', sdog:'#8a9ee0', insect:'#ffb070', cpierce:'#ff3a4a', cnova:'#ff3a4a', bmet:'#ff5a6a', gavel:'#d8c48a'}[p.kind];
       const r = hit(p.owner, t, p.dmg, {src:p.kind, kb:p.kb, launch:p.launch, stop:p.kind === 'purple' ? .15 : .07, shake:p.kind === 'purple' ? 24 : 10, heavy:p.dmg > 15, col, ce:p.ce || 4, stunT:p.dmg > 15 ? .6 : .3});
       if (p.kind === 'dismantle' && r === 'blocked') { slashFx(p.x, p.y, 3, '#ffd0d0', 70); sparks(p.x, p.y, '#bff1ff', 16, 380); }
       if (p.kind === 'dismantle') { p.didHit = true; if (r === 'hit') { bigSlash(b.x, b.y, 3, 200, .4, rand() * 999, false); sfx('slash'); scar({kind:'cut', x:t.x, life:4}); } }
@@ -3123,6 +3333,7 @@ function updProjs(dt) {
       if (p.charge && r === 'hit') { addCharge(t, p.charge, p.owner); t.stun = Math.max(t.stun, p.kind === 'bolt' ? .3 : 0); }
       if ((p.kind === 'bolt' || p.kind === 'emw') && r !== 'miss') { zapFx(p.x - Math.sign(p.vx) * 80, p.y, b.x, b.y, p.kind === 'emw' ? 1.4 : .8); }
       if (p.kind === 'garuda' && r !== 'miss') { ringFx(p.x, p.y, 130, '#ffd36a', .3, 8); dustFx(p.x, 1.6); }
+      if (p.kind === 'cpierce' && r !== 'miss') { ringFx(p.x, p.y, 70 + p.r * 3, '#ff3a4a', .25, 6); sparks(b.x, b.y, '#ff2a3a', 14, 360); }
       if (p.kind === 'insect') { ringFx(p.x, p.y, 70, '#ff9a4a', .25, 6); sparks(p.x, p.y, '#ffb060', 12, 300); if (rand() < .5) sfx('tInsect'); }
       if (p.kind === 'dragon' && r === 'hit') { ringFx(p.x, p.y, 150, '#e0ecff', .35, 8); }
       if (p.kind === 'purple') { flashScreen('#ffffff', .4, .25); ringFx(p.x, p.y, 320, '#e8c8ff', .5, 12); }
@@ -3319,9 +3530,9 @@ function buildBg() {
     c.fillStyle = gg; c.fillRect(x, top, w, GROUND - top);
     for (let r = 0; r < 16; r++) for (let q = 0; q < 4; q++) { const v = h(i * 97 + r * 13 + q * 3); if (top + 20 + r * 30 > GROUND - 30) continue; c.fillStyle = v > .68 ? 'rgba(242,196,109,.7)' : v > .55 ? 'rgba(120,170,230,.3)' : 'rgba(8,10,18,.8)'; c.fillRect(x + 12 + q * (w - 24) / 4, top + 20 + r * 30, 12, 16); }
   }
-  if (!dusk) { c.fillStyle = 'rgba(255,255,255,.08)'; c.fillRect(1010, 300, 220, 64);
+  if (!dusk && sc !== 'colony') { c.fillStyle = 'rgba(255,255,255,.08)'; c.fillRect(1010, 300, 220, 64);
     c.font = `700 30px ${SANS}`; c.fillStyle = '#ffd36a'; c.textAlign = 'center'; c.fillText(sc === 'shinjuku' ? 'SHINJUKU' : 'SHIBUYA', 1120, 342); }
-  else { c.fillStyle = 'rgba(20,10,20,.35)'; c.fillRect(0, 0, VW, VH); }   // 68 年后：黄昏的废墟
+  else if (dusk) { c.fillStyle = 'rgba(20,10,20,.35)'; c.fillRect(0, 0, VW, VH); }   // 68 年后：黄昏的废墟
   const gr = c.createLinearGradient(0, GROUND, 0, VH); gr.addColorStop(0, '#1d2030'); gr.addColorStop(1, '#07080d');
   c.fillStyle = gr; c.fillRect(0, GROUND, VW, VH - GROUND);
   c.fillStyle = '#353b55'; c.fillRect(0, GROUND, VW, 3);
@@ -3401,6 +3612,38 @@ function drawWomb(c, t) {
   c.restore();
   c.strokeStyle = 'rgba(216,168,168,.25)'; c.lineWidth = 2; for (let i = 0; i < 14; i++) { const x = h(i * 11) * VW, ph = (t * .8 + h(i)) % 1; c.beginPath(); c.moveTo(x, ph * VH - 60); c.lineTo(x, ph * VH); c.stroke(); }
   c.fillStyle = '#14060a'; c.fillRect(-100, GROUND, VW + 200, VH - GROUND + 100);
+}
+// 诛伏赐死：法庭（样子按「法庭」简化画的）
+function drawCourt(c, t) {
+  const g = c.createLinearGradient(0, 0, 0, VH); g.addColorStop(0, '#1a120c'); g.addColorStop(.7, '#3a2618'); g.addColorStop(1, '#1a100a');
+  c.fillStyle = g; c.fillRect(-100, -100, VW + 200, VH + 200);
+  c.fillStyle = 'rgba(90,60,36,.5)'; for (let x = -60; x < VW + 100; x += 120) c.fillRect(x, 60, 8, GROUND - 60);   // 墙板
+  c.fillStyle = '#2a1a10'; c.strokeStyle = '#0a0604'; c.lineWidth = 4; c.fillRect(480, 380, 640, 170); c.strokeRect(480, 380, 640, 170);   // 法官席
+  c.fillStyle = '#4a3020'; c.fillRect(470, 370, 660, 24); c.strokeRect(470, 370, 660, 24);
+  drawJudgeman(c, 800, 360, 1.2, t);
+  c.fillStyle = '#3a2618'; c.fillRect(-100, GROUND, VW + 200, VH - GROUND + 100); c.fillStyle = '#5a3a24'; c.fillRect(-100, GROUND, VW + 200, 4);
+  c.fillStyle = 'rgba(0,0,0,.25)'; for (let x = 0; x < VW; x += 160) c.fillRect(x, GROUND + 20, 120, 8);
+}
+// Judgeman：漂在空中的式神，脸像缝住眼睛的面具，带着天平（外形按资料描述简化）
+function drawJudgeman(c, x, y, s, t) {
+  c.save(); c.translate(x, y + Math.sin(t * 2) * 6); c.scale(s, s); c.lineJoin = 'round';
+  c.fillStyle = '#2a2430'; c.strokeStyle = OL; c.lineWidth = 3;
+  c.beginPath(); c.moveTo(0, -110); c.lineTo(58, 10); c.quadraticCurveTo(0, 36, -58, 10); c.closePath(); c.fill(); c.stroke();
+  c.fillStyle = '#e8e2d4'; c.beginPath(); c.moveTo(0, -168); c.lineTo(30, -128); c.lineTo(0, -90); c.lineTo(-30, -128); c.closePath(); c.fill(); c.stroke();
+  c.strokeStyle = '#2a1418'; c.lineWidth = 2; for (const ex of [-12, 12]) { c.beginPath(); c.moveTo(ex - 7, -130); c.lineTo(ex + 7, -130); c.stroke(); for (let k = -1; k <= 1; k++) { c.beginPath(); c.moveTo(ex + k * 4, -134); c.lineTo(ex + k * 4, -126); c.stroke(); } }
+  const tilt = Math.sin(t * 1.5) * 8; c.strokeStyle = '#d8c48a'; c.lineWidth = 3;
+  c.beginPath(); c.moveTo(0, -88); c.lineTo(0, -50); c.moveTo(-70, -60); c.lineTo(70, -60); c.stroke();
+  for (const s0 of [-1, 1]) { const px = s0 * 70, py = -60 + s0 * tilt * .5; c.strokeStyle = '#d8c48a'; c.beginPath(); c.moveTo(px, py); c.lineTo(px - 18, py + 40); c.moveTo(px, py); c.lineTo(px + 18, py + 40); c.stroke();
+    c.beginPath(); c.ellipse(px, py + 40, 22, 7, 0, 0, Math.PI); c.fillStyle = '#b8a070'; c.fill(); c.strokeStyle = OL; c.stroke(); }
+  c.restore();
+}
+// 水：机械丸打开的水把百敛冲散（第 104 话）
+function drawWater(c, t, k) {
+  c.save(); c.globalAlpha = k; c.strokeStyle = 'rgba(190,225,255,.55)'; c.lineWidth = 2;
+  for (let i = 0; i < 70; i++) { const x = h(i) * VW, y = ((h(i * 3) * VH + t * (700 + 300 * h(i * 5))) % (GROUND + 40)) - 40; c.beginPath(); c.moveTo(x, y); c.lineTo(x - 6, y + 26); c.stroke(); }
+  c.fillStyle = 'rgba(120,180,230,.25)'; c.fillRect(-100, GROUND - 6, VW + 200, 12);
+  c.strokeStyle = 'rgba(200,235,255,.5)'; for (let i = 0; i < 12; i++) { const x = (h(i * 7) * VW + t * 20) % VW, w = 30 + 40 * ((t * .8 + h(i)) % 1); c.globalAlpha = k * (1 - (t * .8 + h(i)) % 1); c.beginPath(); c.ellipse(x, GROUND + 4, w, 5, 0, 0, Math.PI * 2); c.stroke(); }
+  c.restore();
 }
 // 盖棺铁围山：火山口里面，四周是岩壁，脚下是岩浆（具体样子尚未确认，按火山画的）
 function drawVolcano(c, t) {
@@ -3655,6 +3898,8 @@ function portrait(c, kind, u) {
     yuki:{bg:'#f4dccb', hair:'#f0cf72', hs:'#c9a64a', lash:'#2a1608', iris:['#f0d8b8', '#b07a48', '#6a3a1a', '#2a1208'], pupil:'#140804'},
     kenjaku:{bg:'#efd6c2', hair:'#141418', hs:'#3a3640', lash:'#140a10', iris:['#d8cce6', '#6a5a80', '#2a2038', '#0e0814'], pupil:'#06030a'},
     geto:{bg:'#efd6c2', hair:'#141418', hs:'#3a3640', lash:'#140a10', iris:['#d8cce6', '#6a5a80', '#2a2038', '#0e0814'], pupil:'#06030a'},
+    choso:{bg:'#ecd6c6', hair:'#17151b', hs:'#3a3442', lash:'#140a10', iris:['#ecd0d8', '#9a5868', '#4a2030', '#1a0810'], pupil:'#0a0408'},
+    higuruma:{bg:'#ead2c0', hair:'#1b191d', hs:'#3a3640', lash:'#141014', iris:['#ddd6cc', '#7a7068', '#3a342e', '#141210'], pupil:'#080706'},
     jogo:{bg:'#d6cec4', hair:'#3a2a24', hs:'#ff7a3a', lash:'#14100e', iris:['#fff6ea', '#e8dccc', '#6a4a3a', '#1a0e0a'], pupil:'#0a0605'},
     dabura:{bg:'#c9ccd6', hair:'#eef0ea', hs:'#b4bab4', lash:'#1a1018', iris:['#fff0c0', '#ffb050', '#e0601a', '#5a1a05'], pupil:'#200800'},
     yujiM:{bg:'#f1d6c4', hair:'#cdd5e0', hs:'#8f98a6', lash:'#1a0a0a', iris:['#e8c8a0', '#a06a40', '#6a3f2a', '#2a1508'], pupil:'#140a04'},
@@ -3678,6 +3923,8 @@ function portrait(c, kind, u) {
   if (kind === 'dabura') { c.strokeStyle = '#3a2f3e'; c.lineWidth = 10; c.lineJoin = 'miter'; c.beginPath(); c.moveTo(-220, 140); for (let i = 1; i <= 8; i++) c.lineTo(-220 + i * 55, 140 + (i % 2 ? 30 : 0)); c.stroke(); c.lineJoin = 'round'; }
   if (kind === 'mahito') { c.strokeStyle = '#6a5e5a'; c.lineWidth = 6; c.beginPath(); c.moveTo(-250, -190); c.quadraticCurveTo(-40, -60, 140, 170); c.stroke(); for (let i = 0; i < 9; i++) { const k = i / 8, x = lerp(-230, 120, k), y = lerp(-170, 150, k) - Math.sin(k * Math.PI) * 50; c.beginPath(); c.moveTo(x - 18, y + 14); c.lineTo(x + 18, y - 14); c.stroke(); } }
   if (kind === 'kashimo') { c.strokeStyle = '#3a5a64'; c.lineWidth = 7; c.lineJoin = 'miter'; c.beginPath(); c.moveTo(-200, 120); for (let i = 1; i <= 8; i++) c.lineTo(-200 + i * 50, 120 + (i % 2 ? 22 : 0)); c.stroke(); c.lineJoin = 'round'; }
+  if (kind === 'choso') { c.fillStyle = '#2a1418'; c.fillRect(-270, 100, 540, 46); }
+  if (kind === 'higuruma') { c.strokeStyle = 'rgba(80,60,70,.5)'; c.lineWidth = 8; for (const yy of [118, 140]) { c.beginPath(); c.moveTo(-180, yy); c.quadraticCurveTo(0, yy + 24, 180, yy); c.stroke(); } }
   if (kind === 'yujiM') { c.strokeStyle = '#8a4a3a'; c.lineWidth = 6; c.beginPath(); c.moveTo(-60, 130); c.lineTo(60, 128); c.stroke(); }
   c.restore();
   c.fillStyle = P.hair;
@@ -3838,6 +4085,21 @@ function drawProj(c, p, t) {
     c.fillStyle = '#ffffff'; c.beginPath(); c.arc(8, -5, 5, 0, Math.PI * 2); c.arc(18, -2, 3.6, 0, Math.PI * 2); c.fill();
     c.fillStyle = '#100810'; c.beginPath(); c.arc(9, -5, 2, 0, Math.PI * 2); c.arc(18.5, -2, 1.5, 0, Math.PI * 2); c.fill();
     c.strokeStyle = '#100810'; c.lineWidth = 2; c.beginPath(); c.moveTo(10, 7); c.lineTo(22, 6); c.stroke();
+    c.restore();
+  } else if (p.kind === 'cpierce') {   // 穿血：压缩后射出的一道血线
+    c.save(); c.lineCap = 'round'; const x0 = p.x0 ?? p.x, tail = Math.min(Math.abs(p.x - x0), 900), xs = p.x - d * tail;
+    c.shadowColor = '#ff1a2a'; c.shadowBlur = 20; c.strokeStyle = 'rgba(140,0,20,.85)'; c.lineWidth = p.r * 1.3; c.beginPath(); c.moveTo(xs, p.y); c.lineTo(p.x, p.y); c.stroke();
+    c.strokeStyle = '#ff5a6a'; c.lineWidth = p.r * .5; c.beginPath(); c.moveTo(xs + d * tail * .3, p.y); c.lineTo(p.x, p.y); c.stroke();
+    c.restore();
+  } else if (p.kind === 'cnova' || p.kind === 'bmet') {   // 超新星的血珠 / 血星磊硬化的血弹
+    c.save(); c.translate(p.x, p.y); c.rotate(Math.atan2(p.vy, p.vx));
+    if (p.kind === 'bmet') { c.fillStyle = '#7a0a1a'; c.strokeStyle = OL; c.lineWidth = 2; c.beginPath(); c.moveTo(14, 0); c.lineTo(0, -6); c.lineTo(-14, -5); c.lineTo(-14, 5); c.lineTo(0, 6); c.closePath(); c.fill(); c.stroke(); c.fillStyle = 'rgba(255,120,130,.6)'; c.fillRect(-10, -3, 14, 2); }
+    else { c.fillStyle = 'rgba(200,20,40,.35)'; c.beginPath(); c.ellipse(-12, 0, 18, 5, 0, 0, Math.PI * 2); c.fill(); c.fillStyle = '#c0102a'; c.strokeStyle = OL; c.lineWidth = 2; c.beginPath(); c.arc(0, 0, 8, 0, Math.PI * 2); c.fill(); c.stroke(); c.fillStyle = '#ff8a9a'; c.beginPath(); c.arc(-2, -2, 2.4, 0, Math.PI * 2); c.fill(); }
+    c.restore();
+  } else if (p.kind === 'gavel') {   // 转着飞的法槌
+    c.save(); c.translate(p.x, p.y); c.rotate(t * 18 * d); c.strokeStyle = OL; c.lineWidth = 3;
+    c.fillStyle = '#6a3e20'; c.fillRect(-4, 0, 8, 46); c.strokeRect(-4, 0, 8, 46);
+    c.fillStyle = '#8a5a30'; c.fillRect(-26, -14, 52, 28); c.strokeRect(-26, -14, 52, 28); c.fillStyle = '#d8c48a'; c.fillRect(-26, -14, 7, 28); c.fillRect(19, -14, 7, 28);
     c.restore();
   } else if (p.kind === 'insect') {   // 火礫虫：发着火光的小虫，翅膀快速扇动（外形简化）
     c.save(); c.translate(p.x, p.y); c.scale(d, 1); c.shadowColor = '#ff7a2a'; c.shadowBlur = 16;
@@ -4004,7 +4266,12 @@ function drawFighterAll(c, f, t) {
     c.restore();
   }
   if (f.hidden > 0 && !f.ko) drawFlies(c, f, t);
-  f.J = fig(c, f.heian ? 'sukunaH' : f.distortT > 0 ? 'mahitoX' : f.who, f.pose, f.x, f.y, f.face, f.K, f.wt, {alpha:f.hidden > 0 && !f.ko ? (f === G.P ? .45 : .3) : undefined, bf:false, tint, vx:f.vx, t, grin:f.who === 'sukuna' && !!f.act, wheel:f.who === 'mahoraga' && rise < .6 ? f.wheelA : null, wheelGlow:f.wheelGlow, amber:f.amberT > 0});
+  if (f.who === 'higuruma' && f.act && f.act.name === 'hcourt') { c.save(); c.globalAlpha = Math.min(1, f.act.t / .3); drawJudgeman(c, f.x - f.face * 90, f.y - 170, .7, t); c.restore(); }
+  if (f.scaleT > 0 && !f.ko) {   // 赤鳞跃动：血流加速的红光
+    const cy = f.y - 110 * f.K, g = c.createRadialGradient(f.x, cy, 10, f.x, cy, 170 * f.K / 1.5);
+    g.addColorStop(0, `rgba(255,40,60,${.22 + .08 * Math.sin(t * 14)})`); g.addColorStop(1, 'rgba(255,40,60,0)'); c.fillStyle = g; c.fillRect(f.x - 200, cy - 220, 400, 440);
+  }
+  f.J = fig(c, f.heian ? 'sukunaH' : f.distortT > 0 ? 'mahitoX' : f.who, f.pose, f.x, f.y, f.face, f.K, f.wt, {alpha:f.hidden > 0 && !f.ko ? (f === G.P ? .45 : .3) : undefined, bf:false, tint, vx:f.vx, t, grin:f.who === 'sukuna' && !!f.act, wheel:f.who === 'mahoraga' && rise < .6 ? f.wheelA : null, wheelGlow:f.wheelGlow, amber:f.amberT > 0, sword:f.swordT > 0, scale:f.scaleT > 0});
   if (rise > 0) c.restore();
   if (f.stun > 0 && G.domain && G.domain.kind === 'void' && G.domain.owner !== f) {   // 信息灌满大脑只属于无量空处
     c.save(); c.font = `600 16px ${SANS}`; c.textAlign = 'center';
@@ -4158,6 +4425,10 @@ function hud(c, t) {
     if (f.twistT > 0 && !f.ko) chips.push(['灵魂被改造 · 变慢', '#cfe0ef']);
     if (f.who === 'kashimo') chips.push(f.amberT > 0 ? [`幻兽琥珀 ${f.amberT.toFixed(1)}s`, '#bff6ff'] : f.amberUsed ? ['幻兽琥珀 已用', '#888'] : ['幻兽琥珀 可用（I）', '#7fe3f0']);
     if (f.charge > 0) chips.push([`电荷 ×${f.charge}`, '#7fe3f0']);
+    if (G.time < (f.confUntil || 0) && !f.ko) chips.push([`术式被没收 ${(f.confUntil - G.time).toFixed(1)}s`, '#d8c48a']);
+    if (f.who === 'higuruma') chips.push(f.swordT > 0 ? [`处刑人之剑 ${f.swordT.toFixed(1)}s`, '#fff2c0'] : [`罪状 ${Math.round(f.harm || 0)}`, '#a89a70']);
+    if (f.scaleT > 0 && !f.ko) chips.push([`赤鳞跃动 ${f.scaleT.toFixed(1)}s`, '#ff5a6a']);
+    if (f.act && f.act.name === 'cpierce' && !f.act.fired) chips.push([`百敛 ${Math.round(clamp((f.act.t - .15) / .85, 0, 1) * 100)}%`, '#ff5a6a']);
     if (f.who === 'yuki') chips.push(f.massT > 0 ? [`星之怒 · 质量 ${f.massT.toFixed(1)}s`, '#ffd36a'] : f.yHoleUsed ? ['黑洞 已用', '#888'] : f.hp <= f.maxHp * .5 ? ['黑洞 可用（I）', '#ffd36a'] : ['黑洞 · 体力过半前不可用', '#998a66']);
     if (f.who === 'geto' && G.time < (f.uzuLock || 0)) chips.push([`咒灵用尽 ${(f.uzuLock - G.time).toFixed(1)}s`, '#c9b6e8']);
     if (f.who === 'toji') chips.push(f.hidden > 0 ? [`蝇头掩护 ${f.hidden.toFixed(1)}s`, '#a8d8b0'] : ['天与咒缚 · 零咒力', '#a8d8b0']);
@@ -4260,6 +4531,7 @@ function draw(t) {
   const sx = (rand() - .5) * G.shake, sy = (rand() - .5) * G.shake, cm = G.cam, z = cm.z;
   c.setTransform(S * z, 0, 0, S * z, S * (cm.fx * (1 - z) + sx), S * (cm.fy * (1 - z) + sy));
   const d = G.domain, intro = d ? clamp(d.t / .7, 0, 1) : 1;
+  if (G.court) drawCourt(c, t); else
   if (G.dual) drawDual(c, G.dual, t); else
   if (d && d.kind !== 'shrine' && intro >= 1) DBG[d.kind](c, t); else c.drawImage(bgc, -20, -20, VW + 40, VH + 40);
   if (d && intro < 1) {
@@ -4270,6 +4542,7 @@ function draw(t) {
   drawScars(c, t);
   if (G.dim > .01) { c.fillStyle = `rgba(0,0,0,${G.dim})`; c.fillRect(-100, -100, VW + 200, VH + 200); }
   for (const fl of G.fields) if (fl.kind === 'grav') drawGrav(c, fl, t); else if (fl.kind === 'blue') drawBlue(c, fl, t); else if (fl.kind === 'hole') drawHole(c, fl, t); else if (fl.kind === 'volc') drawVolc(c, fl, t); else if (fl.kind === 'meteor') drawMeteor(c, fl, t); else if (fl.kind === 'elephant') drawElephant(c, fl, t);
+  if (G.ph && G.ph.waterT > G.time) drawWater(c, t, Math.min(1, (G.ph.waterT - G.time) / .5));
   for (const f of G.fx) if (!f.front) f.draw(c, f.t / f.life);
   const order = G.P.act ? [G.E, G.P] : [G.P, G.E];
   for (const f of order) drawFighterAll(c, f, t);
@@ -4339,6 +4612,16 @@ const LEVELS = [
     },
     outro:{gojo:'原作结局：五条悟用无量空处压过了盖棺铁围山，扯下漏瑚的头要问出幕后的人；花御出手，把只剩一颗头的漏瑚救走了（第 15 话）。',
       jogo:'IF 结局：原作里漏瑚的领域被无量空处压了过去，只剩一颗头被花御救走（第 15 话）。这一次，倒下的是最强。'}},
+  {id:'cy', title:'不存在的记忆', vs:'虎杖悠仁 对 胀相', pair:['yuji', 'choso'], hero:'yuji', opp:'choso', hp:{choso:1.1, yuji:1}, memory:true,
+    src:'《咒术回战》涩谷事变篇 · 第 104–105 话',
+    txt:'涩谷事变。咒胎九相图的长兄胀相，为被虎杖他们祓除的两个弟弟找上了虎杖。他用百敛把血压缩到极限，射出穿血，血星磊打穿了虎杖的肝（第 104 话）。机械丸配合虎杖把他引进厕所，用水冲散了百敛（第 104 话）。最后虎杖倒下了；就在这时，胀相的脑子里涌出了一段异样的「不存在的记忆」（第 105 话），他没有下杀手。',
+    rule:'胀相体力掉到六成时，虎杖会把他引进水里：8 秒内胀相的 K、L、U 都用不了（水把血冲散了），趁机贴上去打。这一关虎杖倒下时不算输：按原作，胀相会看到「不存在的记忆」，收手离开。胀相体力 ×1.1。用胀相打时，把虎杖逼到三成体力以下就会触发这段记忆。',
+    stars:{
+      yuji:[['让胀相停手（第 105 话）', () => true], ['水淹时打中胀相 5 次（第 104 话）', S => (S.waterHits || 0) >= 5], ['不靠「记忆」，用拳头打倒胀相', S => !S.memory]],
+      choso:[['把虎杖逼到绝境（第 105 话）', () => true], ['用血星磊打中虎杖（第 104 话）', S => (S.src || {}).bmet > 0], ['用穿血打中虎杖 3 次', S => (S.pierceHits || 0) >= 3]],
+    },
+    outro:{yuji:'原作结局：虎杖倒下了，胀相看到「不存在的记忆」，没有下杀手（第 105 话）。后来他知道了虎杖是自己的弟弟，站到了虎杖一边。',
+      choso:'原作结局：胀相看到「不存在的记忆」，放过了倒下的虎杖（第 105 话）。'}},
   {id:'fu', title:'伏黑', vs:'伏黑惠 对 伏黑甚尔', pair:['megumi', 'toji'], hero:'megumi', opp:'toji', hp:{toji:.95, megumi:1}, fu:true,
     src:'《咒术回战》涩谷事变篇 · 第 111–113 话',
     txt:'涩谷事变中，一个诅咒师用降灵术把伏黑甚尔降到了别人身上。甚尔失去了自我，只剩战斗的本能，在涩谷站外和伏黑惠交上了手（第 111 话）。惠用脱兔和蛤蟆周旋，靠影子绊住甚尔的脚步，硬吃一击抓住了他。甚尔问他叫什么名字，惠回答「伏黑」。听到这个姓，甚尔用游云刺穿了自己的头（第 113 话）。',
@@ -4379,9 +4662,19 @@ const LEVELS = [
     },
     outro:{yuji:'原作结局：真人被黑闪重创，逃走时遇上羂索（夏油杰的身体），被咒灵操术吸收（第 133 话）。', yujiM:'（非原作组合）原作结局：真人被黑闪重创，逃走时遇上羂索，被咒灵操术吸收（第 133 话）。',
       mahito:'IF 结局：原作里真人被虎杖的黑闪打倒，逃走后被羂索吸收（第 133 话）。这一次，倒下的是虎杖。'}},
+  {id:'hg', scene:'colony', title:'诛伏赐死', vs:'虎杖悠仁 对 日车宽见', pair:['yuji', 'higuruma'], hero:'yuji', opp:'higuruma', hp:{higuruma:1.15, yuji:1}, court:true,
+    src:'《咒术回战》死灭回游篇 · 第 164–166 话',
+    txt:'死灭回游 · 东京第一结界。虎杖想说服参赛者加一条规则，找上了原本是律师的日车宽见（第 164 话）。日车展开领域「诛伏赐死」，式神 Judgeman 开庭：第一审罪名是未成年进柏青哥店，判「没收」，虎杖的咒力被没收；虎杖申请再审，第二审罪名是涩谷事变中的大量杀人，虎杖认罪，被判「死刑」，日车的法槌化成了处刑人之剑（第 165 话）。可证据指向的是宿傩；日车最后放下了剑（第 166 话）。',
+    rule:'日车开局不久就会开庭，第一审判「没收」：10 秒内你的 K、L、U、I 都用不了，只能用拳头。日车体力掉到 55% 时开第二审，判「死刑」：他拿着处刑人之剑冲过来，10 秒内被砍中就是重伤，一定要躲。把日车打到四分之一以下，剧情会走向原作的结局。日车体力 ×1.15。用日车打是 IF：两次审判按原作的罪状判。',
+    stars:{
+      yuji:[['撑到日车放下剑（第 166 话）', () => true], ['没被处刑人之剑砍中', S => !S.swordTaken], ['咒力被没收时打中日车 5 次', S => (S.confHits || 0) >= 5]],
+      higuruma:[['击败虎杖（IF：原作里日车放下了剑）', () => true], ['两次审判都判有罪（第 165 话）', S => (S.guilty || 0) >= 2], ['用处刑人之剑砍中虎杖', S => (S.src || {}).hsword > 0]],
+    },
+    outro:{yuji:'原作结局：日车看出证据指向的是宿傩，放下了处刑人之剑。虎杖仍然说那是自己的责任。日车之后和虎杖一起行动（第 166 话起）。',
+      higuruma:'IF 结局：原作里日车放下了处刑人之剑（第 166 话）。这一次，他执行了判决。'}},
   {id:'k1', scene:'tomb', title:'薨星宫', vs:'九十九由基 对 羂索', pair:['yuki', 'kenjaku'], hero:'yuki', opp:'kenjaku', hp:{kenjaku:.92, yuki:1}, wombForce:true,
     src:'《咒术回战》死灭回游篇 · 第 204–208 话',
-    txt:'死灭回游期间，羂索来到天元所在的薨星宫。九十九由基和胀相在这里迎击：九十九一拳就打穿了羂索的防御（第 205 话）；羂索展开胎藏遍野，剥掉了她的简易领域，打碎了她的右臂（第 206 话）。最后，九十九把术式变成了黑洞（第 208 话）。原作里胀相也在场，游戏里没有做。',
+    txt:'死灭回游期间，羂索来到天元所在的薨星宫。九十九由基和胀相在这里迎击：九十九一拳就打穿了羂索的防御（第 205 话）；羂索展开胎藏遍野，剥掉了她的简易领域，打碎了她的右臂（第 206 话）。最后，九十九把术式变成了黑洞（第 208 话）。原作里胀相也在场，这一关没让他上场。',
     rule:'羂索体力掉到七成时一定会展开胎藏遍野，简易领域挡不住，只能跑出范围或者硬扛。九十九体力低于一半后黑洞解锁。',
     stars:{
       yuki:[['击败羂索（原作里她没能做到）', () => true], ['用黑洞打中羂索（第 208 话）', S => (S.src || {}).yhole > 0], ['挨过胎藏遍野后获胜', S => !!S.wombSeen]],
@@ -4476,7 +4769,7 @@ function showIntro(i) {
   const L = LEVELS[i]; G.lv = i; inPick = L.hero;
   $('inTitle').textContent = L.title; $('inSrc').textContent = L.src; $('inTxt').textContent = L.txt; $('inRule').textContent = L.rule;
   const box = $('inPicks'); box.textContent = '';
-  for (const w of ['sukuna', 'gojo', 'yuta', 'mahoraga', 'yujiM', 'dabura', 'toji', 'geto', 'yuki', 'kenjaku', 'kashimo', 'mahito', 'megumi', 'yuji', 'jogo']) {
+  for (const w of ['sukuna', 'gojo', 'yuta', 'mahoraga', 'yujiM', 'dabura', 'toji', 'geto', 'yuki', 'kenjaku', 'kashimo', 'mahito', 'megumi', 'yuji', 'jogo', 'choso', 'higuruma']) {
     if (w === L.opp && !L.pair.includes(w)) continue;
     const b = document.createElement('button'); b.type = 'button'; b.dataset.w = w; if (L.pair.includes(w)) b.className = 'canon';
     b.innerHTML = '<b></b>'; b.querySelector('b').textContent = CHAR[w].name; b.querySelector('b').style.color = CHAR[w].col;
@@ -4540,6 +4833,10 @@ function storyHit(att, def, src) {
     if (!G.flags.betHit) { G.flags.betHit = true; const b = body(def); toast('碰到了', '#ff8a4a', {size:70, life:1.4, x:b.x, y:b.y - 260, sub:'赌约 · 漏瑚打中了宿傩一下'}); }
   }
   if (L.jogoBet && att === G.P && src === 'insect') S.insectHits = (S.insectHits || 0) + 1;
+  if (L.memory && att === G.P && def.who === 'choso' && G.ph && G.ph.waterT > G.time) S.waterHits = (S.waterHits || 0) + 1;
+  if (L.memory && att === G.P && src === 'cpierce') S.pierceHits = (S.pierceHits || 0) + 1;
+  if (L.court && def === G.P && src === 'hsword') S.swordTaken = true;
+  if (L.court && att === G.P && G.time < (att.confUntil || 0)) S.confHits = (S.confHits || 0) + 1;
 }
 // 被锁住的招式（觉醒前的五条、被破掉的咒灵）
 function storyLock(f, slot) {
@@ -4547,6 +4844,7 @@ function storyLock(f, slot) {
   if (L.awaken && f.who === 'gojo' && G.ph && G.ph.stage === 1 && slot !== 'K') return '还没觉醒：现在只会苍';
   if (L.fu && f.who === 'toji' && slot !== 'L') return '这时的甚尔只带着游云';
   if (L.fu && f.who === 'megumi' && slot === 'I') return '咒力不够，展开不了领域';
+  if (L.memory && f.who === 'choso' && G.ph && G.ph.waterT > G.time && slot !== 'I') return '水把血冲散了，控制不住';
   if (L.jogoBet && slot === 'I' && TECH[f.who].I && TECH[f.who].I.act === 'domain') return '这一战没有展开领域';
   if (L.curseBreak && f.who === 'geto' && G.stats) { if (slot === 'K' && G.stats.rainbowCut) return '虹龙已被斩开'; if (slot === 'L' && G.stats.kuchiCut) return '口裂女已被破掉'; }
   return null;
@@ -4577,6 +4875,22 @@ const STAGE2 = {
       startScene(SCRIPT.fu.name(), () => { if (t.ko) return; const b = body(t); t.lastSrc = 'self'; t.hp = 0; t.lastHit = G.time; t.rct = 0; toast('伏黑', '#a8d8b0', {size:120, life:1.8, y:330, sub:'第 113 话'}); flashScreen('#ffffff', .3, .3); sparks(b.x, b.y, '#a8d8b0', 20, 400); });
     } else if (m.ai && m.hp < m.maxHp * .35 && !m.ko && !t.ko) {   // 用甚尔打：问出名字，但这次没有停手
       G.flags.named = true; G.stats.named = true; startScene(SCRIPT.fu.nameT());
+    }
+  },
+  cy() {
+    const ch = findW('choso'); if (!ch || ch.ko) return; const ph = G.ph || (G.ph = {});
+    if (!G.flags.water && ch.hp < ch.maxHp * .6 && ch.hp > 0 && freeF(ch)) { G.flags.water = true; clearField(); startScene(SCRIPT.cy.water(), () => { ph.waterT = G.time + 8; }); return; }
+    const y = opp(ch);
+    if (ch === G.P && !G.flags.memory && y.hp < y.maxHp * .3 && y.hp > 0 && !y.ko) { G.flags.memory = true; G.stats.memory = true; clearField();   // 用胀相打：把虎杖逼到绝境时看到记忆
+      startScene(SCRIPT.cy.memory(), () => { y.hp = 0; y.lastSrc = 'memory'; y.lastHit = G.time; y.rct = 0; }); }
+  },
+  hg() {
+    const hj = findW('higuruma'); if (!hj || hj.ko || !hj.ai || G.scene) return;
+    if (!G.flags.t1 && G.time > 3 && freeF(hj)) { G.flags.t1 = true; hj.ce = Math.max(hj.ce, 100); hj.cd = {}; useTech(hj, 'I'); return; }
+    if (G.flags.t1 && !G.flags.t2 && hj.hp < hj.maxHp * .55 && freeF(hj)) { G.flags.t2 = true; hj.ce = Math.max(hj.ce, 100); hj.cd = {}; useTech(hj, 'I'); return; }
+    if (G.flags.t2 && !G.flags.relent && hj.hp < hj.maxHp * .25 && hj.hp > 0 && !G.court) {   // 第 166 话：放下了剑
+      G.flags.relent = true; G.stats.relent = true; clearField(); hj.swordT = 0;
+      startScene(SCRIPT.hg.relent(), () => { if (hj.ko) return; hj.hp = 0; hj.lastSrc = 'yield'; hj.lastHit = G.time; hj.rct = 0; toast('日车放下了剑', '#d8c48a', {size:80, life:1.6, y:330, sub:'第 166 话'}); });
     }
   },
   gj() {
@@ -4661,6 +4975,11 @@ function stageTick() {
 }
 function stageKO(f) {
   const L = LEVELS[G.lv], ph = G.ph;
+  if (L.memory && f === G.P && f.who !== 'choso' && !G.flags.memory && findW('choso')) {   // 第 105 话：虎杖倒下，胀相看到「不存在的记忆」
+    G.flags.memory = true; G.stats.memory = true; clearField(); f.hp = 1; f.invul = 3; const ch = findW('choso');
+    startScene(SCRIPT.cy.memory(), () => { if (ch.ko) return; ch.hp = 0; ch.lastSrc = 'memory'; ch.lastHit = G.time; ch.rct = 0; });
+    return true;
+  }
   if (L.awaken && ph && ph.stage === 1 && f.who === 'gojo') {   // 第 75 话：濒死时领悟反转术式
     ph.stage = 2; G.stats.awoke = true; clearField();
     Object.assign(f, {hp:f.maxHp * (f.ai ? .75 : 1), ce:f.maxCe, invul:2.5, burnout:0}); const e = opp(f); e.hp = e.maxHp; e.hidden = 0; e.x = clamp(f.x + f.face * 500, WALL_L + 80, WALL_R - 80);
@@ -4758,6 +5077,21 @@ const SCRIPT = {
     end:() => G.pick === 'megumi' ? [N('甚尔临死前告诉惠：选了伏黑这个姓，没有错（第 113 话）。'), N('降灵术随着他的死散去了。')]
       : G.pick === 'toji' ? [N('原作里，甚尔听到「伏黑」这个姓后自尽了（第 113 话）。这一次，倒下的是惠。')] : [],
   },
+  cy:{
+    open:() => [N('涩谷事变。咒胎九相图的长兄胀相，找上了祓除他两个弟弟的虎杖。'), N('他用百敛把血压缩到极限，再射出穿血。'),
+      ...(G.pick === 'choso' ? [O('胀相', '为了弟弟们。', '#e0506a')] : G.pick === 'yuji' ? [O('虎杖悠仁', '……我不会逃。', '#ff8fa8')] : [])],
+    water:() => [N('虎杖把胀相引进了厕所。机械丸打开了水（第 104 话）。'), N(G.P.who === 'choso' ? '水冲散了百敛，血控制不住了。撑过这 8 秒。' : '水冲散了百敛，胀相的血控制不住了。趁现在贴上去打！')],
+    memory:() => [N('虎杖倒下了（第 105 话）。'), N('就在胀相要下杀手的时候，他的脑子里涌出了一段「不存在的记忆」：弟弟们，还有虎杖，和他围坐在一起。'), N('胀相收了手，离开了。')],
+    end:() => G.pick === 'yuji' ? (G.stats.memory ? [N('原作里也是这样：虎杖倒下，胀相看到了不存在的记忆（第 105 话）。'), N('后来，胀相站到了虎杖一边，自称是他的哥哥。')] : [N('原作里，这一战倒下的是虎杖（第 105 话）。'), N('这一次，虎杖用拳头赢了。')])
+      : G.pick === 'choso' ? [N('胀相不明白那段记忆是什么。'), N('只觉得倒在眼前的，是他的弟弟。')] : [],
+  },
+  hg:{
+    open:() => [N('死灭回游 · 东京第一结界。'), N('虎杖想说服参赛者加一条规则，找上了原本是律师的日车宽见（第 164 话）。'),
+      ...(G.pick === 'higuruma' ? [O('日车宽见', '……开庭吧。', '#d8c48a')] : G.pick === 'yuji' ? [O('虎杖悠仁', '我只是想谈谈。', '#ff8fa8')] : [])],
+    relent:() => [N('日车举起了处刑人之剑。'), N('可 Judgeman 拿出的证据，指向的是宿傩，而不是虎杖。'), N('日车放下了剑：被附身时做下的事，不是他的罪。虎杖却仍然说，那是自己的责任（第 166 话）。')],
+    end:() => G.pick === 'yuji' ? [N('日车交出了点数，之后和虎杖一起行动（第 166 话起）。')]
+      : G.pick === 'higuruma' ? [N('原作里，日车在这里放下了剑（第 166 话）。'), N('这一次，他执行了判决。')] : [],
+  },
   gj:{
     open:() => [N('虎杖悠仁入学后不久。特级咒灵漏瑚找上了五条悟（第 14 话）。'), N('火礫虫被无下限挡在半空。五条把虎杖带到一旁，说这是今天的课。'),
       ...(G.pick === 'gojo' ? [O('五条悟', '悠仁，好好看着。', '#6fd3ff')] : G.pick === 'jogo' ? [O('漏瑚', '……少瞧不起人。', '#ff8a4a')] : [])],
@@ -4785,7 +5119,7 @@ const SCRIPT = {
       : G.pick === 'mahito' ? [N('原作里，真人被虎杖的黑闪打倒，逃走后被羂索吸收（第 133 话）。'), N('这一次，倒下的是虎杖。')] : [],
   },
   k1:{
-    open:() => [N('死灭回游期间，天元所在的薨星宫。'), N('九十九由基和胀相在这里等着羂索。原作里胀相也在场，游戏里没有做。')],
+    open:() => [N('死灭回游期间，天元所在的薨星宫。'), N('九十九由基和胀相在这里等着羂索。原作里胀相也在场，这一关没让他上场。')],
     womb:() => [N('羂索结印——领域展开 · 胎藏遍野（第 206 话）。'), N('它不设结界，九十九的简易领域被硬生生剥掉了。')],
     end:() => G.pick === 'yuki' ? [N('原作里，九十九最后把术式变成黑洞，凭意志压住它，没让它毁掉世界。她战死了，羂索活了下来（第 208 话）。'), N('这一次，倒下的是羂索。')]
       : G.pick === 'kenjaku' ? [N('原作结局：九十九战死，羂索活了下来（第 208 话）。')] : [],
@@ -4926,6 +5260,10 @@ function startGame() {
     : G.pick === 'mahoraga' ? '提示：适应要真的挨打，防御时法阵几乎不转。适应完成后同一种攻击只剩三成伤害。对五条悟时多去碰无下限，适应后就能打穿。'
     : G.pick === 'yuji' ? '提示：贴身用 J 三连，拳头上出现红圈时只按一次 J 就是黑闪，你的时机比别人宽。K 逕庭拳的第二下穿过防御，对手缩着防御时用 U 全力一拳。I 集中后黑闪最好打。'
     : G.opp === 'yuji' ? '提示：别跟他贴身对拳，他的黑闪很容易打出来。用远程招式拉开距离；他身上冒红光（状态绝佳）时先躲开。'
+    : G.pick === 'choso' ? '提示：远了按住 K 压缩再松开，一发穿血打穿全场。贴身用 L 超新星，追击用 U 血星磊。I 赤鳞跃动开着时硬顶上去打。'
+    : G.opp === 'choso' ? '提示：他双手合在胸前就是在压缩血液，马上跳起来或者冲刺躲开那一道穿血。被血珠围住时先防御。'
+    : G.pick === 'higuruma' ? '提示：先让对手打你几下攒「罪状」，攒够 12 点再按 I 开庭；40 点以上会判死刑，赶紧贴上去用 U 处刑人之剑。'
+    : G.opp === 'higuruma' ? '提示：你打他打得越多，开庭时判得越重（他的状态栏会显示罪状）。他结印时打断他；判了死刑就离他远点，剑只有 10 秒。'
     : G.pick === 'jogo' ? '提示：K 火礫虫会自己追人，远了就放；L 火山放在对手脚下，逼他走位。对手被火山掀上天或者僵住时放 U 隕，落点躲不开。I 领域里持续灼烧。'
     : G.opp === 'jogo' ? '提示：脚下地面鼓起来就马上走开，那是火山。天上出现红圈是隕，冲刺跑出圈外。火礫虫会追着你飞，防御或者用飞行物抵掉。'
     : G.pick === 'megumi' ? '提示：U 满象的水能把对手一路冲开、最后冲倒，墙边放最好。远了用 K 玉犬、L 鵺骚扰，鵺打中会麻痹一下，接着贴上去打 J。I 嵌合暗翳庭开着的 8 秒里玉犬会自动补刀，趁机贴上去打。'
@@ -4954,7 +5292,7 @@ function startGame() {
   fitView();
 }
 function fitView() { const a = $('arena'); if (a.classList.contains('land') && !a.classList.contains('max')) a.scrollIntoView({block:'start'}); }
-const WIN_LINE = {jogo:'（漏瑚头顶的火山口喷出一股热气）', yuji:'（虎杖甩了甩拳头）', megumi:'（伏黑惠解开手印，影子缩回脚下）', mahito:'（真人歪着头笑了笑）', kashimo:'（鹿紫云一把如意扛回肩上）', kenjaku:'（羂索摸了摸额头的缝合线）', yuki:'（九十九由基跨上摩托，扬长而去）', geto:'（夏油杰把咒灵收回体内）', toji:'（伏黑甚尔把咒具塞回咒灵的肚子里）', dabura:'（光芒散去）', mahoraga:'（法阵转动的声音）', yuta:'乙骨忧太：「真失礼啊，这是纯爱哦。」', gojo:'五条悟：「放心吧，我是最强的。」', yujiM:'虎杖悠仁：「我还要再活三百年呢。」', sukuna:'两面宿傩：「认清你的立场。」'};
+const WIN_LINE = {choso:'（胀相把血收回体内）', higuruma:'（日车松开领带，叹了口气）', jogo:'（漏瑚头顶的火山口喷出一股热气）', yuji:'（虎杖甩了甩拳头）', megumi:'（伏黑惠解开手印，影子缩回脚下）', mahito:'（真人歪着头笑了笑）', kashimo:'（鹿紫云一把如意扛回肩上）', kenjaku:'（羂索摸了摸额头的缝合线）', yuki:'（九十九由基跨上摩托，扬长而去）', geto:'（夏油杰把咒灵收回体内）', toji:'（伏黑甚尔把咒具塞回咒灵的肚子里）', dabura:'（光芒散去）', mahoraga:'（法阵转动的声音）', yuta:'乙骨忧太：「真失礼啊，这是纯爱哦。」', gojo:'五条悟：「放心吧，我是最强的。」', yujiM:'虎杖悠仁：「我还要再活三百年呢。」', sukuna:'两面宿傩：「认清你的立场。」'};
 function showResult() {
   G.state = 'result';
   const win = G.E.ko, s = G.stats, sec = Math.max(1, Math.round((performance.now() - s.start) / 1000 - (G.sceneTime || 0)));   // 剧情演出的时间不算
@@ -5013,6 +5351,8 @@ const PASSIVE = {
   mahoraga:['被动 · 适应', '挨同一类攻击会转动法阵，转满 4 圈后这类攻击只剩三成伤害并回血。防御时几乎不转。'],
   yujiM:['被动 · 黑闪 / 灵魂攻击', 'J 三连最后一下必出黑闪（游戏设定）；打中后对手 3 秒内不能用反转术式回血。'],
   yuji:['被动 · 体术 / 黑闪', '没有术式，拳脚最快最重。黑闪的判定窗口比别人宽，打出后进入 6 秒状态绝佳，窗口更宽；I 集中直接进入状态绝佳。连续 4 次黑闪会提示追平七海的纪录。拳头打得到灵魂：对手 3 秒内不能反转回血。没有领域和反转术式。'],
+  choso:['赤血操术', 'K 按住压缩血液（百敛），松开射出穿血，按得越久越痛。L 超新星近距离散射，U 血星磊连射三发。I 赤鳞跃动 · 载 8 秒内更快、更痛、更耐打。没有领域和反转术式。'],
+  higuruma:['诛伏赐死', '对手打你越多，「罪状」越重（头顶状态栏会显示）。I 开庭：12 点以上判没收（对手 10 秒用不了 K、L、U、I），40 点以上判死刑，拿到 U 处刑人之剑。判决标准是游戏设定。'],
   jogo:['被动 · 再生', 'K 火礫虫会追着对手飞；L 火山在对手脚下鼓起来，约半秒后喷发；U 极之番 · 隕从天上砸下来，落点有预警圈。3 秒没挨打慢慢回血（游戏设定）。'],
   megumi:['十种影法术', 'K、L、U 都是从影子里召唤式神。U 满象喷水把对手冲开，最后一下冲倒；跳起来能躲开。I 嵌合暗翳庭是未完成的领域：没有必中，8 秒内影子里的玉犬会不断从对手脚下窜出来。没有反转术式。'],
   mahito:['被动 · 修复 / 遍杀即灵体', '3 秒没挨打就慢慢回血，灵魂受创时修不了。体力第一次低于 35% 时变成遍杀即灵体：10 秒内只吃四成伤害、伤害 ×1.2，被黑闪打中就会打破。K 碰到宿傩会反被斩伤，对模块虎杖改不动灵魂。'],
@@ -5026,7 +5366,7 @@ const PASSIVE = {
 function fillMoves() {
   const P = G.P, box = $('moves'); box.textContent = ''; if (!P) return;
   const add = (k, v, cls) => { if (cls) { const d = document.createElement('div'); d.className = cls; d.textContent = v; box.appendChild(d); return; } const b = document.createElement('b'); b.textContent = k; const sp = document.createElement('span'); sp.textContent = v; box.append(b, sp); };
-  add('J', P.who === 'yuta' ? '刀术三连' : P.who === 'geto' ? '游云三连' : P.who === 'kashimo' ? '如意三连' : '体术三连');
+  add('J', P.who === 'yuta' ? '刀术三连' : P.who === 'geto' ? '游云三连' : P.who === 'kashimo' ? '如意三连' : P.who === 'higuruma' ? '法槌三连' : '体术三连');
   for (const sl of ['K', 'L', 'U', 'I']) { const t = techView(P, sl); if (t) add(sl, `${t.name}${t.ce ? `（${t.ce} 咒力）` : ''}`); }
   if (P.who !== 'mahoraga' && P.who !== 'toji') add('黑闪', '出拳后拳头上出现红圈时，只按一次 J（命中前一瞬间），伤害 ×2.5；乱按不算。');
   add('S / Shift', P.who === 'sukuna' || P.who === 'mahoraga' || P.who === 'toji' ? '防御 / 冲刺' : '防御（敌方领域里按住是简易领域）/ 冲刺');
@@ -5061,7 +5401,7 @@ if (window.ResizeObserver) new ResizeObserver(() => resize()).observe(cv);
 /* ================= 触屏按钮的实时状态 ================= */
 const PADB = {};
 document.querySelectorAll('#pad .pr [data-k]').forEach(b => { PADB[b.dataset.k] = {b, ic:b.querySelector('.ic'), cost:b.querySelector('.cost'), cd:b.querySelector('.cd'), key:''}; });
-const shortName = (slot, n, act) => { if (n === '重新展开') return '重展'; if (n === '无为转变') return '触碰'; if (n === '自闭圆顿裹') return '领域'; if (n === '嵌合暗翳庭') return '领域'; if (n === '玉犬 · 浑') return '玉犬'; if (n === '全力一拳') return '重拳'; if (n === '突进踢') return '飞踢'; if (n === '幻兽琥珀') return '琥珀'; if (slot === 'I' && act === 'domain') return '领域'; const s = n.split('·').pop().trim(); return s.replace('（自创）', ''); };
+const shortName = (slot, n, act) => { if (n === '重新展开') return '重展'; if (n === '处刑人之剑') return '处刑'; if (n === '诛伏赐死') return '领域'; if (n === '赤鳞跃动 · 载') return '赤鳞'; if (n === '百敛 · 穿血') return '穿血'; if (n === '法槌 · 巨大化') return '巨槌'; if (n === '法槌 · 投掷') return '投槌'; if (n === '无为转变') return '触碰'; if (n === '自闭圆顿裹') return '领域'; if (n === '嵌合暗翳庭') return '领域'; if (n === '玉犬 · 浑') return '玉犬'; if (n === '全力一拳') return '重拳'; if (n === '突进踢') return '飞踢'; if (n === '幻兽琥珀') return '琥珀'; if (slot === 'I' && act === 'domain') return '领域'; const s = n.split('·').pop().trim(); return s.replace('（自创）', ''); };
 function padState(P, k) {
   if (k === 'KeyJ') return {name:P.who === 'yuta' ? '斩' : '拳', ce:0, cd:0, off:false};
   if (k === 'ShiftLeft') return {name:'冲', ce:5, cd:Math.max(0, P.dashCd) / .45, cdT:P.dashCd, off:P.ce < 5};
@@ -5151,7 +5491,7 @@ $('fs').addEventListener('click', toggleFs); $('padFs').addEventListener('click'
 $('rotBtn').addEventListener('click', enterFs);
 layout();
 if (document.fonts) {
-  document.fonts.load(`80px "Zhi Mang Xing"`, '魔虚罗法阵适应退魔之剑猛击远斩乙骨忧太里香纯爱真赝相爱咒言别动雅各的梯子五条悟虎杖悠仁两面宿傩苍赫虚式茈领域展开无量空处伏魔御厨子黑闪卍踢捌开胜败开战术式烧断对撞……落空连续次鹿紫云一幻兽琥珀放电雷突击神肉体崩坏电磁波如意真人无为转变触碰改造多重魂拨体自闭圆顿裹遍杀即灵体破伏黑惠玉犬浑鵺蛤蟆嵌合暗翳庭十种影法术逕庭拳突进踢全力一拳集中纪录满象漏瑚火礫虫火山隕极之番盖棺铁围山再生一击之约灼烧课外教学压过').then(() => buildBg()).catch(() => {});
+  document.fonts.load(`80px "Zhi Mang Xing"`, '魔虚罗法阵适应退魔之剑猛击远斩乙骨忧太里香纯爱真赝相爱咒言别动雅各的梯子五条悟虎杖悠仁两面宿傩苍赫虚式茈领域展开无量空处伏魔御厨子黑闪卍踢捌开胜败开战术式烧断对撞……落空连续次鹿紫云一幻兽琥珀放电雷突击神肉体崩坏电磁波如意真人无为转变触碰改造多重魂拨体自闭圆顿裹遍杀即灵体破伏黑惠玉犬浑鵺蛤蟆嵌合暗翳庭十种影法术逕庭拳突进踢全力一拳集中纪录满象漏瑚火礫虫火山隕极之番盖棺铁围山再生一击之约灼烧课外教学压过胀相百敛穿血超新星血星磊赤鳞跃动载日车宽见诛伏赐死法槌巨大化投掷处刑人之剑没收死刑无罪罪状不存在的记忆').then(() => buildBg()).catch(() => {});
 }
 let last = performance.now();
 function frame(now) {
